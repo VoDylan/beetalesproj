@@ -1,13 +1,12 @@
 // import {React, useState, useEffect, useCallback } from "react";
-import {Box, Card, CardMedia} from "@mui/material";
+import {Box, Card, CardMedia, Stack} from "@mui/material";
 // import {Button, IconButton, Typography, styled} from "@mui/material";
 import Pic2 from "../assets/JordanValley_1(2).png"
-import FetchCSVData from "../backend/getDataFromSheets.ts";
 
 
 export default function Home() {
     return (
-        <div>
+        <Stack>
             <Box
                 sx={{
                     display: "flex",
@@ -29,6 +28,6 @@ export default function Home() {
                     title="Pic2"
                 />
             </Box>
-        </div>
+        </Stack>
     )
 }
