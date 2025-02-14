@@ -9,11 +9,6 @@ export default function AboutPage() {
                 padding: 2,
                 borderRadius: 1,
                 backgroundColor: "#676565",
-
-                //         width: "100%",
-                //         height: "100%",
-                //         // pt: "10px"
-                //
             }}
         >
             <Box
