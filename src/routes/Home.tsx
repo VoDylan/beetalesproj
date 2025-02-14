@@ -2,11 +2,14 @@
 import {Box, Card, CardMedia, Stack} from "@mui/material";
 // import {Button, IconButton, Typography, styled} from "@mui/material";
 import Pic2 from "../assets/JordanValley_1(2).png"
+import MapPage from "./MapPage.tsx";
 
 
 export default function Home() {
     return (
         <Stack>
+            <MapPage/>
+
             <Box
                 sx={{
                     display: "flex",
