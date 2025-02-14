@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -65,4 +71,11 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+/* height of the container */
+.leaflet-container {
+  height: 100vh;
+  width: 100%;
+  border-radius: 0;
 }

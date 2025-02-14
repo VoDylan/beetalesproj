@@ -1,21 +1,20 @@
 import {AppBar, Button, Toolbar, Stack} from "@mui/material";
-import Logo from "../assets/WpiXBeetalesLogo(2).png";
-
-// import Resizer from 'react-image-file-resizer';
-
+import Logo from "../assets/WpiXBeetalesLogo.png";
 
 function Header() {
 
 
     return (
         <AppBar
-            position="fixed"
+            position="sticky"
             sx={{
                 backgroundColor: "#F7CE46",
                 height: "110px",
-                boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
+                // boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
                 elevation: 1,
                 justifyContent: "center",
+                width: "100%",
+                padding:0,
 
             }}
         >
@@ -42,11 +41,11 @@ function Header() {
                         // marginLeft: "7%",
                         minWidth: "200px" }}
                 >
-                    <Button variant="text" href={"/main"} sx = {{color: 'black', fontWeight: 'bold'}}>Home</Button>
-                    <Button variant="text" href={"/main"} sx = {{color: 'black', fontWeight: 'bold'}}>About</Button>
-                    <Button variant="text" href={"/main"} sx = {{color: 'black', fontWeight: 'bold'}}>Map Data</Button>
-                    <Button variant="text" href={"/main"} sx = {{color: 'black', fontWeight: 'bold'}}>Survey Results</Button>
-                    <Button variant="text" href={"/main"} sx = {{color: 'black', fontWeight: 'bold'}}>Conclusions</Button>
+                    <Button variant="text" href={"/"} sx = {{color: 'black', fontWeight: 'bold'}}>Home</Button>
+                    <Button variant="text" href={"/About"} sx = {{color: 'black', fontWeight: 'bold'}}>About</Button>
+                    <Button variant="text" href={"/Map"} sx = {{color: 'black', fontWeight: 'bold'}}>Map Data</Button>
+                    <Button variant="text" href={"/Database"} sx = {{color: 'black', fontWeight: 'bold'}}>Survey Results</Button>
+                    <Button variant="text" href={"/Conclusions"} sx = {{color: 'black', fontWeight: 'bold'}}>Conclusions</Button>
                 </Stack>
 
                 <Stack

@@ -6,8 +6,8 @@ import Header from "./Components/Header.tsx";
 // import Footer from "./Components/Footer.tsx";
 import Home from "./routes/Home.tsx";
 import About from "./routes/About.tsx";
-// import Map from "./routes/Map.tsx"
 import Database from "./routes/Database.tsx";
+import MapPage from "./routes/MapPage.tsx";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -25,10 +25,10 @@ function App() {
                 path: "",
                 element: <Home/>,
             },
-            // {
-            //     path: "/Map",
-            //     element: <Map/>,
-            // },
+            {
+                path: "/MapPage",
+                element: <MapPage/>,
+            },
             {
                 path: "/Database",
                 element: <Database/>,
