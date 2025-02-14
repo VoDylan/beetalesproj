@@ -2,7 +2,7 @@ import {Box, Stack, Typography} from "@mui/material";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 import {Icon} from "leaflet"
 import "leaflet/dist/leaflet.css";
-import "../index.css";
+import "../mapstyles.css";
 
 import parkIconImg from "../assets/park.png";
 import hikeIconImg from "../assets/mountain.png"
@@ -257,24 +257,35 @@ export default function MapPage() {
 
 
     return (
-        <Stack>
-            <Typography>
-                Data Points in Hong Kong
+        <Stack spacing={2}
+               sx={{
+                   width: '100%',
+                   marginTop: "11vh"
+               }}>
+            <Box sx={{
+                border: '1px solid #000',
+                padding: 2,
+                borderRadius: 1,
+                backgroundColor: "D9D9D9",
+            }}>
+            <Typography variant='h6' fontStyle={'bold'} fontSize={36}>
+                Where Pollinators reside in Hong Kong
             </Typography>
+            </Box>
             <Box
                 sx={{
-                    // border: '1px solid #000',
-                    padding: 0  ,
-                    borderRadius: 0,
-                    backgroundColor: "#676565",
-
-                    width: "100%",
-                    height: "100%",
+                    width: "175vh",  height: "80%", border: '1px solid #000',
                 }}>
-                <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}>
+                <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
+                              style={{
+                                  height: '100vh',
+                                  width: '100%',
+                              }}>
                     <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        // url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
                     />
 
                     {markers.map((marker, markerIndex) => (
@@ -286,7 +297,7 @@ export default function MapPage() {
                             <Popup>
                                 <Stack>
                                 <Typography variant="h5">{marker.popUp}</Typography>
-                                    <Typography variant="h6">{marker.description} </Typography>
+                                    <Typography variant="h6"> filler </Typography>
                                     {marker.imageUrl.map((url, index) => (
                                         <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`} width="150" height="150" />
                                     ))}
