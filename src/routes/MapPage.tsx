@@ -2,7 +2,7 @@ import {Box, Stack, Typography} from "@mui/material";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 import {Icon} from "leaflet"
 import "leaflet/dist/leaflet.css";
-import "../index.css";
+import "../mapstyles.css";
 
 import parkIconImg from "../assets/park.png";
 import hikeIconImg from "../assets/mountain.png"
@@ -44,12 +44,10 @@ export default function MapPage() {
             geocode: [22.2824, 114.1887],
             popUp: "Victoria Park",
             description: "Plants: 5",
+
             imageUrl: [
                 VictoriaPlant1,
                 VictoriaPlant2,
-                VictoriaPlant3,
-                VictoriaPlant4,
-                VictoriaPlant5
             ],
             type: "park"
         },
@@ -252,29 +250,72 @@ export default function MapPage() {
                 "https://via.placeholder.com/150"
             ],
             type: "park"
+        },
+        {
+            geocode: [22.3549708, 114.1865379],
+            popUp: "Dragon's Back",
+            imageUrl: [
+                "https://via.placeholder.com/150",
+            ],
+            type: "hike"
+        },
+        {
+            geocode: [22.44331097, 114.1266774],
+            popUp: "Ng Tung Chai Waterfall",
+            imageUrl: [
+                "https://via.placeholder.com/150",
+            ],
+            type: "hike"
+        },
+        {
+            geocode: [22.35415862, 114.1868307],
+            popUp: "Lion Rock",
+            imageUrl: [
+                "https://via.placeholder.com/150",
+            ],
+            type: "hike"
+        },
+        {
+            geocode: [22.35415862,	114.1868307],
+            popUp: "Pineapple Dam Trail",
+            imageUrl: [
+                "https://via.placeholder.com/150",
+            ],
+            type: "hike"
         }
     ];
 
 
     return (
-        <Stack>
-            <Typography>
-                Data Points in Hong Kong
+        <Stack spacing={2}
+               sx={{
+                   width: '100%',
+                   marginTop: "10vh"
+               }}>
+            <Box sx={{
+                border: '1px solid #000',
+                padding: 2,
+                borderRadius: 2,
+                backgroundColor: "#D9D9D9",
+            }}>
+            <Typography variant='h3' fontStyle={'bold'}color={"black"}>
+                What is the Current Status of Bees in Hong Kong?
             </Typography>
+            </Box>
             <Box
                 sx={{
-                    // border: '1px solid #000',
-                    padding: 0  ,
-                    borderRadius: 0,
-                    backgroundColor: "#676565",
-
-                    width: "100%",
-                    height: "100%",
+                    width: "175vh",  height: "75%", border: '1px solid #000',
                 }}>
-                <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}>
+                <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
+                              style={{
+                                  height: '90vh',
+                                  width: '100%',
+                              }}>
                     <TileLayer
-                        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        // attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        attribution='&copy; <a href="https://carto.com/attributions">CARTO</a>'
+                        // url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
                     />
 
                     {markers.map((marker, markerIndex) => (
@@ -284,12 +325,23 @@ export default function MapPage() {
                             icon={marker.type === "park" ? parkIcon : hikeIcon}
                         >
                             <Popup>
-                                <Stack>
+                                <Stack sx={{
+                                        maxHeight: '400px',
+                                        width: '300px',
+                                        overflow: 'auto',
+                                    }}>
                                 <Typography variant="h5">{marker.popUp}</Typography>
-                                    <Typography variant="h6">{marker.description} </Typography>
-                                    {marker.imageUrl.map((url, index) => (
-                                        <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`} width="150" height="150" />
-                                    ))}
+                                    <Typography variant="h6"> {marker.description} </Typography>
+                                    <Box sx={{
+                                        display: 'flex',
+                                        // flexWrap: 'wrap',
+                                        flexDirection: 'row',
+                                        gap: 1,
+                                    }}>
+                                        {marker.imageUrl.map((url, index) => (
+                                            <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`} width="150" height="150" />
+                                        ))}
+                                    </Box>
                                 </Stack>
                             </Popup>
                         </Marker>

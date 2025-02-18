@@ -14,6 +14,7 @@ import {
 
     Outlet
 } from "react-router-dom";
+import Footer from "./Components/Footer.tsx";
 
 function App() {
     const router = createBrowserRouter([{
@@ -47,9 +48,9 @@ function App() {
         return (
             <div>
                 <Header/>
-
-                {/*<Footer/>*/}
                 <Outlet/>
+                <Footer/>
+
             </div>
         )
     }

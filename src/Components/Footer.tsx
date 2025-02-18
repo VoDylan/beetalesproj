@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {Box, Container, Grid2, Typography} from "@mui/material";
 
 function Footer() {
     return (
@@ -6,19 +6,32 @@ function Footer() {
             sx={{
                 width: "100%",
                 height: "auto",
-                backgroundColor: "secondary.main",
+                backgroundColor: "#C20F2E",
+                // backgroundColor: "white",
                 paddingTop: "1rem",
                 paddingBottom: "1rem",
+                position: "absolute",
+                left: 0,
+                right: 0,
+                zIndex: -1,
+                boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
+                marginTop: "2rem",
+                // border: "1px solid white", //
             }}
         >
-            <Container maxWidth="lg">
-                <Grid container direction="column" alignItems="center">
-                    <Grid item xs={12}>
+            <Container maxWidth="xl">
+                <Grid2 container direction="column" alignItems="center">
+                    <Grid2 item xs={12}>
                         <Typography color="black" variant="h5">
-                            Footer
+                            This research is taken by students at Worcester Polytechnic Institute for completion of their Interactive Qualifying project and not peer reviewed.
                         </Typography>
-                    </Grid>
-                </Grid>
+                    </Grid2>
+                    {/*<Grid2 item xs={12}>*/}
+                    {/*    <Typography color="textSecondary" variant="subtitle1">*/}
+                    {/*        {`${new Date().getFullYear()} | React | Material UI | React Router`}*/}
+                    {/*    </Typography>*/}
+                    {/*</Grid2>*/}
+                </Grid2>
             </Container>
         </Box>
     );
