@@ -1,9 +1,8 @@
 // import {React, useState, useEffect, useCallback } from "react";
-import {Box, Card, CardMedia, Grid2, Stack, Typography} from "@mui/material";
+import {Box, Stack, Typography} from "@mui/material";
 // import {Button, IconButton, Typography, styled} from "@mui/material";
 import Pic2 from "../assets/JordanValley_1(2).png"
 import MapPage from "./MapPage.tsx";
-import CustomCard from "../Components/CustomCard.tsx";
 
 
 export default function Home() {
