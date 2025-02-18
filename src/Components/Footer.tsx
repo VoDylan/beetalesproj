@@ -15,7 +15,7 @@ function Footer() {
                 right: 0,
                 zIndex: -1,
                 boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
-                marginTop: "2rem",
+                marginTop: "10rem",
                 // border: "1px solid white", //
             }}
         >

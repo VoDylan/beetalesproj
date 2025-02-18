@@ -41,7 +41,6 @@ export default function DisplayDatabase() {
     );
     const [beeDataColumns] = useState<GridColDef[]>([
         {field: "id", headerName: "id", width: 150},
-        {field: "District", headerName: "District", width: 150},
         {field: "Name", headerName: "Name", width: 150},
         {field: "Total Pollinators", headerName: "Total Pollinators", width: 150},
         // {field: "Vegetation Proportion", headerName: "Vegetation Proportion", width: 150},
