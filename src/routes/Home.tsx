@@ -12,13 +12,17 @@ export default function Home() {
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2,
-                backgroundColor: "#D9D9D9",
+                borderRadius: 2,                backgroundColor: "#D9D9D9",
                 marginTop: 2,
             }}>
                 <Typography variant='h4' fontStyle={'bold'} color={"black"}>
-                    In our studies, we discovered that there is a lack of living spaces and access to food, both in urban areas and in the forests.
+                    In our studies, we discovered that there is a lack of living spaces and access to food, both in urban areas and in the wilderness.
                 </Typography>
+
+                <Typography variant='h4' fontStyle={'bold'} color={"black"}>
+                    There is also a lack of native plant species throughout the Urban cities which harms the biodiversity of Hong Kong
+                </Typography>
+            {/*    Use Card media to caption a flower that is native, versus another that is invasive to hong kong*/}
             </Box>
 
             {/*<Box*/}
