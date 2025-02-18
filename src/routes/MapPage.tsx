@@ -307,21 +307,26 @@ export default function MapPage() {
         <Stack spacing={2}
                sx={{
                    width: '100%',
-                   marginTop: "10vh"
+                   marginTop: "10vh",
+                   justifyContent: "center",
+                   alignItems: "center"
+
                }}>
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2,
-                backgroundColor: "#D9D9D9",
+                borderRadius: 2, backgroundColor: "#D9D9D9",
+                marginTop: 2,
+                alignSelf: 'stretch'
             }}>
-            <Typography variant='h3' fontStyle={'bold'}color={"black"}>
+            <Typography variant='h2' fontStyle={'bold'} color={"black"}
+                        >
                 Where Pollinators Reside in Hong Kong
             </Typography>
             </Box>
             <Box
                 sx={{
-                    width: "175vh",  height: "75%", border: '1px solid #000',
+                    width: "175vh",  height: "75%", justifyContent: "center"
                 }}>
                 <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
                               style={{
@@ -362,6 +367,44 @@ export default function MapPage() {
                         </Marker>
                     ))}
                 </MapContainer>
+            </Box>
+                <Box sx={{
+                    border: '1px solid #000',
+                    padding: 2,
+                    borderRadius: 2, backgroundColor: "#F8CB00",
+                    marginTop: 2,
+                    width: "90%",
+                    justifyContent: 'center',
+                    textAlign: 'center'
+
+                }}>
+                    <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                        This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on, its not a conclusive map that shows all the places that bees and other pollinators reside in Hong Kong but instead just the places the four of us have observed bees and other pollinators.
+                    </Typography>
+                </Box>
+                <Box sx={{
+                    border: '1px solid #000',
+                    padding: 2,
+                    borderRadius: 2, backgroundColor: "#C20F2E",
+                    marginTop: 2,
+                    alignSelf: 'stretch'
+                }}>
+                    <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                        Methodology for Data Collection
+                    </Typography>
+                </Box>
+            <Box sx={{
+                border: '1px solid #000',
+                padding: 2,
+                borderRadius: 2, backgroundColor: "#020000",
+                marginTop: 2,
+                width: "90%",
+                justifyContent: 'center',
+                textAlign: 'center'
+            }}>
+                <Typography variant='h5' fontStyle={'bold'} color={"white"} fontFamily={"Julius Sans One"}>
+                    At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take data on bees and other pollinators we picked a flowering plant that either had pollinators around it or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to the plant and wrote down the number, frequency of visits, and the weather directly above the plant (sun, partial shade, or shade). We tried to do five flowers for park but if we couldn’t find 5 different flower species we just took data on the as many different flowers we could find.
+                </Typography>
             </Box>
         </Stack>
     )
