@@ -1,23 +1,22 @@
 import * as React from "react";
-import {Button, Box, Typography, Accordion, AccordionSummary, AccordionDetails, Stack, Tabs} from "@mui/material";
-import axios, {AxiosResponse} from "axios";
+import {Box} from "@mui/material";
 import {
     DataGrid,
     GridColDef,
-    GridToolbar,
-    GridRowModel,
+    // GridToolbar,
+    // GridRowModel,
     GridRowModesModel,
-    GridRowModes,
-    GridRowId,
-    GridActionsCellItem,
+    // GridRowModes,
+    // GridRowId,
+    // GridActionsCellItem,
 } from "@mui/x-data-grid";
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import {useEffect, useState} from "react";
+// import Table from '@mui/material/Table';
+// import TableBody from '@mui/material/TableBody';
+// import TableCell from '@mui/material/TableCell';
+// import TableContainer from '@mui/material/TableContainer';
+// import TableHead from '@mui/material/TableHead';
+// import TableRow from '@mui/material/TableRow';
+import {useState} from "react";
 import getDataFromSheets from "../backend/getDataFromSheets.ts"
 
 type BeeDataParams = {

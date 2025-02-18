@@ -1,8 +1,9 @@
-import {AppBar, Button, Toolbar, Stack, Box, makeStyles} from "@mui/material";
+import {AppBar, Button, Toolbar, Stack, Box} from "@mui/material";
 import Logo from "../assets/WpiXBeetalesLogo.png";
 import {Link} from "react-router";
 
 function Header() {
+
 
     return (
         <AppBar
