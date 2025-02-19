@@ -8,6 +8,8 @@ import Home from "./routes/Home.tsx";
 import About from "./routes/About.tsx";
 import Database from "./routes/Database.tsx";
 import MapPage from "./routes/MapPage.tsx";
+import Conclusions from "./routes/Conclusions.tsx";
+import Survey from "./routes/Suvery.tsx";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -37,6 +39,14 @@ function App() {
             {
                 path: "/About",
                 element: <About/>,
+            },
+            {
+                path: "/Conclusions",
+                element: <Conclusions/>,
+            },
+            {
+                path: "/Suvery",
+                element: <Survey/>,
             },
         ],
     },
