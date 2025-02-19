@@ -109,7 +109,7 @@ export default function AboutPage() {
     >
         <Box
             component="img"
-            src="/path"
+            src="src/assets/James_Headshot.jpg"
             alt="Student 1"
             sx={{
                 width: 50,
@@ -153,7 +153,7 @@ export default function AboutPage() {
     >
         <Box
             component="img"
-            src="/path"
+            src="src/assets/Keethu_Headshot.jpg"
             alt="Student 2"
             sx={{
                 width:50,
