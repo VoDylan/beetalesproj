@@ -1,4 +1,4 @@
-import {Box, Stack, Typography} from "@mui/material";
+import {Box, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableRow, Typography} from "@mui/material";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 import {Icon} from "leaflet"
 import "leaflet/dist/leaflet.css";
@@ -33,6 +33,7 @@ import KowloonWall2 from "../assets/parkImages/D6_KowloonWalledCity_Plant9.jpg"
 import YuenShin1 from "../assets/parkImages/D7_YuenShin_Plant3.jpg"
 import YuenShin2 from "../assets/parkImages/D7_YuenShin_Plant5.jpg"
 import DragonsBack1 from "../assets/parkImages/DragonsBack_P5_Pic3.jpg"
+import DragonsBack2 from "../assets/parkImages/DragonsBack_P4.jpg"
 import JordanValley1 from "../assets/parkImages/JordanValley_1(2).jpg"
 import JordanValley2 from "../assets/parkImages/JordanValley_1.jpg"
 import KingsPark1 from "../assets/parkImages/kings park plant 1.jpg"
@@ -44,6 +45,7 @@ import KingGeorge1 from "../assets/parkImages/KingGeorgeVPark_F2_1.jpg"
 import KingGeorge2 from "../assets/parkImages/KingGeorgeVPark_F2_2.jpg"
 import KingGeorge3 from "../assets/parkImages/KingGeorgeVPark_F2_3.jpg"
 import MountAustin1 from "../assets/parkImages/MountAustinPlayground_F1.jpg"
+import MountAustin2 from "../assets/parkImages/MountAustin2.jpg"
 import SaiKung1 from "../assets/parkImages/SaiKung1.jpg"
 import SaiKung2 from "../assets/parkImages/SaiKung2.jpg"
 import LittleHawaii1 from "../assets/parkImages/LittleHawaii1.jpg"
@@ -51,6 +53,12 @@ import NgTungChai1 from "../assets/parkImages/NgTungChai_Plant1.jpg"
 import NgTungChai2 from "../assets/parkImages/NgTungChai_Plant3.jpg"
 import TsuengKwan1 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark1.jpg"
 import TsuengKwan2 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark1.jpg"
+import TsingYiWestPark1 from "../assets/parkImages/TsingYiWestPark1.jpg"
+import TsingYiWestPark2 from "../assets/parkImages/TsingYiWestPark2.jpg"
+import LionsRock1 from "../assets/parkImages/LionsRock1.jpg"
+import LionsRock2 from "../assets/parkImages/LionsRock2.jpg"
+import WohChaiHill1 from "../assets/parkImages/WohChaiHill_P1.jpg"
+import WohChaiHill2 from "../assets/parkImages/WohChaiHill_P1.jpg"
 
 
 import getDataFromSheets from "../backend/getDataFromSheets.ts";
@@ -76,7 +84,13 @@ export default function MapPage() {
         {
             geocode: [22.2824, 114.1887],
             popUp: "Victoria Park",
-            description: "Plants: 5",
+            Pollinators: "5",
+            PlantsSeen: "8",
+            BeeAverage: "0.625",
+            Temperature: "17.8 C",
+            Humidity: "35%",
+            Weather: "Sunny",
+            Date: "January 16, 2025",
 
             imageUrl: [
                 VictoriaPlant1,
@@ -87,6 +101,14 @@ export default function MapPage() {
         {
             geocode: [22.2757, 114.1762],
             popUp: "Wan Chai Park",
+            Pollinators: "4",
+            PlantsSeen: "5",
+            BeeAverage: "0.8",
+            Temperature: "17.9 C",
+            Humidity:"30%",
+            Weather: "Sunny/Shade",
+            Date: "January 17, 2025",
+
             imageUrl: [
                 WanChai1,
                 WanChai2,
@@ -96,6 +118,13 @@ export default function MapPage() {
         {
             geocode: [22.2667, 114.2384],
             popUp: "Chai Wan Park",
+            Pollinators: "29",
+            PlantsSeen: "8",
+            BeeAverage: "3.625",
+            Temperature: "15.7 C",
+            Humidity:"36%",
+            Weather: "Sunny",
+            Date: "January 17, 2025",
             imageUrl: [
                 ChaiWan1,
                 ChaiWan2,
@@ -231,9 +260,8 @@ export default function MapPage() {
             geocode: [22.353254, 114.099524],
             popUp: "Tsing Yi Road West Park",
             imageUrl: [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
+                TsingYiWestPark1,
+                TsingYiWestPark2,
             ],
             type: "park"
         },
@@ -241,9 +269,8 @@ export default function MapPage() {
             geocode: [22.272675, 114.147395],
             popUp: "Mount Austin Playground",
             imageUrl: [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
+                MountAustin1,
+                MountAustin2
             ],
             type: "park"
         },
@@ -259,9 +286,9 @@ export default function MapPage() {
             geocode: [22.285716, 114.144138],
             popUp: "King George V Memorial Park",
             imageUrl: [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
+                KingGeorge1,
+                KingGeorge2,
+                KingGeorge3,
             ],
             type: "park"
         },
@@ -269,7 +296,8 @@ export default function MapPage() {
             geocode: [22.239449, 114.241945],
             popUp: "Dragon's Back",
             imageUrl: [
-                DragonsBack1
+                DragonsBack1,
+                DragonsBack2
             ],
             type: "hike"
         },
@@ -277,7 +305,8 @@ export default function MapPage() {
             geocode: [22.44331097, 114.1266774],
             popUp: "Ng Tung Chai Waterfall",
             imageUrl: [
-                "https://via.placeholder.com/150",
+                NgTungChai1,
+                NgTungChai2
             ],
             type: "hike"
         },
@@ -285,7 +314,8 @@ export default function MapPage() {
             geocode: [22.35415862, 114.1868307],
             popUp: "Lion Rock",
             imageUrl: [
-                "https://via.placeholder.com/150",
+                LionsRock1,
+                LionsRock2
             ],
             type: "hike"
         },
@@ -296,8 +326,65 @@ export default function MapPage() {
                 "https://via.placeholder.com/150",
             ],
             type: "hike"
-        }
+        },
+        {
+            geocode: [22.38089406, 114.2702369],
+            popUp: "Sai Kung Park",
+            imageUrl: [
+                SaiKung1,
+                SaiKung2
+            ],
+            type: "Park"
+        },
+        {
+            geocode: [22.334788, 114.16407],
+            popUp: "Garden Hill",
+            imageUrl: [
+                GardenHill1
+            ],
+            type: "hike"
+        },
+        {
+            geocode: [22.35415862, 114.1868307],
+            popUp: "Little Hawaii Trail",
+            imageUrl: [
+                LittleHawaii1
+            ],
+            type: "hike"
+        },
+        {
+            geocode: [22.33061449, 114.1688082],
+            popUp: "Woh Chai Hill",
+            imageUrl: [
+
+            ],
+            type: "hike"
+        },
+
+
     ];
+
+
+    // const fillMarkerData = (beeDataRows, markers) => {
+    //     return markers.map(marker => {
+    //         const match = beeDataRows.find(row => row.Name.trim() === marker.popUp);
+    //         if (match) {
+    //             return {
+    //                 ...marker,
+    //                 Pollinators: match.Total Pollinators,
+    //                 PlantsSeen: match.Vegetation Proportion,
+    //                 BeeAverage: match.BeesPerFlower,
+    //                 Temperature: match.Temperature,
+    //                 Humidity: match.Humidity,
+    //                 Weather: match.Weather,
+    //                 Date: match.Date,
+    //
+    //             };
+    //         }
+    //         return marker;
+    //     });
+    // };
+    // fillMarkerData(beeDataRows, markers)
 
     return (
         <Stack spacing={2}
@@ -342,20 +429,59 @@ export default function MapPage() {
                         >
                             <Popup>
                                 <Stack sx={{
-                                        maxHeight: '400px',
-                                        width: '300px',
-                                        overflow: 'auto',
-                                    }}>
-                                <Typography variant="h5">{marker.popUp}</Typography>
-                                    <Typography variant="h6"> {marker.description} </Typography>
+                                    maxHeight: '400px',
+                                    width: '300px',
+                                    overflow: 'auto',
+                                }}>
+                                    <Typography variant="h5">{marker.popUp}</Typography>
+                                    <TableContainer component={Paper}>
+                                        <Table>
+                                            <TableBody>
+                                                <TableRow>
+                                                    <TableCell>Date</TableCell>
+                                                    <TableCell>{marker.Date}</TableCell>
+
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableCell>Plants Seen</TableCell>
+                                                    <TableCell>{marker.PlantsSeen}</TableCell>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableCell>Pollinators</TableCell>
+                                                    <TableCell>{marker.Pollinators}</TableCell>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableCell>Bee Average</TableCell>
+                                                    <TableCell>{marker.BeeAverage}</TableCell>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableCell>Temperature</TableCell>
+                                                    <TableCell>{marker.Temperature}</TableCell>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableCell>Humidity</TableCell>
+                                                    <TableCell>{marker.Humidity}</TableCell>
+                                                </TableRow>
+                                                <TableRow>
+                                                    <TableCell>Weather</TableCell>
+                                                    <TableCell>{marker.Weather}</TableCell>
+                                                </TableRow>
+                                                {marker.description && (
+                                                    <TableRow>
+                                                        <TableCell>Notes</TableCell>
+                                                        <TableCell>{marker.description}</TableCell>
+                                                    </TableRow>
+                                                )}
+                                            </TableBody>
+                                        </Table>
+                                    </TableContainer>
                                     <Box sx={{
                                         display: 'flex',
-                                        // flexWrap: 'wrap',
                                         flexDirection: 'row',
                                         gap: 1,
                                     }}>
                                         {marker.imageUrl.map((url, index) => (
-                                            <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`} width="150" height="150" />
+                                            <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`} width="150" height="150"/>
                                         ))}
                                     </Box>
                                 </Stack>

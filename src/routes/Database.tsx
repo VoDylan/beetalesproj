@@ -51,7 +51,7 @@ export default function DisplayDatabase() {
         // {field: "Weather", headerName: "Weather", width: 150},
         // {field: "Time", headerName: "Time", width: 150},
         // {field: "Date", headerName: "Date", width: 150},
-        {field: "FlowersObserved", headerName: "FlowersObserved", width: 150},
+        {field: "Flowers Observed", headerName: "FlowersObserved", width: 150},
         {field: "Bees Per Flower", headerName: "Bees Per Flower", width: 150},
     ])
     const beeDataRows = getDataFromSheets();
