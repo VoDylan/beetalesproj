@@ -22,6 +22,7 @@ import TSWP2 from "../assets/parkImages/D3TinShuiWaiParkPlant5.jpg"
 import TuenMun1 from "../assets/parkImages/D3_TunMun_Plant1(2).jpg"
 import TuenMun2 from "../assets/parkImages/D3_TunMun_Plant4(2).jpg"
 import NamCheong1 from "../assets/parkImages/D4_NamCheong_P1_Pic2.jpg"
+import NamCheong2 from "../assets/parkImages/D4_NamCheong_P2_Pic2.jpg"
 import ShaTin1 from "../assets/parkImages/D4_ShaTin_P2_Pic1.jpg"
 import ShaTin2 from "../assets/parkImages/D4_ShaTin_P4_Pic2.jpg"
 import KowloonBird1 from "../assets/parkImages/D5_KowloonBird_P12_Pic2.jpg"
@@ -58,12 +59,27 @@ import TsingYiWestPark2 from "../assets/parkImages/TsingYiWestPark2.jpg"
 import LionsRock1 from "../assets/parkImages/LionsRock1.jpg"
 import LionsRock2 from "../assets/parkImages/LionsRock2.jpg"
 import WohChaiHill1 from "../assets/parkImages/WohChaiHill_P1.jpg"
-import WohChaiHill2 from "../assets/parkImages/WohChaiHill_P1.jpg"
+import WohChaiHill2 from "../assets/parkImages/WohChaiHill_P2.jpg"
+import Pineapple1 from "../assets/parkImages/PineappleDam_P2_pic3.jpg"
+import Pineapple2 from "../assets/parkImages/PineappleDam_P4_Pic1.jpg"
+import MountParker1 from "../assets/parkImages/MountParkerRoadGreenTrail_P1_Pic1.jpg"
+import FetchCSVData from "../backend/getDataFromSheets.ts";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
+export default function MapPage()  {
+    // const beedata = FetchCSVData()
+    // console.log(beedata[0].Name)
+    const[data,setData] = useState([]);
 
-import getDataFromSheets from "../backend/getDataFromSheets.ts";
+    // useEffect(() => {
+    // }, []);
+    //
+    // const beeData = async() => {
+    //     const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSBA5PxBO7AHB8YJhQ33Pt8JUhFIr03zhIzQCxH3EeIoS3pitzumJT8_E2Bvp-_s-p4vXfaXm1-IUpF/pub?gid=1793986521&single=true&output=csv')
+    //     setData(await response.json())
+    // }
 
-export default function MapPage() {
 
 
     const parkIcon = new Icon({
@@ -75,11 +91,11 @@ export default function MapPage() {
         iconUrl: hikeIconImg as string,
         iconSize: [38, 38]
     });
-
-    const beeDataRows = getDataFromSheets();
+    //
 
 
 // markers
+
     const markers = [
         {
             geocode: [22.2824, 114.1887],
@@ -134,6 +150,13 @@ export default function MapPage() {
         {
             geocode: [22.2769, 114.1608],
             popUp: "Hong Kong Park",
+            Pollinators: "13",
+            PlantsSeen: "5",
+            BeeAverage: "2.6",
+            Temperature: "22.2C",
+            Humidity: "63%",
+            Weather: "Partially Cloudy",
+            Date: "January 19, 2025",
             imageUrl: [
                 HK1,
                 HK2
@@ -143,6 +166,13 @@ export default function MapPage() {
         {
             geocode: [22.3497, 114.0582],
             popUp: "Ma Wan Park",
+            Pollinators: "37",
+            PlantsSeen: "5",
+            BeeAverage: "7.4",
+            Temperature: "22C",
+            Humidity: "30%",
+            Weather: "Sunny",
+            Date: "January 19, 2025",
             imageUrl: [
                 MaWan1,
                 MaWan2
@@ -152,6 +182,13 @@ export default function MapPage() {
         {
             geocode: [22.3921,113.9736],
             popUp: "Tuen Mun Park",
+            Pollinators: "84",
+            PlantsSeen: "5",
+            BeeAverage: "16.8",
+            Temperature: "19C",
+            Humidity: "25%",
+            Weather: "Sunny",
+            Date: "January 19, 2025",
             imageUrl: [
                 TuenMun1,
                 TuenMun2
@@ -161,6 +198,13 @@ export default function MapPage() {
         {
             geocode: [22.4566,114.0025],
             popUp: "Tin Shui Wai Park",
+            Pollinators: "37",
+            PlantsSeen: "5",
+            BeeAverage: "7.4",
+            Temperature: "22C",
+            Humidity: "30%",
+            Weather: "Sunny",
+            Date: "January 19, 2025",
             imageUrl: [
                 TSWP1,
                 TSWP2
@@ -170,14 +214,29 @@ export default function MapPage() {
         {
             geocode: [22.32468983,114.1574124],
             popUp: "Nam Cheong",
+            Pollinators: "44",
+            PlantsSeen: "6",
+            BeeAverage: "7.33",
+            Temperature: "19C",
+            Humidity: "30%",
+            Weather: "Sunny",
+            Date: "January 21, 2025",
             imageUrl: [
                 NamCheong1,
+                NamCheong2,
             ],
             type: "park"
         },
         {
             geocode: [22.3796, 114.1901],
             popUp: "Sha Tin Park",
+            Pollinators: "26",
+            PlantsSeen: "5",
+            BeeAverage: "5.2",
+            Temperature: "20.5",
+            Humidity: "30%",
+            Weather: "Sunny",
+            Date: "January 21, 2025",
             imageUrl: [
                 ShaTin1,
                 ShaTin2
@@ -187,6 +246,13 @@ export default function MapPage() {
         {
             geocode: [22.30679693,114.1685628],
             popUp: "Kowloon Bird Park",
+            Pollinators: "37",
+            PlantsSeen: "15",
+            BeeAverage: "2.466666667",
+            Temperature: "18C",
+            Humidity: "61%",
+            Weather: "Cloudy",
+            Date: "January 22, 2025",
             imageUrl: [
                 KowloonBird1,
                 KowloonBird2
@@ -196,6 +262,13 @@ export default function MapPage() {
         {
             geocode: [22.37317907, 114.1105293],
             popUp: "Tsuen Wan Park",
+            Pollinators: "10",
+            PlantsSeen: "6",
+            BeeAverage: "1.666666667",
+            Temperature: "18C",
+            Humidity: "58%",
+            Weather: "Partially Cloudy",
+            Date: "February 3, 2025",
             imageUrl: [
                 TsuenWan1,
                 TsuenWan2
@@ -205,6 +278,13 @@ export default function MapPage() {
         {
             geocode: [22.3095, 114.1751],
             popUp: "King's Park",
+            Pollinators: "3",
+            PlantsSeen: "5",
+            BeeAverage: "0.6",
+            Temperature: "19C",
+            Humidity: "33%",
+            Weather: "Sunny",
+            Date: "February 5, 2025",
             imageUrl: [
                 KingsPark1,
                 KingsPark2
@@ -214,6 +294,13 @@ export default function MapPage() {
         {
             geocode: [22.38237241, 114.1253041],
             popUp: "Shing Mun Valley Park",
+            Pollinators: "74",
+            PlantsSeen: "9",
+            BeeAverage: "8.22",
+            Temperature: "21.5C",
+            Humidity: "21%",
+            Weather: "Partially Cloudy",
+            Date: "January 21, 2025",
             imageUrl: [
                 ShingMun1,
                 ShingMun2
@@ -223,6 +310,13 @@ export default function MapPage() {
         {
             geocode: [22.325000, 114.217729],
             popUp: "Jordan Valley Park",
+            Pollinators: "6",
+            PlantsSeen: "4",
+            BeeAverage: "1.5",
+            Temperature: "19.4C",
+            Humidity: "21%",
+            Weather: "Partially Cloudy",
+            Date: "January 21, 2025",
             imageUrl: [
                 JordanValley1,
                 JordanValley2
@@ -232,6 +326,13 @@ export default function MapPage() {
         {
             geocode: [22.3321, 114.1903],
             popUp: "Kowloon Walled City Park",
+            Pollinators: "16",
+            PlantsSeen: "9",
+            BeeAverage: "1.78",
+            Temperature: "13.1 C",
+            Humidity: "30%",
+            Weather: "Sunny",
+            Date: "January 26, 2025",
             imageUrl: [
                 KowloonWall1,
                 KowloonWall2
@@ -241,6 +342,13 @@ export default function MapPage() {
         {
             geocode: [22.45244695, 114.1767435],
             popUp: "Yuen Shin Park",
+            Pollinators: "4",
+            PlantsSeen: "5",
+            BeeAverage: "0.8",
+            Temperature: "19.1C",
+            Humidity: "59%",
+            Weather: "Sunny Intervals",
+            Date: "January 22, 2025",
             imageUrl: [
                 YuenShin1,
                 YuenShin2
@@ -250,6 +358,13 @@ export default function MapPage() {
         {
             geocode: [22.30239566, 114.2599706],
             popUp: "Tsueng Kwan O Waterfront Park",
+            Pollinators: "11",
+            PlantsSeen: "9",
+            BeeAverage: "1.22",
+            Temperature: "13C",
+            Humidity: "83%",
+            Weather: "Cloudy/Windy",
+            Date: "February 3, 2025",
             imageUrl: [
                 TsuengKwan1,
                 TsuengKwan2
@@ -259,6 +374,13 @@ export default function MapPage() {
         {
             geocode: [22.353254, 114.099524],
             popUp: "Tsing Yi Road West Park",
+            Pollinators: "0",
+            PlantsSeen: "5",
+            BeeAverage: "0",
+            Temperature: "14C",
+            Humidity: "69%",
+            Weather: "Cloudy",
+            Date: "February 6, 2025",
             imageUrl: [
                 TsingYiWestPark1,
                 TsingYiWestPark2,
@@ -268,6 +390,13 @@ export default function MapPage() {
         {
             geocode: [22.272675, 114.147395],
             popUp: "Mount Austin Playground",
+            Pollinators: "22",
+            PlantsSeen: "9",
+            BeeAverage: "2.44",
+            Temperature: "14C",
+            Humidity: "69%",
+            Weather: "Cloudy",
+            Date: "February 6, 2025",
             imageUrl: [
                 MountAustin1,
                 MountAustin2
@@ -278,6 +407,13 @@ export default function MapPage() {
             geocode: [22.28388648, 114.143138],
             popUp: "West End Park",
             description: "0 Flowers",
+            Pollinators: "0",
+            PlantsSeen: "0",
+            BeeAverage: "0",
+            Temperature: "",
+            Humidity: "15.7C",
+            Weather: "74%",
+            Date: "Cloudy",
             imageUrl: [
             ],
             type: "park"
@@ -285,6 +421,13 @@ export default function MapPage() {
         {
             geocode: [22.285716, 114.144138],
             popUp: "King George V Memorial Park",
+            Pollinators: "4",
+            PlantsSeen: "3",
+            BeeAverage: "1.33",
+            Temperature: "15.7C",
+            Humidity: "74%",
+            Weather: "Cloudy",
+            Date: "January 26, 2025",
             imageUrl: [
                 KingGeorge1,
                 KingGeorge2,
@@ -295,6 +438,13 @@ export default function MapPage() {
         {
             geocode: [22.239449, 114.241945],
             popUp: "Dragon's Back",
+            Pollinators: "13",
+            PlantsSeen: "5",
+            BeeAverage: "2.6",
+            Temperature: "19.2",
+            Humidity: "47%",
+            Weather: "Sunny",
+            Date: "January 19, 2025",
             imageUrl: [
                 DragonsBack1,
                 DragonsBack2
@@ -304,6 +454,13 @@ export default function MapPage() {
         {
             geocode: [22.44331097, 114.1266774],
             popUp: "Ng Tung Chai Waterfall",
+            Pollinators: "0",
+            PlantsSeen: "5",
+            BeeAverage: "0",
+            Temperature: "22.2C",
+            Humidity: "51%",
+            Weather: "Sunny",
+            Date: "January 24, 2025",
             imageUrl: [
                 NgTungChai1,
                 NgTungChai2
@@ -313,6 +470,13 @@ export default function MapPage() {
         {
             geocode: [22.35415862, 114.1868307],
             popUp: "Lion Rock",
+            Pollinators: "0",
+            PlantsSeen: "1",
+            BeeAverage: "0",
+            Temperature: "15.7C",
+            Humidity: "29%",
+            Weather: "Sunny",
+            Date: "January 27, 2025",
             imageUrl: [
                 LionsRock1,
                 LionsRock2
@@ -322,31 +486,60 @@ export default function MapPage() {
         {
             geocode: [22.388958, 114.146686],
             popUp: "Pineapple Dam Trail",
+            Pollinators: "23",
+            PlantsSeen: "4",
+            BeeAverage: "5.75",
+            Temperature: "20.1C",
+            Humidity: "79%",
+            Weather: "Cloudy",
+            Date: "February 2, 2025",
             imageUrl: [
-                "https://via.placeholder.com/150",
+                Pineapple1,
+                Pineapple2
             ],
             type: "hike"
         },
         {
             geocode: [22.38089406, 114.2702369],
             popUp: "Sai Kung Park",
+            Pollinators: "13",
+            PlantsSeen: "2",
+            BeeAverage: "6.5",
+            Temperature: "13.3C",
+            Humidity: "38%",
+            Weather: "Sunny",
+            Date: "February 6, 2025",
             imageUrl: [
                 SaiKung1,
                 SaiKung2
             ],
-            type: "Park"
+            type: "park"
         },
         {
             geocode: [22.334788, 114.16407],
             popUp: "Garden Hill",
+            Pollinators: "0",
+            PlantsSeen: "1",
+            BeeAverage: "0",
+            Temperature: "18.1C",
+            Humidity: "47%",
+            Weather: "Sunny",
+            Date: "February 3, 2025",
             imageUrl: [
                 GardenHill1
             ],
-            type: "hike"
+            type: "park"
         },
         {
             geocode: [22.35415862, 114.1868307],
             popUp: "Little Hawaii Trail",
+            Pollinators: "5",
+            PlantsSeen: "1",
+            BeeAverage: "5",
+            Temperature: "18.2C",
+            Humidity: "46%",
+            Weather: "Sunny",
+            Date: "February 10, 2025",
             imageUrl: [
                 LittleHawaii1
             ],
@@ -355,8 +548,31 @@ export default function MapPage() {
         {
             geocode: [22.33061449, 114.1688082],
             popUp: "Woh Chai Hill",
+            Pollinators: "0",
+            PlantsSeen: "3",
+            BeeAverage: "0",
+            Temperature: "17C",
+            Humidity: "66%",
+            Weather: "Sunny with shade",
+            Date: "February 4, 2025",
             imageUrl: [
-
+                WohChaiHill1,
+                WohChaiHill2
+            ],
+            type: "park"
+        },
+        {
+            geocode: [22.28074535, 114.2100897],
+            popUp: "Mount Parker Road Green Trail",
+            Pollinators: "0",
+            PlantsSeen: "1",
+            BeeAverage: "0",
+            Temperature: "20C",
+            Humidity: "82%",
+            Weather: "Cloudy",
+            Date: "February 14, 2025",
+            imageUrl: [
+                MountParker1
             ],
             type: "hike"
         },
@@ -364,27 +580,6 @@ export default function MapPage() {
 
     ];
 
-
-    // const fillMarkerData = (beeDataRows, markers) => {
-    //     return markers.map(marker => {
-    //         const match = beeDataRows.find(row => row.Name.trim() === marker.popUp);
-    //         if (match) {
-    //             return {
-    //                 ...marker,
-    //                 Pollinators: match.Total Pollinators,
-    //                 PlantsSeen: match.Vegetation Proportion,
-    //                 BeeAverage: match.BeesPerFlower,
-    //                 Temperature: match.Temperature,
-    //                 Humidity: match.Humidity,
-    //                 Weather: match.Weather,
-    //                 Date: match.Date,
-    //
-    //             };
-    //         }
-    //         return marker;
-    //     });
-    // };
-    // fillMarkerData(beeDataRows, markers)
 
     return (
         <Stack spacing={2}
@@ -429,11 +624,11 @@ export default function MapPage() {
                         >
                             <Popup>
                                 <Stack sx={{
-                                    maxHeight: '400px',
-                                    width: '300px',
+                                    maxHeight: '20rem',
+                                    width: '15rem',
                                     overflow: 'auto',
                                 }}>
-                                    <Typography variant="h5">{marker.popUp}</Typography>
+                                    <Typography variant="h6">{marker.popUp}</Typography>
                                     <TableContainer component={Paper}>
                                         <Table>
                                             <TableBody>
@@ -478,6 +673,7 @@ export default function MapPage() {
                                     <Box sx={{
                                         display: 'flex',
                                         flexDirection: 'row',
+                                        marginTop: "1rem",
                                         gap: 1,
                                     }}>
                                         {marker.imageUrl.map((url, index) => (

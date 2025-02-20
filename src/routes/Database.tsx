@@ -55,7 +55,6 @@ export default function DisplayDatabase() {
         {field: "Bees Per Flower", headerName: "Bees Per Flower", width: 150},
     ])
     const beeDataRows = getDataFromSheets();
-    // console.log(beeDataRows)
 
     return (
         <Box
