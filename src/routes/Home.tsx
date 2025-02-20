@@ -21,8 +21,9 @@ export default function Home() {
                 borderRadius: 2, backgroundColor: "#D9D9D9",
                 marginTop: "1rem",
                 marginBottom: "2rem",
+
             }}>
-                <Typography variant='h1' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
                     What is the Current Status of Pollinators in Hong Kong?
                 </Typography>
             </Box>

@@ -2,7 +2,11 @@ import {Box, Stack, Typography} from "@mui/material";
 
 export default function AboutPage() {
     return (
-        <Stack spacing={2} sx={{ paddingX: 2}}>
+        <Stack spacing={2}
+               sx={{
+            paddingX: 2,
+            marginTop: "3rem"
+        }}>
         <Box
             sx={{
                 border: '1px solid #000',
@@ -11,8 +15,8 @@ export default function AboutPage() {
                 backgroundColor: "#444444",
                 maxWidth: '100%',
                 width: 'fit-content',
-                marginX: 'auto',
                 alignSelf: 'center',
+
             }}
         >
             <Box
@@ -48,7 +52,7 @@ export default function AboutPage() {
         marginX: 'auto',
         backgroundColor: '#F8CB00',
     }}>
-    <Typography>
+    <Typography color="black">
         Which key environmental and social factors influence pollinator populations across urban,
         suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
         for greater effectiveness?
@@ -66,7 +70,7 @@ export default function AboutPage() {
         marginX: 'auto',
         backgroundColor: '#EFD0CA',
 }}>
-    <Typography>
+    <Typography color="black">
         For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this website
         to illustrate our data to help us come to a conclusion about our research question under the guidance
         of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
