@@ -45,7 +45,7 @@ function App() {
                 element: <Conclusions/>,
             },
             {
-                path: "/Suvery",
+                path: "/Survey",
                 element: <Survey/>,
             },
         ],

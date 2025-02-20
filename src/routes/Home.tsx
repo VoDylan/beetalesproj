@@ -1,40 +1,64 @@
-// import {React, useState, useEffect, useCallback } from "react";
-import {Box, Stack, Typography} from "@mui/material";
-// import {Button, IconButton, Typography, styled} from "@mui/material";
-import Pic2 from "../assets/JordanValley_1(2).png"
-import MapPage from "./MapPage.tsx";
+import {Box, Button, Stack, Typography} from "@mui/material";
+import Carousel from "../Components/Carousel.tsx";
+import {useNavigate} from "react-router";
 
 
 export default function Home() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/MapPage'); // Replace with your desired route
+    };
+
     return (
-        <Stack>
-            <MapPage/>
+        <Stack sx={{
+            marginTop: "6rem",
+            justifyContent: "center",
+        }}>
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2,
-                backgroundColor: "#D9D9D9",
-                marginTop: 2,
+                borderRadius: 2, backgroundColor: "#D9D9D9",
+                marginTop: "1rem",
+                marginBottom: "2rem",
             }}>
-                <Typography variant='h4' fontStyle={'bold'} color={"black"}>
-                    In our studies, we discovered that there is a lack of living spaces and access to food, both in urban areas and in the forests.
+                <Typography variant='h1' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                    What is the Current Status of Pollinators in Hong Kong?
                 </Typography>
             </Box>
+            <Carousel/>
+            <Box sx={{
+                border: '1px solid #000',
+                padding: 2,
+                borderRadius: 2, backgroundColor: "#D9D9D9",
+                marginTop: 2,
+            }}>
+                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
+                            sx={{wordBreak: "break-word"}}>
+                    Our study in Hong Kong and what we discovered!
+                </Typography>
+                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
+                            sx={{wordBreak: "break-word"}}>Click below to see where we found pollinators!
+                </Typography>
 
-            {/*<Box*/}
-            {/*    sx={{*/}
-            {/*        display: "flex",*/}
-            {/*        alignItems: "center",*/}
-            {/*        alignContent: "center",*/}
-            {/*        justifyContent: "center",*/}
-            {/*        height: "100%",*/}
-            {/*        width: "100%",*/}
-            {/*        outline: "2px solid white",*/}
-            {/*        objectFit: "contain",*/}
-            {/*        marginTop: "5%"*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*</Box>*/}
+            </Box>
+            <Box sx={{
+                display: 'flex',
+                justifyContent: 'center',
+                width: '100%',
+                marginTop: "1rem"
+
+            }}>
+                <Button variant="contained" color="#F7CE46" onClick={handleClick}
+                        sx={{
+                            padding: '0 8px', // Adjust padding as needed
+                            width: "auto",
+                            textTransform: 'none', // Preserve text casing
+                            display: 'inline-block'
+                        }}>
+                    See the Map
+                </Button>
+            </Box>
         </Stack>
     )
 }
