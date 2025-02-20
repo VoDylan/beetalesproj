@@ -72,9 +72,12 @@ function Header() {
                                 sx={{color: 'black', fontWeight: 'bold'}}>About</Button>
                         <Button component={Link} to="/mapPage"
                                 sx={{color: 'black', fontWeight: 'bold'}}>Map</Button>
+                        <Button component={Link} to="/Survey"
+                                sx={{color: 'black', fontWeight: 'bold'}}>Survey Data</Button>
                         <Button component={Link} to="/Database" sx={{color: 'black', fontWeight: 'bold'}}>Database</Button>
                         <Button component={Link} to="/conclusions"
                                 sx={{color: 'black', fontWeight: 'bold'}}>Conclusions</Button>
+
                     </Stack>
                 </Box>
                 <Drawer

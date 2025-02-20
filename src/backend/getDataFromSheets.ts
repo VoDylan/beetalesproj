@@ -38,7 +38,7 @@ export default function FetchCSVData() {
     useEffect(() => {
         fetchCSVData();
     },[]);
-    // console.log(csvData)
+    console.log(csvData)
 
     return csvData;
 }

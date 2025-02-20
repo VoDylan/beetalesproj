@@ -11,7 +11,7 @@ import VictoriaPlant1 from "../assets/VictoriaParkPics/D1_Victoria_Plant1.jpg";
 import VictoriaPlant2 from "../assets/VictoriaParkPics/D1_Victoria_Plant2.jpg";
 import WanChai1 from "../assets/parkImages/D1_WanChai_Plant3(2).jpg"
 import WanChai2 from "../assets/parkImages/D1_WanChai_Plant5(2).jpg"
-import ChaiWan1 from "../assets/parkImages/D1_ChaiWan_P4_Pic4.jpg"
+import ChaiWan1 from "../assets/parkImages/Chai Wan Park 1.jpg"
 import ChaiWan2 from "../assets/parkImages/D1_ChaiWan_P5_Pic3.jpg"
 import MaWan1 from "../assets/parkImages/D2_MaWan_Plant2(2).jpg"
 import MaWan2 from "../assets/parkImages/D2_MaWan_Plant5.jpg"
@@ -44,8 +44,13 @@ import KingGeorge1 from "../assets/parkImages/KingGeorgeVPark_F2_1.jpg"
 import KingGeorge2 from "../assets/parkImages/KingGeorgeVPark_F2_2.jpg"
 import KingGeorge3 from "../assets/parkImages/KingGeorgeVPark_F2_3.jpg"
 import MountAustin1 from "../assets/parkImages/MountAustinPlayground_F1.jpg"
-import SaiKung1 from "../assets/parkImages/SaiKung2.jpg"
+import SaiKung1 from "../assets/parkImages/SaiKung1.jpg"
+import SaiKung2 from "../assets/parkImages/SaiKung2.jpg"
 import LittleHawaii1 from "../assets/parkImages/LittleHawaii1.jpg"
+import NgTungChai1 from "../assets/parkImages/NgTungChai_Plant1.jpg"
+import NgTungChai2 from "../assets/parkImages/NgTungChai_Plant3.jpg"
+import TsuengKwan1 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark1.jpg"
+import TsuengKwan2 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark1.jpg"
 
 
 import getDataFromSheets from "../backend/getDataFromSheets.ts";
@@ -64,14 +69,7 @@ export default function MapPage() {
     });
 
     const beeDataRows = getDataFromSheets();
-    // const markers = [
-    //     {
-    //         geocode: [],
-    //         popUp: "",
-    //         description: "",
-    //         imageUrl: [],
-    //         type: ""
-    //     },]
+
 
 // markers
     const markers = [
@@ -224,9 +222,8 @@ export default function MapPage() {
             geocode: [22.30239566, 114.2599706],
             popUp: "Tsueng Kwan O Waterfront Park",
             imageUrl: [
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150",
-                "https://via.placeholder.com/150"
+                TsuengKwan1,
+                TsuengKwan2
             ],
             type: "park"
         },
@@ -301,7 +298,6 @@ export default function MapPage() {
             type: "hike"
         }
     ];
-
 
     return (
         <Stack spacing={2}

@@ -7,7 +7,7 @@ export default function Home() {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/about'); // Replace with your desired route
+        navigate('/MapPage'); // Replace with your desired route
     };
 
     return (
@@ -47,8 +47,9 @@ export default function Home() {
                 justifyContent: 'center',
                 width: '100%',
                 marginTop: "1rem"
+
             }}>
-                <Button variant="contained" color="primary" onClick={handleClick}
+                <Button variant="contained" color="#F7CE46" onClick={handleClick}
                         sx={{
                             padding: '0 8px', // Adjust padding as needed
                             width: "auto",
