@@ -1,19 +1,8 @@
-import {Box, Paper, Stack, styled, Typography} from "@mui/material";
+import {Box, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import pieChart1 from "../assets/BeetalesAge.png"
 import pieChart2 from "../assets/BeetalesCity.png"
 import pieChart3 from "../assets/BeetalesNests.png"
-
-const Item = styled(Paper)(({theme}) => ({
-    backgroundColor: '#fff',
-    ...theme.typography.body2,
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-    ...theme.applyStyles('dark', {
-        backgroundColor: '#1A2027',
-        objectFit: 'cover'
-    }),
-}));
 
 export default function SurveyPage() {
     return (
