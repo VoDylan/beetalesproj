@@ -10,6 +10,7 @@ import Database from "./routes/Database.tsx";
 import MapPage from "./routes/MapPage.tsx";
 import Conclusions from "./routes/Conclusions.tsx";
 import Survey from "./routes/Suvery.tsx";
+import Test from "./routes/Test.tsx";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -47,6 +48,10 @@ function App() {
             {
                 path: "/Survey",
                 element: <Survey/>,
+            },
+            {
+                path: "/Test",
+                element: <Test/>,
             },
         ],
     },
