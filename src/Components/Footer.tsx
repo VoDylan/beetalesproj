@@ -6,17 +6,14 @@ function Footer() {
             sx={{
                 width: "100%",
                 height: "auto",
-                backgroundColor: "#C20F2E",
-                // backgroundColor: "white",
-                paddingTop: "1rem",
-                paddingBottom: "1rem",
+                backgroundColor: "#F7CE46",
+                paddingTop: "2rem",
+                paddingBottom: "2rem",
                 position: "absolute",
                 left: 0,
                 right: 0,
                 zIndex: -1,
-                boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
-                marginTop: "10rem",
-                // border: "1px solid white", //
+                marginTop: "2rem",
             }}
         >
             <Container maxWidth="xl">

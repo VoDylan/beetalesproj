@@ -16,7 +16,7 @@ export default function SurveyPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#C20F2E',
+                    backgroundColor: '#f9d6b7',
                 }}>
                 <Typography color='black' variant='h4'>
                     Purpose of the Survey
@@ -26,14 +26,14 @@ export default function SurveyPage() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 1,
+                    borderRadius: "1rem",
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#292828',
+                    backgroundColor: '#F7CE46',
                 }}>
-                <Typography color='white'>
+                <Typography color='black'>
                     The purpose of the survey in our study was to assess public
                     perception of bees and explore the potential root causes behind
                     these perceptions. Based on our preliminary research, it was
@@ -49,12 +49,12 @@ export default function SurveyPage() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 1,
+                    borderRadius: "1rem",
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#C20F2E',
+                    backgroundColor: '#f9d6b7',
                 }}>
                 <Typography color='black' variant='h4'>
                     Findings
@@ -63,10 +63,11 @@ export default function SurveyPage() {
             <Box sx={{ width: '100%' }}>
                 <Grid container spacing={4} alignItems="stretch" columns={2}>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem" }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem" }}>
                             <Typography
                                 variant="h4"
                                 sx={{ fontSize: "2rem", textAlign: 'center',  }}
+                                color={'black'}
                             >
                                 The majority of our demographic of survey responders tend to be those aged between
                                 18-24, which may influence responses gathered. Responses are also from all over the
@@ -80,9 +81,10 @@ export default function SurveyPage() {
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#FAE4B3', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
                             <Typography
                                 variant="h4"
+                                color={'black'}
                                 sx={{ fontSize: "2rem", textAlign: 'center' }}>
                                 Of these responses, participants strongly agree with the fact that bees have the right to live in cities, and that bee hives in the city should at least be relocated in the city, instead of being removed.
                             </Typography>
@@ -94,8 +96,9 @@ export default function SurveyPage() {
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
                             <Typography variant="h4"
+                                        color={'black'}
                                         sx={{ fontSize: "2rem", textAlign: 'center' }}>
                                 Even though people agree that bees are important for the city because they are pollinators, that doesnt change the fact that people are still fearful of bees. Taking extreme precautions in the event that they do encounter a bee even though they are not as dangerous as people really percieve them to be.
                             </Typography>

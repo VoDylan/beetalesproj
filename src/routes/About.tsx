@@ -2,88 +2,99 @@ import {Box, Stack, Typography} from "@mui/material";
 
 export default function AboutPage() {
     return (
-        <Stack spacing={2} sx={{ paddingX: 2, marginTop: "3rem"}}>
+        <Stack spacing={2} sx={{paddingX: 2, marginTop: "5rem"}}>
 
             <Box
                 sx={{
-                    border: '1px solid #000',
+                    // border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
-                    borderWidth: '1px',
-                    backgroundColor: "#676565",
+                    borderRadius: "1rem",
+                    backgroundColor: "#f9d6b7",
                     maxWidth: '100%',
                     width: 'fit-content',
-                    marginX: 'auto',
+                    // marginX: 'auto',
                     alignSelf: 'center',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
+                    border: '1px solid #000',
                 }}
             >
                 <Box
                     sx={{
-                        border: '1px solid #000',
                         padding: 2,
-                        borderRadius: 0,
-                        borderWidth: '3px',
-                        marginBottom: 2,
+                        marginBottom: "1rem",
                         fontSize: '20px',
                         width: 'fit-content',
                         alignSelf: 'auto',
-                        backgroundColor: '#D9D9D9',
 
                     }}
                 >
-                    <Typography variant="h2" color='black' style={{ fontFamily: 'Julius Sans One' }}>Purpose</Typography>
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Purpose</Typography>
                 </Box>
                 <Typography color="black">
-                In completion of the Interactive Qualifying Project at WPI done by students in their
-                junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
-                and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
-                research question.
+                    In completion of the Interactive Qualifying Project at WPI done by students in their
+                    junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
+                    and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
+                    research question.
                 </Typography>
             </Box>
 
             <Box
                 sx={{
-                    border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
-                    borderWidth: '1px',
-                    marginBottom: 2,
+                    borderRadius: "1rem",
                     maxWidth: '100%',
                     width: 'fit-content',
-                    marginX: 'auto',
+                    // marginX: 'auto',
+                    alignSelf: 'center',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
                     backgroundColor: '#F8CB00',
+                    border: '1px solid #000',
                 }}>
+                <Box
+                    sx={{
+                        padding: 2,
+                        marginBottom: "1rem",
+                        fontSize: '20px',
+                        width: 'fit-content',
+                        alignSelf: 'auto',
+
+                    }}
+                >
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Research
+                        Question</Typography>
+                </Box>
                 <Typography color='black' variant='h4'>
-                Which key environmental and social factors influence pollinator populations across urban,
-                suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
-                for greater effectiveness?
+                    Which key environmental and social factors influence pollinator populations across urban,
+                    suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
+                    for greater effectiveness?
                 </Typography>
             </Box>
 
             <Box
                 sx={{
-                    border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
-                    borderWidth: '1px',
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#676565',
+                    borderRadius: "1rem",
+                    backgroundColor: "#f9d6b7",
+                    border: '1px solid #000',
                 }}>
                 <Typography color='black'>
-                For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this website
-                to illustrate our data to help us come to a conclusion about our research question under the guidance
-                of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
-                while trying to get locals to take our survey to collect data on pollinator perception. Based on the
-                results we created a written report and final presentation under the guidance of our advisors to
-                demonstrate the intent methodology and results of our project. Below is more information on us, the
-                students who worked on this project, and our advisors and sponsor who guided us. And below that is
-                our full written report on our project!
+                    For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this
+                    website
+                    to illustrate our data to help us come to a conclusion about our research question under the
+                    guidance
+                    of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
+                    while trying to get locals to take our survey to collect data on pollinator perception. Based on the
+                    results we created a written report and final presentation under the guidance of our advisors to
+                    demonstrate the intent methodology and results of our project. Below is more information on us, the
+                    students who worked on this project, and our advisors and sponsor who guided us.
                 </Typography>
             </Box>
 
@@ -99,12 +110,12 @@ export default function AboutPage() {
                 {/* About Us Box */}
                 <Box
                     sx={{
-                        border: '3px solid #000',
                         padding: 2,
-                        borderRadius: 0,
                         width: 'fit-content',
-                        backgroundColor: '#676565',
+                        borderRadius: "1rem",
+                        backgroundColor: "#f9d6b7",
                         textAlign: 'center', // Center text inside the box
+                        border: '1px solid #000',
                     }}
                 >
                     <Typography variant="h2" color='black'>About Us</Typography>
@@ -136,12 +147,12 @@ export default function AboutPage() {
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: 2,
-                                minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                                maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                                minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                                maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
                                 borderRadius: 0,
-                                backgroundColor: '#676565',
+                                backgroundColor: '#f9d6b7',
                             }}
                         >
                             <Box
@@ -193,12 +204,12 @@ export default function AboutPage() {
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: 2,
-                                minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                                maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                                minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                                maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
                                 borderRadius: 0,
-                                backgroundColor: '#676565',
+                                backgroundColor: '#f9d6b7',
                             }}
                         >
                             <Box
@@ -261,12 +272,12 @@ export default function AboutPage() {
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: 2,
-                                minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                                maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                                minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                                maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
                                 borderRadius: 1,
-                                backgroundColor: '#676565',
+                                backgroundColor: '#f9d6b7',
                             }}
                         >
                             <Box
@@ -318,12 +329,12 @@ export default function AboutPage() {
                                 display: 'flex',
                                 alignItems: 'center',
                                 gap: 2,
-                                minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                                maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                                minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                                maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
                                 borderRadius: 1,
-                                backgroundColor: '#676565',
+                                backgroundColor: '#f9d6b7',
                             }}
                         >
                             <Box
@@ -381,7 +392,7 @@ export default function AboutPage() {
                 }}
             >
                 {/* Heading */}
-                <Typography variant="h3" sx={{ textAlign: 'center' }} color='white'>
+                <Typography variant="h3" sx={{textAlign: 'center'}} color='white'>
                     Special Thanks to our Advising Professors and Sponsor
                 </Typography>
 
@@ -401,12 +412,12 @@ export default function AboutPage() {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 2,
-                            minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                            maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                            minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                            maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
                             borderRadius: 1,
-                            backgroundColor: '#676565',
+                            backgroundColor: '#f9d6b7',
                         }}
                     >
                         <Box
@@ -456,12 +467,12 @@ export default function AboutPage() {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 2,
-                            minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                            maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                            minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                            maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
                             borderRadius: 1,
-                            backgroundColor: '#676565',
+                            backgroundColor: '#f9d6b7',
                         }}
                     >
                         <Box
@@ -511,12 +522,12 @@ export default function AboutPage() {
                             display: 'flex',
                             alignItems: 'center',
                             gap: 2,
-                            minWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
-                            maxWidth: { xs: '100%', sm: '45%', md: '30%' }, // Responsive width
+                            minWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
+                            maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
                             borderRadius: 1,
-                            backgroundColor: '#676565',
+                            backgroundColor: '#f9d6b7',
                         }}
                     >
                         <Box
