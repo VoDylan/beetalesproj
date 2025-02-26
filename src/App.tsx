@@ -32,10 +32,10 @@ function App() {
                 path: "/MapPage",
                 element: <MapPage/>,
             },
-            {
-                path: "/Database",
-                element: <Database/>,
-            },
+            // {
+            //     path: "/Database",
+            //     element: <Database/>,
+            // },
             {
                 path: "/About",
                 element: <About/>,

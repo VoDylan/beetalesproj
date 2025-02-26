@@ -5,7 +5,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  cursor: url('./assets/bee_cursor_icon.png'), auto;
+  /*cursor: url('./assets/bee_cursor_icon.png'), auto;*/
 }
 
 .logo {
@@ -41,7 +41,8 @@
 }
 
 body {
-  background-color: #444444;
+  background-color: #fffdf5;
+  /*#f9d6b7*/
   margin: 0;
   padding: 0;
   min-height: 100vh;

@@ -1,7 +1,9 @@
-import {Box, Grid, List, ListItem, Button, Stack, Typography} from "@mui/material";
+import {Box, List, ListItem, Button, Stack, Typography} from "@mui/material";
+import Grid from '@mui/material/Grid2';
 // import Carousel from "../Components/Carousel.tsx";
 import {useNavigate} from "react-router";
-// import pieChart3 from "../assets/BeetalesNests.png";
+import sprayingPesticide from "../assets/spraying-pesticides.jpg";
+import CustomCard from "../Components/CustomCard.tsx";
 
 
 export default function Home() {
@@ -13,71 +15,88 @@ export default function Home() {
 
     return (
         <Stack sx={{
-            marginTop: "6rem",
+            marginTop: "5rem",
             justifyContent: "center",
             width: "95%",
         }}>
             <Box
                 sx={{
-                    border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
-                    backgroundColor: '#C20F2E',
                     width: "fit-content",
-                    marginBottom: "2rem"
+                    marginBottom: "2rem",
+                    borderRadius: "1rem",
+                    backgroundColor: '#f9d6b7',
                 }}>
-                <Typography color='white' variant='h1' fontWeight='bold'>
-                    Have You Ever Seen These Signs?
+                <Typography color='#000000' variant='h1'>
+                    The Real Story Behind Pesticides
                 </Typography>
             </Box>
 
-            <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000', marginBottom: "2rem" }}>
-                <img src={"src/assets/pesticide_warning.jpg"} alt="Description" style={{maxWidth: "auto", height: "100%"}}/>
+            <Box sx={{width: '100%'}}>
+                <Grid container spacing={4} direction="column" alignItems="center" columns={1}>
+                    <Grid item>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}>
+                            <img src={sprayingPesticide} alt="Description"
+                                 style={{width: "100%", height: "auto", objectFit: 'cover'}}/>
+                        </Box>
+                    </Grid>
+                    <Grid item>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                        }}>
+                            <img src={"src/assets/pesticide_warning.jpg"} alt="Description"
+                                 style={{width: "100%", height: "auto", objectFit: 'cover'}}/>
+                        </Box>
+                    </Grid>
+                </Grid>
             </Box>
 
-            {/*<Box*/}
-            {/*    component="img"*/}
-            {/*    src="src/assets/pesticide_warning.jpg"*/}
-            {/*    alt="Image"*/}
-            {/*    sx={{ width: '100%',*/}
-            {/*        borderRadius: 1,*/}
-            {/*        objectFit: 'cover',*/}
-            {/*        height: '100%',*/}
-            {/*        display: 'flex',*/}
-            {/*        marginBottom: "2rem"    }}*/}
-            {/*/>*/}
 
-            <Grid container spacing={2}>
+
+            <Grid container spacing={2}
+            sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginTop: "2rem"
+            }}>
                 <Grid item xs={12} sm={6}>
                     <Box
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
                             borderRadius: 1,
-                            backgroundColor: '#292828',
+                            backgroundColor: '#f9d6b7',
                         }}>
                         <Box
                             sx={{
-                                border: '1px solid #000',
+                                // border: '1px solid #000',
                                 padding: 1,
                                 borderRadius: 1,
-                                backgroundColor: '#C20F2E',
                                 marginBottom: 1,
                             }}>
                             <Typography color='black' variant='h6'>Indirect</Typography>
                         </Box>
                         <List>
                             <ListItem>
-                                <Typography color="white">Acute Poisoning</Typography>
+                                <Typography color="black">Acute Poisoning</Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography color="white">Chronic Illnesses</Typography>
+                                <Typography color="black">Chronic Illnesses</Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography color="white">Skin and Eye Irritation</Typography>
+                                <Typography color="black">Skin and Eye Irritation</Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography color="white">Ingestion Risks</Typography>
+                                <Typography color="black">Ingestion Risks</Typography>
                             </ListItem>
                         </List>
                     </Box>
@@ -88,77 +107,79 @@ export default function Home() {
                             border: '1px solid #000',
                             padding: 2,
                             borderRadius: 1,
-                            backgroundColor: '#292828',
+                            backgroundColor: '#f9d6b7',
                         }}>
                         <Box
                             sx={{
                                 border: '1px solid #000',
                                 padding: 1,
                                 borderRadius: 1,
-                                backgroundColor: '#C20F2E',
                                 marginBottom: 1,
                             }}>
                             <Typography color='black' variant='h6'>Direct</Typography>
                         </Box>
                         <List>
                             <ListItem>
-                                <Typography color="white">Food Safety</Typography>
+                                <Typography color="black">Food Safety</Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography color="white">Economic Impact</Typography>
+                                <Typography color="black">Economic Impact</Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography color="white">Ecosystem Collapse</Typography>
+                                <Typography color="black">Ecosystem Collapse</Typography>
                             </ListItem>
                             <ListItem>
-                                <Typography color="white">Nutritional Deficiency</Typography>
+                                <Typography color="black">Nutritional Deficiency</Typography>
                             </ListItem>
                         </List>
                     </Box>
                 </Grid>
             </Grid>
-            <Button
-                component="a"
-                href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9231402/#:~:text=People%20who%20are%20both%20directly,number%20of%20serious%20chronic%20diseases"
-                target="_blank"
-                rel="noopener noreferrer"
-                sx={{
-                    backgroundColor: 'red',
-                    border: '2px solid black',
-                    color: 'white',
-                    padding: 2,
-                    marginTop: "1rem",
-                    '&:hover': {
-                        backgroundColor: '#d50000',
-                    },
-                }}
-            >
-                <Typography variant="h3">
-                    More Info on the Dangers of Pesticides
-                </Typography>
-            </Button>
+            {/*<Button*/}
+            {/*    component="a"*/}
+            {/*    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9231402/#:~:text=People%20who%20are%20both%20directly,number%20of%20serious%20chronic%20diseases"*/}
+            {/*    target="_blank"*/}
+            {/*    rel="noopener noreferrer"*/}
+            {/*    sx={{*/}
+            {/*        backgroundColor: 'red',*/}
+            {/*        border: '2px solid black',*/}
+            {/*        color: 'white',*/}
+            {/*        padding: 2,*/}
+            {/*        marginTop: "1rem",*/}
+            {/*        '&:hover': {*/}
+            {/*            backgroundColor: '#d50000',*/}
+            {/*        },*/}
+            {/*    }}*/}
+            {/*>*/}
+            {/*    <Typography variant="h3">*/}
+            {/*        More Info on the Dangers of Pesticides*/}
+            {/*    </Typography>*/}
+            {/*</Button>*/}
             <Box
-                sx ={{
+                sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 1, backgroundColor: "#C20F2E",
+                    borderRadius: 1,
+                    backgroundColor: '#F8CB00',
                     marginTop: "1rem",
                     marginBottom: "2rem",
                     width: "fit-content",
                 }}>
-                <Typography color="white" variant="h2"> To ensure the health of ourselves and others it's worth asking, are pesticides worth truly helpful?</Typography>
+                <Typography color="black" variant="h3" fontFamily={"Julius Sans One"}> To ensure the health of ourselves and others it's worth asking,
+                    are pesticides really worth it?</Typography>
             </Box>
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2, backgroundColor: "#D9D9D9",
+                borderRadius: 2,
+                backgroundColor: "#f9d6b7",
                 marginTop: 2,
             }}>
-                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
+                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
                             sx={{wordBreak: "break-word"}}>
                     Our study in Hong Kong and what we discovered!
                 </Typography>
-                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
+                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
                             sx={{wordBreak: "break-word"}}>Click below to see where we found pollinators!
                 </Typography>
 
@@ -166,15 +187,14 @@ export default function Home() {
             <Box sx={{
                 display: 'flex',
                 justifyContent: 'center',
-                width: '100%',
-                marginTop: "1rem"
+                marginTop: "1rem",
+                backgroundColor:"#f9d6b7"
 
             }}>
-                <Button variant="contained" color="#F7CE46" onClick={handleClick}
+                <Button variant="contained" color="#E7EEE5" onClick={handleClick}
                         sx={{
                             padding: '0 8px',
                             width: "auto",
-                            textTransform: 'none',
                             display: 'inline-block'
                         }}>
                     See the Map

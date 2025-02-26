@@ -63,13 +63,9 @@ import WohChaiHill2 from "../assets/parkImages/WohChaiHill_P2.jpg"
 import Pineapple1 from "../assets/parkImages/PineappleDam_P2_pic3.jpg"
 import Pineapple2 from "../assets/parkImages/PineappleDam_P4_Pic1.jpg"
 import MountParker1 from "../assets/parkImages/MountParkerRoadGreenTrail_P1_Pic1.jpg"
-import FetchCSVData from "../backend/getDataFromSheets.ts";
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 export default function MapPage()  {
-    // const beedata = FetchCSVData()
-    // console.log(beedata[0].Name)
     const[data,setData] = useState([]);
 
     // useEffect(() => {
@@ -593,7 +589,8 @@ export default function MapPage()  {
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2, backgroundColor: "#D9D9D9",
+                borderRadius: "1rem",
+                backgroundColor: '#f9d6b7',
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
@@ -689,7 +686,7 @@ export default function MapPage()  {
                 <Box sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 2, backgroundColor: "#F8CB00",
+                    borderRadius: "1rem", backgroundColor: "#F8CB00",
                     marginTop: 2,
                     width: "90%",
                     justifyContent: 'center',
@@ -703,7 +700,8 @@ export default function MapPage()  {
                 <Box sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 2, backgroundColor: "#C20F2E",
+                    borderRadius: "1rem",
+                    backgroundColor: '#f9d6b7',
                     marginTop: 2,
                     alignSelf: 'stretch'
                 }}>
@@ -714,13 +712,13 @@ export default function MapPage()  {
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2, backgroundColor: "#020000",
+                borderRadius: "1rem", backgroundColor: '#F8CB00',
                 marginTop: 2,
                 width: "90%",
                 justifyContent: 'center',
                 textAlign: 'center'
             }}>
-                <Typography variant='h5' fontStyle={'bold'} color={"white"} fontFamily={"Julius Sans One"}>
+                <Typography variant='h5' color={"black"} fontFamily={"Julius Sans One"}>
                     At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take data on bees and other pollinators we picked a flowering plant that either had pollinators around it or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to the plant and wrote down the number, frequency of visits, and the weather directly above the plant (sun, partial shade, or shade). We tried to do five flowers for park but if we couldn’t find 5 different flower species we just took data on the as many different flowers we could find.
                 </Typography>
             </Box>

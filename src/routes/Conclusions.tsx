@@ -2,17 +2,18 @@ import { Box, Grid, Stack, Typography } from "@mui/material";
 
 export default function ConclusionPage() {
     return (
-        <Stack spacing={2} sx={{ paddingX: 2 }}>
+        <Stack spacing={2} sx={{ paddingX: 2, marginTop: "5rem" }}>
             <Box
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
                     borderRadius: 0,
-                    marginBottom: 2,
+
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#C20F2E',
+                    backgroundColor: '#FAE4B3',
+
                 }}>
                 <Typography color='black' variant='h4'>
                     Which key environmental and social factors influence pollinator
@@ -29,9 +30,9 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#292828',
+                    backgroundColor: '#F7CE46',
             }}>
-                <Typography color='white'>
+                <Typography color='black'>
                     Our research in Hong Kong was focused on addressing the main research
                     question outlined earlier. Prior to arriving, we expected that the majority
                     of our data would be gathered through a survey distributed to local residents.
@@ -53,9 +54,9 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#292828',
+                    backgroundColor: '#F7CE46',
             }}>
-                <Typography color='white'> To summerize the rest of our data however we found that bees resided more in rural and suburban locations than urban due to the increased number of flowers and other greenery. </Typography>
+                <Typography color='black'> To summerize the rest of our data however we found that bees resided more in rural and suburban locations than urban due to the increased number of flowers and other greenery. </Typography>
             </Box>
             <Grid container spacing={2}>
                 {/* Title Box 1 */}
@@ -65,7 +66,7 @@ export default function ConclusionPage() {
                             border: '1px solid #000',
                             padding: 2,
                             borderRadius: 0,
-                            backgroundColor: '#C20F2E',
+                            backgroundColor: '#FAE4B3',
                         }}>
                         <Typography color='black' variant='h4'>
                             Environmental Factors
@@ -80,7 +81,7 @@ export default function ConclusionPage() {
                             border: '1px solid #000',
                             padding: 2,
                             borderRadius: 0,
-                            backgroundColor: '#C20F2E',
+                            backgroundColor: '#FAE4B3',
                         }}>
                         <Typography color='black' variant='h4'>
                             Social Factors
@@ -94,10 +95,10 @@ export default function ConclusionPage() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: 0,
-                            backgroundColor: '#292828',
+                            borderRadius: "1rem",
+                            backgroundColor: '#F7CE46',
                         }}>
-                        <Typography color='white'>
+                        <Typography color='black'>
                             The main environmental factors contributing to the decline of bee and other pollinator populations in Hong Kong are the loss of habitat, food, and the increased use of pesticides. Hong Kong is one of the most urbanized regions globally, and its unsustainable rate of urban development has resulted in the fragmentation and loss of natural habitats that are essential for pollinators as well as diminishing native plant species <a href="https://medium.com/@danielle.tsang88/the-fragile-ecosystems-of-hong-kong-falling-short-of-un-biodiversity-targets-37cdce942f6b#:~:text=1.,2" target="_blank" rel="noopener noreferrer">[1]</a>. When we collected data we found most flowers to be invasive species that strain the local ecosystem. This leads us to our next environmental issue which is the lack of food for pollinators. Although there are many green spaces in Hong Kong there is a stark lack of flowers. And even the avaiable water could be tainted wuth pesticides. Widespread application of pesticides in agricultural practices and public spaces poses a significant threat because the chemicals in them like neonicotinoids are toxic and not only directly affect the health of pollinators but can also lead to sub-lethal effects that impair their foraging behavior and navigation abilities. The accumulation of these chemicals in the environment further compounds the stressors faced by pollinators, contributing to their decline <a href="https://earth.org/climate-change-pollinators/" target="_blank" rel="noopener noreferrer">[2]</a>.
 
                         </Typography>
@@ -110,10 +111,10 @@ export default function ConclusionPage() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: 1,
-                            backgroundColor: '#292828',
+                            borderRadius: "1rem",
+                            backgroundColor: '#F7CE46',
                         }}>
-                        <Typography color='white'>
+                        <Typography color='black'>
                             People in general are very scared of all insects including bees in Hong Kong. There are also some cultural misconceptions around bees and wasps and people tend to think that bees are the same as wasps.
                         </Typography>
                     </Box>
@@ -123,12 +124,12 @@ export default function ConclusionPage() {
                 sx = {{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
+                    borderRadius: "1rem",
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#C20F2E'
+                    backgroundColor: '#f9d6b7'
                 }}>
                 <Typography color='black' variant='h4'> How to Enhance Conservation Efforts</Typography>
             </Box>
@@ -141,9 +142,9 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#292828'
+                    backgroundColor: '#F7CE46'
                 }}>
-                <Typography color="white"> Funding more intiatives like the Blossom Tower by Beetales</Typography>
+                <Typography color="black"> Funding more intiatives like the Blossom Tower by Beetales</Typography>
             </Box>
         </Stack>
     );
