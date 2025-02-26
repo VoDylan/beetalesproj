@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Roboto, Arial,"Julius Sans One", serif, sans-serif, "Nunito Sans", "Geologica";
   line-height: 1.5;
   font-weight: 400;
 
@@ -21,14 +21,15 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #C20F2E;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #C20F2E;
 }
 
 body {
+  font-family: "Nunito Sans", sans-serif;
   margin: 0;
   display: flex;
   place-items: center;
@@ -36,7 +37,8 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geologica", serif;
   font-size: 3.2em;
   line-height: 1.1;
 }
@@ -72,4 +74,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
+.custom-cursor {
+  cursor: url('./assets/bee_cursor_icon.png'), auto;
+}

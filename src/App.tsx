@@ -1,7 +1,7 @@
 // import {useState} from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 import Header from "./Components/Header.tsx";
 // import Footer from "./Components/Footer.tsx";
 import Home from "./routes/Home.tsx";
@@ -10,7 +10,7 @@ import Database from "./routes/Database.tsx";
 import MapPage from "./routes/MapPage.tsx";
 import Conclusions from "./routes/Conclusions.tsx";
 import Survey from "./routes/Suvery.tsx";
-import Test from "./routes/Test.tsx";
+import WhatYouCanDo from "./routes/WhatYouCanDo.tsx";
 import {
     createBrowserRouter,
     RouterProvider,
@@ -18,6 +18,9 @@ import {
     Outlet
 } from "react-router-dom";
 import Footer from "./Components/Footer.tsx";
+
+
+import beeCursor from './assets/bee_cursor_icon.png';
 
 function App() {
     const router = createBrowserRouter([{
@@ -50,8 +53,8 @@ function App() {
                 element: <Survey/>,
             },
             {
-                path: "/Test",
-                element: <Test/>,
+                path: "/WhatYouCanDo",
+                element: <WhatYouCanDo/>,
             },
         ],
     },
@@ -61,7 +64,7 @@ function App() {
 
     function Root() {
         return (
-            <div>
+            <div style={{ cursor: `url(${beeCursor}), auto` }}> //changed the cursor to a bee
                 <Header/>
                 <Outlet/>
                 <Footer/>
