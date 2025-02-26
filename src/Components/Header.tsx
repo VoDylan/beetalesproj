@@ -53,6 +53,7 @@ function Header() {
                 width: "100%",
                 left: 0,
                 right: 0,
+
             }}
         >
             <Toolbar sx={{justifyContent: 'space-between', paddingLeft: 2, paddingRight: 2}}>
@@ -77,7 +78,6 @@ function Header() {
                                 sx={{color: 'black', fontWeight: 'bold'}}>Map</Button>
                         <Button component={Link} to="/Survey"
                                 sx={{color: 'black', fontWeight: 'bold'}}>Survey Data</Button>
-                        <Button component={Link} to="/Database" sx={{color: 'black', fontWeight: 'bold'}}>Database</Button>
                         <Button component={Link} to="/conclusions"
                                 sx={{color: 'black', fontWeight: 'bold'}}>Conclusions</Button>
                         <Button component={Link} to="/WhatYouCanDo"
