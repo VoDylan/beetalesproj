@@ -1,6 +1,7 @@
 import {Box, Grid, List, ListItem, Button, Stack, Typography} from "@mui/material";
-import Carousel from "../Components/Carousel.tsx";
+// import Carousel from "../Components/Carousel.tsx";
 import {useNavigate} from "react-router";
+// import pieChart3 from "../assets/BeetalesNests.png";
 
 
 export default function Home() {
@@ -23,18 +24,28 @@ export default function Home() {
                     borderRadius: 0,
                     backgroundColor: '#C20F2E',
                     width: "fit-content",
+                    marginBottom: "2rem"
                 }}>
-                <Typography color='black' variant='h1'>
+                <Typography color='white' variant='h1' fontWeight='bold'>
                     Have You Ever Seen These Signs?
                 </Typography>
             </Box>
 
-            <Box
-                component="img"
-                src="src/assets/pesticide_warning.jpg"
-                alt="Image"
-                sx={{ width: '100%', borderRadius: 1 }}
-            />
+            <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000', marginBottom: "2rem" }}>
+                <img src={"src/assets/pesticide_warning.jpg"} alt="Description" style={{maxWidth: "auto", height: "100%"}}/>
+            </Box>
+
+            {/*<Box*/}
+            {/*    component="img"*/}
+            {/*    src="src/assets/pesticide_warning.jpg"*/}
+            {/*    alt="Image"*/}
+            {/*    sx={{ width: '100%',*/}
+            {/*        borderRadius: 1,*/}
+            {/*        objectFit: 'cover',*/}
+            {/*        height: '100%',*/}
+            {/*        display: 'flex',*/}
+            {/*        marginBottom: "2rem"    }}*/}
+            {/*/>*/}
 
             <Grid container spacing={2}>
                 <Grid item xs={12} sm={6}>
@@ -89,7 +100,20 @@ export default function Home() {
                             }}>
                             <Typography color='black' variant='h6'>Direct</Typography>
                         </Box>
-                        <Typography color='white'>Content for the second content box.</Typography>
+                        <List>
+                            <ListItem>
+                                <Typography color="white">Food Safety</Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="white">Economic Impact</Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="white">Ecosystem Collapse</Typography>
+                            </ListItem>
+                            <ListItem>
+                                <Typography color="white">Nutritional Deficiency</Typography>
+                            </ListItem>
+                        </List>
                     </Box>
                 </Grid>
             </Grid>
@@ -103,6 +127,7 @@ export default function Home() {
                     border: '2px solid black',
                     color: 'white',
                     padding: 2,
+                    marginTop: "1rem",
                     '&:hover': {
                         backgroundColor: '#d50000',
                     },
@@ -121,21 +146,8 @@ export default function Home() {
                     marginBottom: "2rem",
                     width: "fit-content",
                 }}>
-                <Typography color="white" variant="h2"> To ensure the health of ourselves and others it's worth asking...</Typography>
+                <Typography color="white" variant="h2"> To ensure the health of ourselves and others it's worth asking, are pesticides worth truly helpful?</Typography>
             </Box>
-            <Box sx={{
-                border: '1px solid #000',
-                padding: 2,
-                borderRadius: 2, backgroundColor: "#D9D9D9",
-                marginTop: "1rem",
-                marginBottom: "2rem",
-                width: "95%"
-            }}>
-                <Typography variant='h1' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
-                    What is the Current Status of Pollinators in Hong Kong?
-                </Typography>
-            </Box>
-            <Carousel/>
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
@@ -160,9 +172,9 @@ export default function Home() {
             }}>
                 <Button variant="contained" color="#F7CE46" onClick={handleClick}
                         sx={{
-                            padding: '0 8px', // Adjust padding as needed
+                            padding: '0 8px',
                             width: "auto",
-                            textTransform: 'none', // Preserve text casing
+                            textTransform: 'none',
                             display: 'inline-block'
                         }}>
                     See the Map

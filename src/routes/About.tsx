@@ -36,7 +36,7 @@ export default function AboutPage() {
                 >
                     <Typography variant="h2" color='black' style={{ fontFamily: 'Julius Sans One' }}>Purpose</Typography>
                 </Box>
-                <Typography color="black">
+                <Typography color="white">
                 In completion of the Interactive Qualifying Project at WPI done by students in their
                 junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
                 and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
@@ -75,7 +75,7 @@ export default function AboutPage() {
                     marginX: 'auto',
                     backgroundColor: '#676565',
                 }}>
-                <Typography color='black'>
+                <Typography color='white'>
                 For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this website
                 to illustrate our data to help us come to a conclusion about our research question under the guidance
                 of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
@@ -107,7 +107,7 @@ export default function AboutPage() {
                         textAlign: 'center', // Center text inside the box
                     }}
                 >
-                    <Typography variant="h2" color='black'>About Us</Typography>
+                    <Typography variant="h2" color='white'>About Us</Typography>
                 </Box>
 
                 {/* Student Boxes */}
