@@ -1,8 +1,11 @@
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  cursor: url('./assets/bee_cursor_icon.png'), auto;
 }
 
 .logo {
@@ -12,7 +15,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #C20F2E);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -37,6 +40,21 @@
   padding: 2em;
 }
 
+body {
+  background-color: #444444;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
 .read-the-docs {
   color: #888;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif; /* Body text font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Geologica', serif; /* Header font */
 }

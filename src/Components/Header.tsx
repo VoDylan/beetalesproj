@@ -37,6 +37,9 @@ function Header() {
                 <ListItem button component={Link} to="/conclusions">
                     <ListItemText primary="Conclusions"/>
                 </ListItem>
+                <ListItem button component={Link} to="/WhatYouCanDo">
+                    <ListItemText primary="WhatYouCanDo"/>
+                </ListItem>
             </List>
         </Box>
     );
@@ -77,7 +80,8 @@ function Header() {
                         <Button component={Link} to="/Database" sx={{color: 'black', fontWeight: 'bold'}}>Database</Button>
                         <Button component={Link} to="/conclusions"
                                 sx={{color: 'black', fontWeight: 'bold'}}>Conclusions</Button>
-
+                        <Button component={Link} to="/WhatYouCanDo"
+                                sx={{color: 'black', fontWeight: 'bold'}}>What You Can Do</Button>
                     </Stack>
                 </Box>
                 <Drawer
