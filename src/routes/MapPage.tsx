@@ -1,10 +1,15 @@
-import {Box, Paper, Stack, Table, TableBody, TableCell, TableContainer, TableRow, Typography} from "@mui/material";
+import {
+    Box,
+    Stack,
+    Typography
+} from "@mui/material";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
 import {Icon} from "leaflet"
 import "leaflet/dist/leaflet.css";
 import "../mapstyles.css";
+import Grid from '@mui/material/Grid2';
 
-import parkIconImg from "../assets/park.png";
+import parkIconImg from "../assets/park-location.png";
 import hikeIconImg from "../assets/mountain.png"
 
 import VictoriaPlant1 from "../assets/VictoriaParkPics/D1_Victoria_Plant1.jpg";
@@ -53,7 +58,7 @@ import LittleHawaii1 from "../assets/parkImages/LittleHawaii1.jpg"
 import NgTungChai1 from "../assets/parkImages/NgTungChai_Plant1.jpg"
 import NgTungChai2 from "../assets/parkImages/NgTungChai_Plant3.jpg"
 import TsuengKwan1 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark1.jpg"
-import TsuengKwan2 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark1.jpg"
+import TsuengKwan2 from "../assets/parkImages/D7_TseungKwanOWaterfrontPark2.jpg"
 import TsingYiWestPark1 from "../assets/parkImages/TsingYiWestPark1.jpg"
 import TsingYiWestPark2 from "../assets/parkImages/TsingYiWestPark2.jpg"
 import LionsRock1 from "../assets/parkImages/LionsRock1.jpg"
@@ -63,21 +68,8 @@ import WohChaiHill2 from "../assets/parkImages/WohChaiHill_P2.jpg"
 import Pineapple1 from "../assets/parkImages/PineappleDam_P2_pic3.jpg"
 import Pineapple2 from "../assets/parkImages/PineappleDam_P4_Pic1.jpg"
 import MountParker1 from "../assets/parkImages/MountParkerRoadGreenTrail_P1_Pic1.jpg"
-import { useEffect, useState } from 'react';
 
-export default function MapPage()  {
-    const[data,setData] = useState([]);
-
-    // useEffect(() => {
-    // }, []);
-    //
-    // const beeData = async() => {
-    //     const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vSBA5PxBO7AHB8YJhQ33Pt8JUhFIr03zhIzQCxH3EeIoS3pitzumJT8_E2Bvp-_s-p4vXfaXm1-IUpF/pub?gid=1793986521&single=true&output=csv')
-    //     setData(await response.json())
-    // }
-
-
-
+export default function MapPage() {
     const parkIcon = new Icon({
         iconUrl: parkIconImg as string,
         iconSize: [38, 38]
@@ -103,6 +95,7 @@ export default function MapPage()  {
             Humidity: "35%",
             Weather: "Sunny",
             Date: "January 16, 2025",
+            Description: "",
 
             imageUrl: [
                 VictoriaPlant1,
@@ -117,9 +110,10 @@ export default function MapPage()  {
             PlantsSeen: "5",
             BeeAverage: "0.8",
             Temperature: "17.9 C",
-            Humidity:"30%",
+            Humidity: "30%",
             Weather: "Sunny/Shade",
             Date: "January 17, 2025",
+            Description: "",
 
             imageUrl: [
                 WanChai1,
@@ -134,9 +128,10 @@ export default function MapPage()  {
             PlantsSeen: "8",
             BeeAverage: "3.625",
             Temperature: "15.7 C",
-            Humidity:"36%",
+            Humidity: "36%",
             Weather: "Sunny",
             Date: "January 17, 2025",
+            Description: "",
             imageUrl: [
                 ChaiWan1,
                 ChaiWan2,
@@ -153,6 +148,7 @@ export default function MapPage()  {
             Humidity: "63%",
             Weather: "Partially Cloudy",
             Date: "January 19, 2025",
+            Description: "",
             imageUrl: [
                 HK1,
                 HK2
@@ -169,6 +165,7 @@ export default function MapPage()  {
             Humidity: "30%",
             Weather: "Sunny",
             Date: "January 19, 2025",
+            Description: "",
             imageUrl: [
                 MaWan1,
                 MaWan2
@@ -176,7 +173,7 @@ export default function MapPage()  {
             type: "park"
         },
         {
-            geocode: [22.3921,113.9736],
+            geocode: [22.3921, 113.9736],
             popUp: "Tuen Mun Park",
             Pollinators: "84",
             PlantsSeen: "5",
@@ -185,6 +182,7 @@ export default function MapPage()  {
             Humidity: "25%",
             Weather: "Sunny",
             Date: "January 19, 2025",
+            Description: "",
             imageUrl: [
                 TuenMun1,
                 TuenMun2
@@ -192,7 +190,7 @@ export default function MapPage()  {
             type: "park"
         },
         {
-            geocode: [22.4566,114.0025],
+            geocode: [22.4566, 114.0025],
             popUp: "Tin Shui Wai Park",
             Pollinators: "37",
             PlantsSeen: "5",
@@ -201,6 +199,7 @@ export default function MapPage()  {
             Humidity: "30%",
             Weather: "Sunny",
             Date: "January 19, 2025",
+            Description: "",
             imageUrl: [
                 TSWP1,
                 TSWP2
@@ -208,7 +207,7 @@ export default function MapPage()  {
             type: "park"
         },
         {
-            geocode: [22.32468983,114.1574124],
+            geocode: [22.32468983, 114.1574124],
             popUp: "Nam Cheong",
             Pollinators: "44",
             PlantsSeen: "6",
@@ -217,6 +216,7 @@ export default function MapPage()  {
             Humidity: "30%",
             Weather: "Sunny",
             Date: "January 21, 2025",
+            Description: "",
             imageUrl: [
                 NamCheong1,
                 NamCheong2,
@@ -233,6 +233,7 @@ export default function MapPage()  {
             Humidity: "30%",
             Weather: "Sunny",
             Date: "January 21, 2025",
+            Description: "",
             imageUrl: [
                 ShaTin1,
                 ShaTin2
@@ -240,7 +241,7 @@ export default function MapPage()  {
             type: "park"
         },
         {
-            geocode: [22.30679693,114.1685628],
+            geocode: [22.30679693, 114.1685628],
             popUp: "Kowloon Bird Park",
             Pollinators: "37",
             PlantsSeen: "15",
@@ -249,6 +250,7 @@ export default function MapPage()  {
             Humidity: "61%",
             Weather: "Cloudy",
             Date: "January 22, 2025",
+            Description: "",
             imageUrl: [
                 KowloonBird1,
                 KowloonBird2
@@ -265,6 +267,7 @@ export default function MapPage()  {
             Humidity: "58%",
             Weather: "Partially Cloudy",
             Date: "February 3, 2025",
+            Description: "",
             imageUrl: [
                 TsuenWan1,
                 TsuenWan2
@@ -281,6 +284,7 @@ export default function MapPage()  {
             Humidity: "33%",
             Weather: "Sunny",
             Date: "February 5, 2025",
+            Description: "",
             imageUrl: [
                 KingsPark1,
                 KingsPark2
@@ -297,6 +301,7 @@ export default function MapPage()  {
             Humidity: "21%",
             Weather: "Partially Cloudy",
             Date: "January 21, 2025",
+            Description: "",
             imageUrl: [
                 ShingMun1,
                 ShingMun2
@@ -313,6 +318,7 @@ export default function MapPage()  {
             Humidity: "21%",
             Weather: "Partially Cloudy",
             Date: "January 21, 2025",
+            Description: "",
             imageUrl: [
                 JordanValley1,
                 JordanValley2
@@ -329,6 +335,7 @@ export default function MapPage()  {
             Humidity: "30%",
             Weather: "Sunny",
             Date: "January 26, 2025",
+            Description: "",
             imageUrl: [
                 KowloonWall1,
                 KowloonWall2
@@ -345,6 +352,7 @@ export default function MapPage()  {
             Humidity: "59%",
             Weather: "Sunny Intervals",
             Date: "January 22, 2025",
+            Description: "",
             imageUrl: [
                 YuenShin1,
                 YuenShin2
@@ -361,6 +369,7 @@ export default function MapPage()  {
             Humidity: "83%",
             Weather: "Cloudy/Windy",
             Date: "February 3, 2025",
+            Description: "",
             imageUrl: [
                 TsuengKwan1,
                 TsuengKwan2
@@ -377,6 +386,7 @@ export default function MapPage()  {
             Humidity: "69%",
             Weather: "Cloudy",
             Date: "February 6, 2025",
+            Description: "",
             imageUrl: [
                 TsingYiWestPark1,
                 TsingYiWestPark2,
@@ -393,6 +403,7 @@ export default function MapPage()  {
             Humidity: "69%",
             Weather: "Cloudy",
             Date: "February 6, 2025",
+            Description: "",
             imageUrl: [
                 MountAustin1,
                 MountAustin2
@@ -402,7 +413,7 @@ export default function MapPage()  {
         {
             geocode: [22.28388648, 114.143138],
             popUp: "West End Park",
-            description: "0 Flowers",
+            Description: "0 Flowers",
             Pollinators: "0",
             PlantsSeen: "0",
             BeeAverage: "0",
@@ -410,8 +421,7 @@ export default function MapPage()  {
             Humidity: "15.7C",
             Weather: "74%",
             Date: "Cloudy",
-            imageUrl: [
-            ],
+            imageUrl: [],
             type: "park"
         },
         {
@@ -424,6 +434,7 @@ export default function MapPage()  {
             Humidity: "74%",
             Weather: "Cloudy",
             Date: "January 26, 2025",
+            Description: "",
             imageUrl: [
                 KingGeorge1,
                 KingGeorge2,
@@ -441,6 +452,7 @@ export default function MapPage()  {
             Humidity: "47%",
             Weather: "Sunny",
             Date: "January 19, 2025",
+            Description: "",
             imageUrl: [
                 DragonsBack1,
                 DragonsBack2
@@ -457,6 +469,7 @@ export default function MapPage()  {
             Humidity: "51%",
             Weather: "Sunny",
             Date: "January 24, 2025",
+            Description: "",
             imageUrl: [
                 NgTungChai1,
                 NgTungChai2
@@ -473,6 +486,7 @@ export default function MapPage()  {
             Humidity: "29%",
             Weather: "Sunny",
             Date: "January 27, 2025",
+            Description: "",
             imageUrl: [
                 LionsRock1,
                 LionsRock2
@@ -489,6 +503,7 @@ export default function MapPage()  {
             Humidity: "79%",
             Weather: "Cloudy",
             Date: "February 2, 2025",
+            Description: "",
             imageUrl: [
                 Pineapple1,
                 Pineapple2
@@ -505,6 +520,7 @@ export default function MapPage()  {
             Humidity: "38%",
             Weather: "Sunny",
             Date: "February 6, 2025",
+            Description: "",
             imageUrl: [
                 SaiKung1,
                 SaiKung2
@@ -521,6 +537,7 @@ export default function MapPage()  {
             Humidity: "47%",
             Weather: "Sunny",
             Date: "February 3, 2025",
+            Description: "",
             imageUrl: [
                 GardenHill1
             ],
@@ -536,6 +553,7 @@ export default function MapPage()  {
             Humidity: "46%",
             Weather: "Sunny",
             Date: "February 10, 2025",
+            Description: "",
             imageUrl: [
                 LittleHawaii1
             ],
@@ -551,6 +569,7 @@ export default function MapPage()  {
             Humidity: "66%",
             Weather: "Sunny with shade",
             Date: "February 4, 2025",
+            Description: "",
             imageUrl: [
                 WohChaiHill1,
                 WohChaiHill2
@@ -567,8 +586,10 @@ export default function MapPage()  {
             Humidity: "82%",
             Weather: "Cloudy",
             Date: "February 14, 2025",
+            Description: "",
             imageUrl: [
-                MountParker1
+                MountParker1,
+                // MountAustin1
             ],
             type: "hike"
         },
@@ -589,19 +610,18 @@ export default function MapPage()  {
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: "1rem",
-                backgroundColor: '#f9d6b7',
+                backgroundColor: '#c5e1a5',
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-            <Typography variant='h2' fontStyle={'bold'} color={"black"}
-                        >
-                Where Pollinators Reside in Hong Kong
-            </Typography>
+                <Typography variant='h2' fontStyle={'bold'} color={"black"}
+                >
+                    Where Pollinators Reside in Hong Kong
+                </Typography>
             </Box>
             <Box
                 sx={{
-                    width: "175vh",  height: "75%", justifyContent: "center"
+                    width: "175vh", height: "75%", justifyContent: "center"
                 }}>
                 <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
                               style={{
@@ -621,105 +641,103 @@ export default function MapPage()  {
                         >
                             <Popup>
                                 <Stack sx={{
-                                    maxHeight: '20rem',
-                                    width: '15rem',
-                                    overflow: 'auto',
+                                    height: '30rem',
+                                    width: '20rem',
+
+                                    // overflow: 'auto',
                                 }}>
                                     <Typography variant="h6">{marker.popUp}</Typography>
-                                    <TableContainer component={Paper}>
-                                        <Table>
-                                            <TableBody>
-                                                <TableRow>
-                                                    <TableCell>Date</TableCell>
-                                                    <TableCell>{marker.Date}</TableCell>
-
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Plants Seen</TableCell>
-                                                    <TableCell>{marker.PlantsSeen}</TableCell>
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Pollinators</TableCell>
-                                                    <TableCell>{marker.Pollinators}</TableCell>
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Bee Average</TableCell>
-                                                    <TableCell>{marker.BeeAverage}</TableCell>
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Temperature</TableCell>
-                                                    <TableCell>{marker.Temperature}</TableCell>
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Humidity</TableCell>
-                                                    <TableCell>{marker.Humidity}</TableCell>
-                                                </TableRow>
-                                                <TableRow>
-                                                    <TableCell>Weather</TableCell>
-                                                    <TableCell>{marker.Weather}</TableCell>
-                                                </TableRow>
-                                                {marker.description && (
-                                                    <TableRow>
-                                                        <TableCell>Notes</TableCell>
-                                                        <TableCell>{marker.description}</TableCell>
-                                                    </TableRow>
-                                                )}
-                                            </TableBody>
-                                        </Table>
-                                    </TableContainer>
                                     <Box sx={{
                                         display: 'flex',
                                         flexDirection: 'row',
-                                        marginTop: "1rem",
+                                        // marginTop: "1rem",
                                         gap: 1,
+                                        width: "100%"
                                     }}>
                                         {marker.imageUrl.map((url, index) => (
-                                            <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`} width="150" height="150"/>
+                                            <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`}
+                                                 width="150px" height="150px"/>
                                         ))}
                                     </Box>
+
+                                    <Grid container spacing={2}>
+                                        <Grid item xs={6}>
+                                            <Typography variant="h6">Date: {marker.Date}</Typography>
+                                        </Grid>
+                                        <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                            <Typography variant="h6">Flowers Observed: {marker.PlantsSeen}</Typography>
+                                        </Grid>
+                                        <Grid item xs={6}>
+                                            <Typography variant="h6">Pollinators Observed: {marker.Pollinators}</Typography>
+                                        </Grid>
+                                        <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                            <Typography variant="h6">Bee Average: {marker.BeeAverage}</Typography>
+                                        </Grid>
+                                        <Grid item xs={6}>
+                                            <Typography variant="h6">Temperature: {marker.Temperature}</Typography>
+                                        </Grid>
+                                        <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                            <Typography variant="h6">Humidity: {marker.Humidity}</Typography>
+                                        </Grid>
+                                        <Grid item xs={6}>
+                                            <Typography variant="h6">Weather: {marker.Weather}</Typography>
+                                        </Grid>
+                                        {marker.Description && (
+                                            <Grid item xs={12}>
+                                                <Typography variant="h6">Notes: {marker.Description}</Typography>
+                                            </Grid>
+                                        )}
+                                    </Grid>
+
                                 </Stack>
                             </Popup>
                         </Marker>
                     ))}
                 </MapContainer>
             </Box>
-                <Box sx={{
-                    border: '1px solid #000',
-                    padding: 2,
-                    borderRadius: "1rem", backgroundColor: "#F8CB00",
-                    marginTop: 2,
-                    width: "90%",
-                    justifyContent: 'center',
-                    textAlign: 'center'
-
-                }}>
-                    <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
-                        This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on, its not a conclusive map that shows all the places that bees and other pollinators reside in Hong Kong but instead just the places the four of us have observed bees and other pollinators.
-                    </Typography>
-                </Box>
-                <Box sx={{
-                    border: '1px solid #000',
-                    padding: 2,
-                    borderRadius: "1rem",
-                    backgroundColor: '#f9d6b7',
-                    marginTop: 2,
-                    alignSelf: 'stretch'
-                }}>
-                    <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
-                        Methodology for Data Collection
-                    </Typography>
-                </Box>
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: "1rem", backgroundColor: '#F8CB00',
+                backgroundColor: "#F8CB00",
+                marginTop: 2,
+                width: "90%",
+                justifyContent: 'center',
+                textAlign: 'center'
+
+            }}>
+                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                    This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on, its not a
+                    conclusive map that shows all the places that bees and other pollinators reside in Hong Kong but
+                    instead just the places the four of us have observed bees and other pollinators.
+                </Typography>
+            </Box>
+            <Box sx={{
+                border: '1px solid #000',
+                padding: 2,
+                backgroundColor: '#c5e1a5',
+                marginTop: 2,
+                alignSelf: 'stretch'
+            }}>
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                    Methodology for Data Collection
+                </Typography>
+            </Box>
+            <Box sx={{
+                border: '1px solid #000',
+                padding: 2,
+                backgroundColor: '#F8CB00',
                 marginTop: 2,
                 width: "90%",
                 justifyContent: 'center',
                 textAlign: 'center'
             }}>
                 <Typography variant='h5' color={"black"} fontFamily={"Julius Sans One"}>
-                    At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take data on bees and other pollinators we picked a flowering plant that either had pollinators around it or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to the plant and wrote down the number, frequency of visits, and the weather directly above the plant (sun, partial shade, or shade). We tried to do five flowers for park but if we couldn’t find 5 different flower species we just took data on the as many different flowers we could find.
+                    At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take
+                    data on bees and other pollinators we picked a flowering plant that either had pollinators around it
+                    or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to
+                    the plant and wrote down the number, frequency of visits, and the weather directly above the plant
+                    (sun, partial shade, or shade). We tried to do five flowers for park but if we couldn’t find 5
+                    different flower species we just took data on the as many different flowers we could find.
                 </Typography>
             </Box>
         </Stack>

@@ -1,10 +1,7 @@
 import {Box, List, ListItem, Button, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
-// import Carousel from "../Components/Carousel.tsx";
 import {useNavigate} from "react-router";
 import sprayingPesticide from "../assets/spraying-pesticides.jpg";
-import CustomCard from "../Components/CustomCard.tsx";
-
 
 export default function Home() {
     const navigate = useNavigate();
@@ -24,8 +21,8 @@ export default function Home() {
                     padding: 2,
                     width: "fit-content",
                     marginBottom: "2rem",
-                    borderRadius: "1rem",
-                    backgroundColor: '#f9d6b7',
+                    backgroundColor: '#c5e1a5',
+                    border: "#000 1px solid"
                 }}>
                 <Typography color='#000000' variant='h1'>
                     The Real Story Behind Pesticides
@@ -41,7 +38,7 @@ export default function Home() {
                             alignItems: 'center',
                             justifyContent: 'center',
                         }}>
-                            <img src={sprayingPesticide} alt="Description"
+                            <img src={sprayingPesticide as string} alt="Description"
                                  style={{width: "100%", height: "auto", objectFit: 'cover'}}/>
                         </Box>
                     </Grid>
@@ -73,15 +70,14 @@ export default function Home() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: 1,
-                            backgroundColor: '#f9d6b7',
+                            backgroundColor: '#c5e1a5',
                         }}>
                         <Box
                             sx={{
-                                // border: '1px solid #000',
+                                border: '1px solid #000',
                                 padding: 1,
-                                borderRadius: 1,
                                 marginBottom: 1,
+                                backgroundColor: "#dcedc8"
                             }}>
                             <Typography color='black' variant='h6'>Indirect</Typography>
                         </Box>
@@ -106,15 +102,14 @@ export default function Home() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: 1,
-                            backgroundColor: '#f9d6b7',
+                            backgroundColor: '#c5e1a5',
                         }}>
                         <Box
                             sx={{
                                 border: '1px solid #000',
                                 padding: 1,
-                                borderRadius: 1,
                                 marginBottom: 1,
+                                backgroundColor: '#dcedc8'
                             }}>
                             <Typography color='black' variant='h6'>Direct</Typography>
                         </Box>
@@ -159,7 +154,6 @@ export default function Home() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 1,
                     backgroundColor: '#F8CB00',
                     marginTop: "1rem",
                     marginBottom: "2rem",
@@ -171,8 +165,7 @@ export default function Home() {
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
-                borderRadius: 2,
-                backgroundColor: "#f9d6b7",
+                backgroundColor: "#c5e1a5",
                 marginTop: 2,
             }}>
                 <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
@@ -185,19 +178,19 @@ export default function Home() {
 
             </Box>
             <Box sx={{
-                display: 'flex',
+                display: 'fit',
                 justifyContent: 'center',
                 marginTop: "1rem",
-                backgroundColor:"#f9d6b7"
 
             }}>
-                <Button variant="contained" color="#E7EEE5" onClick={handleClick}
-                        sx={{
-                            padding: '0 8px',
-                            width: "auto",
-                            display: 'inline-block'
-                        }}>
-                    See the Map
+                <Button variant="contained" onClick={handleClick}
+                sx = {{
+                    backgroundColor:"#c5e1a5",
+                    color: "black",
+                    fontSize: "2rem"
+
+                }}>
+                    See Map
                 </Button>
             </Box>
         </Stack>

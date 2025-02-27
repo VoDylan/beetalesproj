@@ -11,12 +11,12 @@ export default function SurveyPage() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 1,
+
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#f9d6b7',
+                    backgroundColor: '#c5e1a5',
                 }}>
                 <Typography color='black' variant='h4'>
                     Purpose of the Survey
@@ -26,7 +26,6 @@ export default function SurveyPage() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: "1rem",
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
@@ -49,12 +48,11 @@ export default function SurveyPage() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: "1rem",
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#f9d6b7',
+                    backgroundColor: '#c5e1a5',
                 }}>
                 <Typography color='black' variant='h4'>
                     Findings
@@ -63,7 +61,7 @@ export default function SurveyPage() {
             <Box sx={{ width: '100%' }}>
                 <Grid container spacing={4} alignItems="stretch" columns={2}>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem" }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46',  border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem" }}>
                             <Typography
                                 variant="h4"
                                 sx={{ fontSize: "2rem", textAlign: 'center',  }}
@@ -76,12 +74,12 @@ export default function SurveyPage() {
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000' }}>
+                        <Box sx={{ height: '100%', backgroundColor: '#292828',  border: '1px solid #000' }}>
                             <img src={pieChart1} alt="Description" style={{ maxWidth: "100%", height: "auto", objectFit: 'cover' }} />
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#FAE4B3', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#FAE4B3',  border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
                             <Typography
                                 variant="h4"
                                 color={'black'}
@@ -91,12 +89,12 @@ export default function SurveyPage() {
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000' }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828',  border: '1px solid #000' }}>
                             <img src={pieChart2} alt="Description" style={{maxWidth: "100%", height: "auto"}}/>
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46', borderRadius: 1, border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46',  border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
                             <Typography variant="h4"
                                         color={'black'}
                                         sx={{ fontSize: "2rem", textAlign: 'center' }}>
@@ -105,7 +103,7 @@ export default function SurveyPage() {
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828', borderRadius: 1, border: '1px solid #000' }}>
+                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828',  border: '1px solid #000' }}>
                             <img src={pieChart3} alt="Description" style={{maxWidth: "100%", height: "auto"}}/>
                         </Box>
                     </Grid>
