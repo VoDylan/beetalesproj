@@ -8,8 +8,7 @@ export default function AboutPage() {
                 sx={{
                     // border: '1px solid #000',
                     padding: 2,
-                    borderRadius: "1rem",
-                    backgroundColor: "#f9d6b7",
+                    backgroundColor: "#c5e1a5",
                     maxWidth: '100%',
                     width: 'fit-content',
                     // marginX: 'auto',
@@ -43,7 +42,6 @@ export default function AboutPage() {
             <Box
                 sx={{
                     padding: 2,
-                    borderRadius: "1rem",
                     maxWidth: '100%',
                     width: 'fit-content',
                     // marginX: 'auto',
@@ -81,8 +79,7 @@ export default function AboutPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    borderRadius: "1rem",
-                    backgroundColor: "#f9d6b7",
+                    backgroundColor: "#c5e1a5",
                     border: '1px solid #000',
                 }}>
                 <Typography color='black'>
@@ -112,8 +109,7 @@ export default function AboutPage() {
                     sx={{
                         padding: 2,
                         width: 'fit-content',
-                        borderRadius: "1rem",
-                        backgroundColor: "#f9d6b7",
+                        backgroundColor: "#c5e1a5",
                         textAlign: 'center', // Center text inside the box
                         border: '1px solid #000',
                     }}
@@ -151,8 +147,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                borderRadius: 0,
-                                backgroundColor: '#f9d6b7',
+                                backgroundColor: '#c5e1a5',
                             }}
                         >
                             <Box
@@ -161,8 +156,8 @@ export default function AboutPage() {
                                 alt="Student 1"
                                 sx={{
                                     width: 80, // Increase image size
-                                    height: 80, // Increase image size
-                                    borderRadius: '50%',
+                                    height: 80, // Increase image size',
+                                    objectFit: "cover"
                                 }}
                             />
                             <Box>
@@ -170,7 +165,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
@@ -185,7 +179,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         textAlign: 'left',
                                         marginTop: 1,
                                         backgroundColor: '#F8CB00',
@@ -208,8 +201,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                borderRadius: 0,
-                                backgroundColor: '#f9d6b7',
+                                backgroundColor: '#c5e1a5',
                             }}
                         >
                             <Box
@@ -218,8 +210,7 @@ export default function AboutPage() {
                                 alt="Student 2"
                                 sx={{
                                     width: 80, // Increase image size
-                                    height: 80, // Increase image size
-                                    borderRadius: '50%',
+                                    height: 80, // Increase image size0%',
                                 }}
                             />
                             <Box>
@@ -227,7 +218,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
@@ -242,7 +232,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         textAlign: 'left',
                                         marginTop: 1,
                                         backgroundColor: '#F8CB00',
@@ -276,8 +265,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                borderRadius: 1,
-                                backgroundColor: '#f9d6b7',
+                                backgroundColor: '#c5e1a5',
                             }}
                         >
                             <Box
@@ -286,8 +274,7 @@ export default function AboutPage() {
                                 alt="Student 3"
                                 sx={{
                                     width: 80, // Increase image size
-                                    height: 80, // Increase image size
-                                    borderRadius: '50%',
+                                    height: 80, // Increase image size0%',
                                 }}
                             />
                             <Box>
@@ -295,7 +282,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
@@ -310,7 +296,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         textAlign: 'left',
                                         marginTop: 1,
                                         backgroundColor: '#F8CB00',
@@ -333,8 +318,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                borderRadius: 1,
-                                backgroundColor: '#f9d6b7',
+                                backgroundColor: '#c5e1a5',
                             }}
                         >
                             <Box
@@ -343,8 +327,7 @@ export default function AboutPage() {
                                 alt="Student 4"
                                 sx={{
                                     width: 80, // Increase image size
-                                    height: 80, // Increase image size
-                                    borderRadius: '50%',
+                                    height: 80, // Increase image size0%',
                                 }}
                             />
                             <Box>
@@ -352,7 +335,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
@@ -367,7 +349,6 @@ export default function AboutPage() {
                                     sx={{
                                         border: '1px solid #000',
                                         padding: 1,
-                                        borderRadius: 0,
                                         textAlign: 'left',
                                         marginTop: 1,
                                         backgroundColor: '#F8CB00',
@@ -389,12 +370,22 @@ export default function AboutPage() {
                     alignItems: 'center', // Center horizontally
                     gap: 4, // Add spacing between sections
                     padding: 2, // Add padding to the container
+
                 }}
             >
                 {/* Heading */}
-                <Typography variant="h3" sx={{textAlign: 'center'}} color='white'>
-                    Special Thanks to our Advising Professors and Sponsor
-                </Typography>
+                <Box sx={{
+                    padding: 2,
+                    width: 'fit-content',
+                    backgroundColor: "#c5e1a5",
+                    textAlign: 'center', // Center text inside the box
+                    border: '1px solid #000',}}>
+                    <Typography variant="h3" sx={{textAlign: 'center'}} color='black'>
+                        Special Thanks to our Advising Professors and Sponsor
+                    </Typography>
+
+                </Box>
+
 
                 {/* Advisor and Sponsor Boxes */}
                 <Box
@@ -416,8 +407,7 @@ export default function AboutPage() {
                             maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
-                            borderRadius: 1,
-                            backgroundColor: '#f9d6b7',
+                            backgroundColor: '#c5e1a5',
                         }}
                     >
                         <Box
@@ -426,8 +416,7 @@ export default function AboutPage() {
                             alt="Advisor 1"
                             sx={{
                                 width: 80, // Increase image size
-                                height: 80, // Increase image size
-                                borderRadius: '50%',
+                                height: 80, // Increase image size0%',
                             }}
                         />
                         <Box>
@@ -435,7 +424,6 @@ export default function AboutPage() {
                                 sx={{
                                     border: '1px solid #000',
                                     padding: 1,
-                                    borderRadius: 0,
                                     borderWidth: '2px',
                                     textAlign: 'left',
                                     width: 'fit-content',
@@ -450,7 +438,6 @@ export default function AboutPage() {
                                 sx={{
                                     border: '1px solid #000',
                                     padding: 1,
-                                    borderRadius: 0,
                                     textAlign: 'left',
                                     marginTop: 1,
                                     backgroundColor: '#F8CB00',
@@ -471,8 +458,7 @@ export default function AboutPage() {
                             maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
-                            borderRadius: 1,
-                            backgroundColor: '#f9d6b7',
+                            backgroundColor: '#c5e1a5',
                         }}
                     >
                         <Box
@@ -481,8 +467,7 @@ export default function AboutPage() {
                             alt="Advisor 2"
                             sx={{
                                 width: 80, // Increase image size
-                                height: 80, // Increase image size
-                                borderRadius: '50%',
+                                height: 80, // Increase image size0%',
                             }}
                         />
                         <Box>
@@ -490,7 +475,6 @@ export default function AboutPage() {
                                 sx={{
                                     border: '1px solid #000',
                                     padding: 1,
-                                    borderRadius: 0,
                                     borderWidth: '2px',
                                     textAlign: 'left',
                                     width: 'fit-content',
@@ -505,7 +489,6 @@ export default function AboutPage() {
                                 sx={{
                                     border: '1px solid #000',
                                     padding: 1,
-                                    borderRadius: 0,
                                     textAlign: 'left',
                                     marginTop: 1,
                                     backgroundColor: '#F8CB00',
@@ -526,8 +509,7 @@ export default function AboutPage() {
                             maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
-                            borderRadius: 1,
-                            backgroundColor: '#f9d6b7',
+                            backgroundColor: '#c5e1a5',
                         }}
                     >
                         <Box
@@ -536,8 +518,7 @@ export default function AboutPage() {
                             alt="Sponsor"
                             sx={{
                                 width: 80, // Increase image size
-                                height: 80, // Increase image size
-                                borderRadius: '50%',
+                                height: 80, // Increase image size0%',
                             }}
                         />
                         <Box>
@@ -545,7 +526,6 @@ export default function AboutPage() {
                                 sx={{
                                     border: '1px solid #000',
                                     padding: 1,
-                                    borderRadius: 0,
                                     borderWidth: '2px',
                                     textAlign: 'left',
                                     width: 'fit-content',
@@ -560,7 +540,6 @@ export default function AboutPage() {
                                 sx={{
                                     border: '1px solid #000',
                                     padding: 1,
-                                    borderRadius: 0,
                                     textAlign: 'left',
                                     marginTop: 1,
                                     backgroundColor: '#F8CB00',

@@ -2,7 +2,6 @@ import './App.css';
 import Header from "./Components/Header.tsx";
 import Home from "./routes/Home.tsx";
 import About from "./routes/About.tsx";
-import Database from "./routes/Database.tsx";
 import MapPage from "./routes/MapPage.tsx";
 import Conclusions from "./routes/Conclusions.tsx";
 import Survey from "./routes/Suvery.tsx";
@@ -14,9 +13,6 @@ import {
     Outlet
 } from "react-router-dom";
 import Footer from "./Components/Footer.tsx";
-
-
-// import beeCursor from './assets/bee_cursor_icon.png';
 
 function App() {
     const router = createBrowserRouter([{
@@ -32,10 +28,6 @@ function App() {
                 path: "/MapPage",
                 element: <MapPage/>,
             },
-            // {
-            //     path: "/Database",
-            //     element: <Database/>,
-            // },
             {
                 path: "/About",
                 element: <About/>,
@@ -50,7 +42,7 @@ function App() {
             },
             {
                 path: "/WhatYouCanDo",
-                element: <WhatYouCanDo/>,
+                element: <WhatYouCanDo src={"src/assets/BeeWhatIf.pdf"}/>,
             },
         ],
     },
