@@ -7,8 +7,7 @@ import { pdfjs } from "react-pdf";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-// eslint-disable-next-line no-empty-pattern
-export default function WhatYouCanDo({}: PdfProps) {
+export default function WhatYouCanDo({src}: PdfProps) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [numPages, setNumPages] = useState<number>();
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -35,7 +34,7 @@ export default function WhatYouCanDo({}: PdfProps) {
             {/*    Next*/}
             {/*</button>*/}
             <Document
-                file={"src/assets/BeeWhatIf.pdf"}
+                file={src}
                 onLoadSuccess={onDocumentLoadSuccess}
                 className="my-react-pdf"
             >
