@@ -1,4 +1,5 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
+import Grid from '@mui/material/Grid2';
 
 export default function ConclusionPage() {
     return (
@@ -7,7 +8,6 @@ export default function ConclusionPage() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
 
                     maxWidth: '100%',
                     width: 'fit-content',
@@ -25,7 +25,6 @@ export default function ConclusionPage() {
                 sx = {{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
@@ -49,7 +48,6 @@ export default function ConclusionPage() {
                 sx = {{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 1,
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
@@ -65,7 +63,6 @@ export default function ConclusionPage() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: 0,
                             backgroundColor: '#FAE4B3',
                         }}>
                         <Typography color='black' variant='h4'>
@@ -80,7 +77,6 @@ export default function ConclusionPage() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: 0,
                             backgroundColor: '#FAE4B3',
                         }}>
                         <Typography color='black' variant='h4'>
@@ -95,7 +91,6 @@ export default function ConclusionPage() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: "1rem",
                             backgroundColor: '#F7CE46',
                         }}>
                         <Typography color='black'>
@@ -111,7 +106,6 @@ export default function ConclusionPage() {
                         sx={{
                             border: '1px solid #000',
                             padding: 2,
-                            borderRadius: "1rem",
                             backgroundColor: '#F7CE46',
                         }}>
                         <Typography color='black'>
@@ -124,7 +118,6 @@ export default function ConclusionPage() {
                 sx = {{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: "1rem",
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
@@ -137,7 +130,6 @@ export default function ConclusionPage() {
                 sx = {{
                     border: '1px solid #000',
                     padding: 2,
-                    borderRadius: 0,
                     marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
