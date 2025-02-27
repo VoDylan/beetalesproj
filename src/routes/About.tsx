@@ -532,7 +532,7 @@ export default function AboutPage() {
                     >
                         <Box
                             component="img"
-                            src="/path"
+                            src="src/assets/Harry_Headshot.JPG"
                             alt="Sponsor"
                             sx={{
                                 width: 80, // Increase image size
@@ -553,7 +553,7 @@ export default function AboutPage() {
                                 }}
                             >
                                 <Typography variant="body1" color="white">
-                                    Harry Freecss
+                                    Harry Wong
                                 </Typography>
                             </Box>
                             <Box
