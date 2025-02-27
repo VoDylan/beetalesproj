@@ -270,7 +270,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="/path"
+                                src="src/assets/Valli_Headshot.jpeg"
                                 alt="Student 3"
                                 sx={{
                                     width: 80, // Increase image size
