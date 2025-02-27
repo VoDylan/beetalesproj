@@ -1,4 +1,4 @@
-import {Box, List, ListItem, Button, Stack, Typography} from "@mui/material";
+import {Box, Button, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
 // import sprayingPesticide from "../assets/spraying-pesticides.jpg";
@@ -29,9 +29,9 @@ export default function Home() {
                 </Typography>
             </Box>
 
-            <Box sx={{ width: '100%' }}>
+            <Box sx={{width: '100%'}}>
                 <Grid container spacing={4} direction="column" alignItems="center">
-                    <Grid>
+                    <Grid item xs={12}>
                         <Box sx={{
                             width: '100%',
                             height: '100%',
@@ -42,29 +42,44 @@ export default function Home() {
                             <img
                                 src="src/assets/SprayPesticide.jpg"
                                 alt="Description"
-                                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                             />
                         </Box>
                     </Grid>
-                    <Grid>
-                        <Grid container spacing={4}>
-                            <Grid>
+                    <Grid item xs={12}>
+                        <Box sx={{
+                            display: 'flex',
+                            flexDirection: 'row',
+                            // justifyContent: 'space-between',
+                            width: '100%',
+                        }}>
+                            <Box sx={{
+                                width: '100%',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}>
+                                <img
+                                    src="src/assets/pesticide_warning.jpg"
+                                    alt="Description"
+                                    style={{width: '100%', height: 'auto', objectFit: 'cover'}}
+                                />
+                            </Box>
+                            <Grid container spacing={1} direction="column" alignItems="end">
                                 <Box sx={{
-                                    height: '100%',
+                                    width: '85%',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                 }}>
                                     <img
-                                        src="src/assets/pesticide_warning.jpg"
+                                        src="src/assets/Dead-bees.png"
                                         alt="Description"
-                                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                        style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
                                 </Box>
-                            </Grid>
-                            <Grid>
                                 <Box sx={{
-                                    height: '100%',
+                                    width: '85%',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -72,109 +87,14 @@ export default function Home() {
                                     <img
                                         src="src/assets/BewareBeeSign.jpg"
                                         alt="Description"
-                                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                        style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
                                 </Box>
                             </Grid>
-                        </Grid>
+                        </Box>
                     </Grid>
                 </Grid>
             </Box>
-
-
-
-            <Grid container spacing={2}
-            sx={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                marginTop: "2rem"
-            }}>
-                <Grid>
-                    <Box
-                        sx={{
-                            border: '1px solid #000',
-                            padding: 2,
-                            backgroundColor: '#c5e1a5',
-                        }}>
-                        <Box
-                            sx={{
-                                // border: '1px solid #000',
-                                padding: 1,
-                                marginBottom: 1,
-                                backgroundColor: "#dcedc8"
-                            }}>
-                            <Typography color='black' variant='h6'>Indirect</Typography>
-                        </Box>
-                        <List>
-                            <ListItem>
-                                <Typography color="black">Acute Poisoning</Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="black">Chronic Illnesses</Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="black">Skin and Eye Irritation</Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="black">Ingestion Risks</Typography>
-                            </ListItem>
-                        </List>
-                    </Box>
-                </Grid>
-                <Grid>
-                    <Box
-                        sx={{
-                            border: '1px solid #000',
-                            padding: 2,
-                            backgroundColor: '#c5e1a5',
-                        }}>
-                        <Box
-                            sx={{
-                                border: '1px solid #000',
-                                padding: 1,
-                                marginBottom: 1,
-                                backgroundColor: '#dcedc8'
-                            }}>
-                            <Typography color='black' variant='h6'>Direct</Typography>
-                        </Box>
-                        <List>
-                            <ListItem>
-                                <Typography color="black">Food Safety</Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="black">Economic Impact</Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="black">Ecosystem Collapse</Typography>
-                            </ListItem>
-                            <ListItem>
-                                <Typography color="black">Nutritional Deficiency</Typography>
-                            </ListItem>
-                        </List>
-                    </Box>
-                </Grid>
-            </Grid>
-            {/*<Button*/}
-            {/*    component="a"*/}
-            {/*    href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9231402/#:~:text=People%20who%20are%20both%20directly,number%20of%20serious%20chronic%20diseases"*/}
-            {/*    target="_blank"*/}
-            {/*    rel="noopener noreferrer"*/}
-            {/*    sx={{*/}
-            {/*        backgroundColor: 'red',*/}
-            {/*        border: '2px solid black',*/}
-            {/*        color: 'white',*/}
-            {/*        padding: 2,*/}
-            {/*        marginTop: "1rem",*/}
-            {/*        '&:hover': {*/}
-            {/*            backgroundColor: '#d50000',*/}
-            {/*        },*/}
-            {/*    }}*/}
-            {/*>*/}
-            {/*    <Typography variant="h3">*/}
-            {/*        More Info on the Dangers of Pesticides*/}
-            {/*    </Typography>*/}
-            {/*</Button>*/}
             <Box
                 sx={{
                     border: '1px solid #000',
@@ -185,7 +105,9 @@ export default function Home() {
                     marginBottom: "2rem",
                     width: "fit-content",
                 }}>
-                <Typography color="black" variant="h3" fontFamily={"Julius Sans One"}> To ensure the health of ourselves and others it's worth asking,
+                <Typography color="black" variant="h3" fontFamily={"Julius Sans One"}> To ensure the health of ourselves
+                    and
+                    others it's worth asking,
                     are pesticides really worth it?</Typography>
             </Box>
             <Box sx={{
@@ -210,12 +132,12 @@ export default function Home() {
 
             }}>
                 <Button variant="contained" onClick={handleClick}
-                sx = {{
-                    backgroundColor:"#c5e1a5",
-                    color: "black",
-                    fontSize: "2rem"
+                        sx={{
+                            backgroundColor: "#c5e1a5",
+                            color: "black",
+                            fontSize: "2rem"
 
-                }}>
+                        }}>
                     See Map
                 </Button>
             </Box>

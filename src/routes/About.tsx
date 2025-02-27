@@ -323,11 +323,11 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="/path"
+                                src="src/assets/Dylan_Headshot.jpeg"
                                 alt="Student 4"
                                 sx={{
                                     width: 80, // Increase image size
-                                    height: 80, // Increase image size0%',
+                                    height: 80, // Increase image size',
                                 }}
                             />
                             <Box>
