@@ -2,16 +2,16 @@ import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import { useState } from "react";
 import { Document, Page } from "react-pdf";
-import { PdfProps } from "../types.ts";
+import { PdfProps } from "../types";
 import { pdfjs } from "react-pdf";
+import "../index.css"; // Assuming you have a CSS file for styles
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-export default function WhatYouCanDo({src}: PdfProps) {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+export default function WhatYouCanDo({ src }: PdfProps) {
     const [numPages, setNumPages] = useState<number>();
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [pageNumber, setPageNumber] = useState<number>(1);
+    const [pageNumber] = useState<number>(1);
+    // setPageNumber
 
     function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
         setNumPages(numPages);
@@ -27,10 +27,10 @@ export default function WhatYouCanDo({src}: PdfProps) {
 
     return (
         <div style={{ width: "100%", height: "auto", marginTop: "5rem" }}>
-            {/*<button onClick={prevPage} disabled={pageNumber <= 1}>*/}
+            {/*<button className="custom-button" onClick={prevPage} disabled={pageNumber <= 1}>*/}
             {/*    Previous*/}
             {/*</button>*/}
-            {/*<button onClick={nextPage} disabled={pageNumber >= (numPages ?? -1)}>*/}
+            {/*<button className="custom-button" onClick={nextPage} disabled={pageNumber >= (numPages ?? -1)}>*/}
             {/*    Next*/}
             {/*</button>*/}
             <Document
@@ -40,9 +40,9 @@ export default function WhatYouCanDo({src}: PdfProps) {
             >
                 <Page pageNumber={pageNumber} />
             </Document>
-            {/*<p>*/}
-            {/*    Page {pageNumber} of {numPages}*/}
-            {/*</p>*/}
+            <p>
+                Page {pageNumber} of {numPages}
+            </p>
         </div>
     );
 }

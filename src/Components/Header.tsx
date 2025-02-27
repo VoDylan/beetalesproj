@@ -48,7 +48,7 @@ function Header() {
         <AppBar
             position="fixed"
             sx={{
-                backgroundColor: "#F7CE46",
+                backgroundColor: "#ffe468",
                 boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.1)",
                 width: "100%",
                 left: 0,
@@ -67,7 +67,7 @@ function Header() {
                     <MenuIcon/>
                 </IconButton>
                 <Box display="flex" alignItems="center" sx={{display: {xs: 'none', md: 'flex'}}}>
-                    <img src={Logo} alt="Logo" style={{height: '50px', marginRight: '16px'}}/>
+                    <img src={Logo as string} alt="Logo" style={{height: '50px', marginRight: '16px'}}/>
                 </Box>
                 <Box sx={{display: {xs: 'none', md: 'flex'}, flexGrow: 1, justifyContent: 'center'}}>
                     <Stack direction="row" spacing={2} alignItems="center">

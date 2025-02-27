@@ -39,7 +39,7 @@ export default function Carousel() {
                             <Card>
                                 <CardMedia
                                     component="img"
-                                    image={image.url}
+                                    image={image.url as string}
                                     alt={image.alt}
                                     sx={{ width: "25rem", height: "20rem", objectFit: 'cover' }}
                                 />

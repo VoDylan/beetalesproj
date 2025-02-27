@@ -616,7 +616,7 @@ export default function MapPage() {
             }}>
                 <Typography variant='h2' fontStyle={'bold'} color={"black"}
                 >
-                    Where Pollinators Reside in Hong Kong
+                    Our Observations of Pollinators in Hong Kong
                 </Typography>
             </Box>
             <Box
@@ -641,8 +641,8 @@ export default function MapPage() {
                         >
                             <Popup>
                                 <Stack sx={{
-                                    height: '30rem',
-                                    width: '20rem',
+                                    height: 'fit-content',
+                                    width: 'fit-content',
 
                                     // overflow: 'auto',
                                 }}>
@@ -652,7 +652,8 @@ export default function MapPage() {
                                         flexDirection: 'row',
                                         // marginTop: "1rem",
                                         gap: 1,
-                                        width: "100%"
+                                        width: "100%",
+                                        height: "auto"
                                     }}>
                                         {marker.imageUrl.map((url, index) => (
                                             <img key={index} src={url as string} alt={`${marker.popUp} ${index + 1}`}
@@ -660,23 +661,23 @@ export default function MapPage() {
                                         ))}
                                     </Box>
 
-                                    <Grid container spacing={2}>
+                                    <Grid container spacing={0}>
                                         <Grid item xs={6}>
                                             <Typography variant="h6">Date: {marker.Date}</Typography>
                                         </Grid>
-                                        <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                        <Grid item xs={6}>
                                             <Typography variant="h6">Flowers Observed: {marker.PlantsSeen}</Typography>
                                         </Grid>
                                         <Grid item xs={6}>
                                             <Typography variant="h6">Pollinators Observed: {marker.Pollinators}</Typography>
                                         </Grid>
-                                        <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                        <Grid item xs={6}>
                                             <Typography variant="h6">Bee Average: {marker.BeeAverage}</Typography>
                                         </Grid>
                                         <Grid item xs={6}>
                                             <Typography variant="h6">Temperature: {marker.Temperature}</Typography>
                                         </Grid>
-                                        <Grid item xs={6} style={{ textAlign: 'right' }}>
+                                        <Grid item xs={6}>
                                             <Typography variant="h6">Humidity: {marker.Humidity}</Typography>
                                         </Grid>
                                         <Grid item xs={6}>
