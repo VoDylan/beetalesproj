@@ -1,7 +1,7 @@
 import {Box, List, ListItem, Button, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
-import sprayingPesticide from "../assets/spraying-pesticides.jpg";
+// import sprayingPesticide from "../assets/spraying-pesticides.jpg";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -14,44 +14,69 @@ export default function Home() {
         <Stack sx={{
             marginTop: "5rem",
             justifyContent: "center",
-            width: "95%",
         }}>
             <Box
                 sx={{
                     padding: 2,
-                    width: "fit-content",
+                    width: "100%",
                     marginBottom: "2rem",
+                    borderRadius: "0",
                     backgroundColor: '#c5e1a5',
                     border: "#000 1px solid"
                 }}>
                 <Typography color='#000000' variant='h1'>
-                    The Real Story Behind Pesticides
+                    The Real Cost of Pesticides
                 </Typography>
             </Box>
 
-            <Box sx={{width: '100%'}}>
-                <Grid container spacing={4} direction="column" alignItems="center" columns={1}>
-                    <Grid item>
+            <Box sx={{ width: '100%' }}>
+                <Grid container spacing={4} direction="column" alignItems="center">
+                    <Grid>
                         <Box sx={{
+                            width: '100%',
                             height: '100%',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                         }}>
-                            <img src={sprayingPesticide as string} alt="Description"
-                                 style={{width: "100%", height: "auto", objectFit: 'cover'}}/>
+                            <img
+                                src="src/assets/SprayPesticide.jpg"
+                                alt="Description"
+                                style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                            />
                         </Box>
                     </Grid>
-                    <Grid item>
-                        <Box sx={{
-                            height: '100%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                        }}>
-                            <img src={"src/assets/pesticide_warning.jpg"} alt="Description"
-                                 style={{width: "100%", height: "auto", objectFit: 'cover'}}/>
-                        </Box>
+                    <Grid>
+                        <Grid container spacing={4}>
+                            <Grid>
+                                <Box sx={{
+                                    height: '100%',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                }}>
+                                    <img
+                                        src="src/assets/pesticide_warning.jpg"
+                                        alt="Description"
+                                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                    />
+                                </Box>
+                            </Grid>
+                            <Grid>
+                                <Box sx={{
+                                    height: '100%',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                }}>
+                                    <img
+                                        src="src/assets/BewareBeeSign.jpg"
+                                        alt="Description"
+                                        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
+                                    />
+                                </Box>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Box>
@@ -65,7 +90,7 @@ export default function Home() {
                 justifyContent: 'center',
                 marginTop: "2rem"
             }}>
-                <Grid item xs={12} sm={6}>
+                <Grid>
                     <Box
                         sx={{
                             border: '1px solid #000',
@@ -74,7 +99,7 @@ export default function Home() {
                         }}>
                         <Box
                             sx={{
-                                border: '1px solid #000',
+                                // border: '1px solid #000',
                                 padding: 1,
                                 marginBottom: 1,
                                 backgroundColor: "#dcedc8"
@@ -97,7 +122,7 @@ export default function Home() {
                         </List>
                     </Box>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid>
                     <Box
                         sx={{
                             border: '1px solid #000',
@@ -154,7 +179,8 @@ export default function Home() {
                 sx={{
                     border: '1px solid #000',
                     padding: 2,
-                    backgroundColor: '#F8CB00',
+                    borderRadius: 1,
+                    backgroundColor: '#ffe468',
                     marginTop: "1rem",
                     marginBottom: "2rem",
                     width: "fit-content",
