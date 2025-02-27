@@ -1,4 +1,4 @@
-import {Box, List, ListItem, Button, Stack, Typography} from "@mui/material";
+import {Box, Button, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
 // import sprayingPesticide from "../assets/spraying-pesticides.jpg";
