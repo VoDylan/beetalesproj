@@ -12,7 +12,7 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#FAE4B3',
+                    backgroundColor: '#c5e1a5',
 
                 }}>
                 <Typography color='black' variant='h4'>
@@ -29,7 +29,7 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#F7CE46',
+                    backgroundColor: '#dcedc8',
             }}>
                 <Typography color='black'>
                     Our research in Hong Kong was focused on addressing the main research
@@ -52,7 +52,7 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#F7CE46',
+                    backgroundColor: '#dcedc8',
             }}>
                 <Typography color='black'> To summerize the rest of our data however we found that bees resided more in rural and suburban locations than urban due to the increased number of flowers and other greenery. </Typography>
             </Box>
@@ -120,7 +120,7 @@ export default function ConclusionPage() {
                     padding: 2,
                     marginBottom: 2,
                     maxWidth: '100%',
-                    width: 'fit-content',
+                    width: '100%',
                     marginX: 'auto',
                     backgroundColor: '#f9d6b7'
                 }}>
@@ -136,7 +136,63 @@ export default function ConclusionPage() {
                     marginX: 'auto',
                     backgroundColor: '#F7CE46'
                 }}>
-                <Typography color="black"> Funding more intiatives like the Blossom Tower by Beetales</Typography>
+                <Typography color="black"> For the Law Enforcing Agencies of Hong Kong</Typography>
+            </Box>
+            <Box
+                sx = {{
+                    border: '1px solid #000',
+                    padding: 2,
+                    borderRadius: 0,
+                    marginBottom: 2,
+                    maxWidth: '100%',
+                    width: '100%',
+                    marginX: 'auto',
+                    backgroundColor: '#F7CE46'
+                }}>
+                <Typography> The law enforcing agencies in hong kong that regulate the use of pesticides and decide what should be planted in government areas include but are not limited to...</Typography>
+            </Box>
+            <Box
+                sx = {{
+                    border: '1px solid #000',
+                    padding: 2,
+                    borderRadius: 0,
+                    marginBottom: 2,
+                    maxWidth: '100%',
+                    width: 'fit-content',
+                    marginX: 'auto',
+                    backgroundColor: '#F7CE46'
+                }}>
+                <Typography color="black"> For Everyone Else Looking to Make Difference</Typography>
+            </Box>
+            <Box
+                sx = {{
+                    border: '1px solid #000',
+                    padding: 2,
+                    borderRadius: 0,
+                    marginBottom: 2,
+                    maxWidth: '100%',
+                    width: '100%',
+                    marginX: 'auto',
+                    backgroundColor: '#F7CE46'
+                }}>
+                <Typography> Support the Local organizations around you looking to restore the pollinator populations like our Sponsor Beetales.</Typography>
+            </Box>
+            {/* Carousel Section for other organizations to check out */}
+            <Box
+                sx={{
+                    border: '1px solid #000',
+                    padding: 2,
+                    borderRadius: 0,
+                    marginBottom: 2,
+                    maxWidth: '100%',
+                    width: '100%',
+                    marginX: 'auto',
+                    backgroundColor: '#f9d6b7',
+                }}
+            >
+                <Typography color="black" variant="h4" sx={{ textAlign: 'center', mb: 2 }}>
+                    Explore More About Conservation Efforts
+                </Typography>
             </Box>
         </Stack>
     );
