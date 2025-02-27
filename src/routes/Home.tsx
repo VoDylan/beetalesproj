@@ -1,7 +1,7 @@
 import {Box, List, ListItem, Button, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
-import sprayingPesticide from "../assets/spraying-pesticides.jpg";
+// import sprayingPesticide from "../assets/spraying-pesticides.jpg";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -31,7 +31,7 @@ export default function Home() {
 
             <Box sx={{ width: '100%' }}>
                 <Grid container spacing={4} direction="column" alignItems="center">
-                    <Grid item xs={12} sx={{ width: '100%' }}>
+                    <Grid>
                         <Box sx={{
                             width: '100%',
                             height: '100%',
@@ -46,9 +46,9 @@ export default function Home() {
                             />
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sx={{ width: '100%' }}>
+                    <Grid>
                         <Grid container spacing={4}>
-                            <Grid item xs={6}>
+                            <Grid>
                                 <Box sx={{
                                     height: '100%',
                                     display: 'flex',
@@ -62,7 +62,7 @@ export default function Home() {
                                     />
                                 </Box>
                             </Grid>
-                            <Grid item xs={6}>
+                            <Grid>
                                 <Box sx={{
                                     height: '100%',
                                     display: 'flex',
@@ -90,7 +90,7 @@ export default function Home() {
                 justifyContent: 'center',
                 marginTop: "2rem"
             }}>
-                <Grid item xs={12} sm={6}>
+                <Grid>
                     <Box
                         sx={{
                             border: '1px solid #000',
@@ -122,7 +122,7 @@ export default function Home() {
                         </List>
                     </Box>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid>
                     <Box
                         sx={{
                             border: '1px solid #000',
