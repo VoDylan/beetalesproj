@@ -49,7 +49,7 @@ export default function AboutPage() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    backgroundColor: '#F8CB00',
+                    backgroundColor: '#ffe468',
                     border: '1px solid #000',
                 }}>
                 <Box
@@ -79,7 +79,7 @@ export default function AboutPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: "#c5e1a5",
+                    backgroundColor: "#dcedc8",
                     border: '1px solid #000',
                 }}>
                 <Typography color='black'>
@@ -147,7 +147,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                backgroundColor: '#c5e1a5',
+                                backgroundColor: '#ffe5ed',
                             }}
                         >
                             <Box
@@ -168,10 +168,10 @@ export default function AboutPage() {
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
-                                        backgroundColor: '#C20F2E',
+                                        backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="white">
+                                    <Typography variant="body1" color="black">
                                         James Gikas
                                     </Typography>
                                 </Box>
@@ -181,7 +181,7 @@ export default function AboutPage() {
                                         padding: 1,
                                         textAlign: 'left',
                                         marginTop: 1,
-                                        backgroundColor: '#F8CB00',
+                                        backgroundColor: '#ffe5ed',
                                     }}
                                 >
                                     <Typography variant="body2" color='black'>
@@ -201,7 +201,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                backgroundColor: '#c5e1a5',
+                                backgroundColor: '#ffe5ed',
                             }}
                         >
                             <Box
@@ -221,10 +221,10 @@ export default function AboutPage() {
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
-                                        backgroundColor: '#C20F2E',
+                                        backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="white">
+                                    <Typography variant="body1" color="black">
                                         Keerthana Jayamoorthy
                                     </Typography>
                                 </Box>
@@ -234,7 +234,7 @@ export default function AboutPage() {
                                         padding: 1,
                                         textAlign: 'left',
                                         marginTop: 1,
-                                        backgroundColor: '#F8CB00',
+                                        backgroundColor: '#ffe5ed',
                                     }}
                                 >
                                     <Typography variant="body2" color='black'>
@@ -265,7 +265,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                backgroundColor: '#c5e1a5',
+                                backgroundColor: '#ffe5ed',
                             }}
                         >
                             <Box
@@ -285,10 +285,10 @@ export default function AboutPage() {
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
-                                        backgroundColor: '#C20F2E',
+                                        backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="white">
+                                    <Typography variant="body1" color="black">
                                         Valli Velmurugan
                                     </Typography>
                                 </Box>
@@ -298,7 +298,7 @@ export default function AboutPage() {
                                         padding: 1,
                                         textAlign: 'left',
                                         marginTop: 1,
-                                        backgroundColor: '#F8CB00',
+                                        backgroundColor: '#ffe5ed',
                                     }}
                                 >
                                     <Typography variant="body2" color='black'>
@@ -318,7 +318,7 @@ export default function AboutPage() {
                                 maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                                 padding: 2, // Increase padding for bigger boxes
                                 border: '1px solid #000',
-                                backgroundColor: '#c5e1a5',
+                                backgroundColor: '#ffe5ed',
                             }}
                         >
                             <Box
@@ -338,10 +338,10 @@ export default function AboutPage() {
                                         borderWidth: '2px',
                                         textAlign: 'left',
                                         width: 'fit-content',
-                                        backgroundColor: '#C20F2E',
+                                        backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="white">
+                                    <Typography variant="body1" color="black">
                                         Dylan Vo
                                     </Typography>
                                 </Box>
@@ -351,7 +351,7 @@ export default function AboutPage() {
                                         padding: 1,
                                         textAlign: 'left',
                                         marginTop: 1,
-                                        backgroundColor: '#F8CB00',
+                                        backgroundColor: '#ffe5ed',
                                     }}
                                 >
                                     <Typography variant="body2" color='black'>
@@ -407,7 +407,7 @@ export default function AboutPage() {
                             maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
-                            backgroundColor: '#c5e1a5',
+                            backgroundColor: '#ffccbc',
                         }}
                     >
                         <Box
@@ -427,10 +427,10 @@ export default function AboutPage() {
                                     borderWidth: '2px',
                                     textAlign: 'left',
                                     width: 'fit-content',
-                                    backgroundColor: '#C20F2E',
+                                    backgroundColor: '#ffab91',
                                 }}
                             >
-                                <Typography variant="body1" color="white">
+                                <Typography variant="body1" color="black">
                                     Clare Gillis
                                 </Typography>
                             </Box>
@@ -440,7 +440,7 @@ export default function AboutPage() {
                                     padding: 1,
                                     textAlign: 'left',
                                     marginTop: 1,
-                                    backgroundColor: '#F8CB00',
+                                    backgroundColor: '#ffccbc',
                                 }}
                             >
                                 <Typography variant="body2" color='black'>The Global School</Typography>
@@ -458,7 +458,7 @@ export default function AboutPage() {
                             maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
-                            backgroundColor: '#c5e1a5',
+                            backgroundColor: '#ffccbc',
                         }}
                     >
                         <Box
@@ -478,10 +478,10 @@ export default function AboutPage() {
                                     borderWidth: '2px',
                                     textAlign: 'left',
                                     width: 'fit-content',
-                                    backgroundColor: '#C20F2E',
+                                    backgroundColor: '#ffab91',
                                 }}
                             >
-                                <Typography variant="body1" color="white">
+                                <Typography variant="body1" color="black">
                                     John Lindholm
                                 </Typography>
                             </Box>
@@ -491,7 +491,7 @@ export default function AboutPage() {
                                     padding: 1,
                                     textAlign: 'left',
                                     marginTop: 1,
-                                    backgroundColor: '#F8CB00',
+                                    backgroundColor: '#ffccbc',
                                 }}
                             >
                                 <Typography variant="body2" color='black'>The Business School</Typography>
@@ -509,7 +509,7 @@ export default function AboutPage() {
                             maxWidth: {xs: '100%', sm: '45%', md: '30%'}, // Responsive width
                             padding: 2, // Increase padding for bigger boxes
                             border: '1px solid #000',
-                            backgroundColor: '#c5e1a5',
+                            backgroundColor: '#ffccbc',
                         }}
                     >
                         <Box
@@ -529,10 +529,10 @@ export default function AboutPage() {
                                     borderWidth: '2px',
                                     textAlign: 'left',
                                     width: 'fit-content',
-                                    backgroundColor: '#C20F2E',
+                                    backgroundColor: '#ffab91',
                                 }}
                             >
-                                <Typography variant="body1" color="white">
+                                <Typography variant="body1" color="black">
                                     Harry Wong
                                 </Typography>
                             </Box>
@@ -542,7 +542,7 @@ export default function AboutPage() {
                                     padding: 1,
                                     textAlign: 'left',
                                     marginTop: 1,
-                                    backgroundColor: '#F8CB00',
+                                    backgroundColor: '#ffccbc',
                                 }}
                             >
                                 <Typography variant="body2" color='black'>Founder of Beetales</Typography>
