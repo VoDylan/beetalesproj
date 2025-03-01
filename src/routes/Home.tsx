@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
 import CustomCard from "../Components/CustomCard.tsx";
 import Carousel from "../Components/Carousel.tsx";
-// import sprayingPesticide from "../assets/spraying-pesticides.jpg";
+import sprayingPesticide from "../assets/SprayPesticide.jpg";
 
 export default function Home() {
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function Home() {
                     backgroundColor: '#c5e1a5',
                     border: "#000 1px solid"
                 }}>
-                <Typography color='#000000' variant='h1'>
+                <Typography color='#000000' variant='h1' fontWeight={"Geologica"}>
                     The Real Cost of Pesticides
                 </Typography>
             </Box>
@@ -41,7 +41,7 @@ export default function Home() {
                             alignItems: 'center',
                             justifyContent: 'center',
                         }}>
-                            <CustomCard imageUrl={"src/assets/SprayPesticide.jpg"} text={"Why do we use pesticides at the cost of our well being and environment?"}/>
+                            <CustomCard imageUrl={sprayingPesticide as string} text={"Why do we use pesticides at the cost of our well being and environment?"}/>
                         </Box>
                     </Grid>
                     <Grid size={{ xs: 12 }}>
