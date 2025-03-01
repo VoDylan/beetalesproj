@@ -604,7 +604,7 @@ export default function MapPage() {
                    width: '100%',
                    marginTop: "10vh",
                    justifyContent: "center",
-                   aligs: "center"
+                   alignItems: "center"
 
                }}>
             <Box sx={{
@@ -712,7 +712,7 @@ export default function MapPage() {
                 padding: 2,
                 backgroundColor: "#F8CB00",
                 marginTop: 2,
-                width: "90%",
+                width: "100%%",
                 justifyContent: 'center',
                 textAlign: 'center'
 
@@ -739,11 +739,11 @@ export default function MapPage() {
                 padding: 2,
                 backgroundColor: '#F8CB00',
                 marginTop: 2,
-                width: "90%",
+                width: "fit-content",
                 justifyContent: 'center',
                 textAlign: 'center'
             }}>
-                <Typography variant='h5' color={"black"} fontFamily={"Julius Sans One"}>
+                <Typography variant='h5' color={"black"} fontFamily={"Julius Sans One"} >
                     At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take
                     data on bees and other pollinators we picked a flowering plant that either had pollinators around it
                     or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to

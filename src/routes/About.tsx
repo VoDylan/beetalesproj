@@ -162,7 +162,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="src/assets/James_Headshot.JPG"
+                                src="../src/assets/James_Headshot.JPG"
                                 alt="Student 1"
                                 sx={{
                                     width: 80, // Increase image size
@@ -216,7 +216,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="src/assets/Keethu_Headshot.jpg"
+                                src="../src/assets/Keethu_Headshot.jpg"
                                 alt="Student 2"
                                 sx={{
                                     width: 80, // Increase image size
@@ -280,7 +280,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="src/assets/Valli_Headshot.jpeg"
+                                src="../src/assets/Valli_Headshot.jpeg"
                                 alt="Student 3"
                                 sx={{
                                     width: 80, // Increase image size
@@ -333,7 +333,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="src/assets/Dylan_Headshot.jpeg"
+                                src="../src/assets/Dylan_Headshot.jpeg"
                                 alt="Student 4"
                                 sx={{
                                     width: 80, // Increase image size
@@ -525,7 +525,7 @@ export default function AboutPage() {
 
                         <Box
                             component="img"
-                            src="src/assets/Harry_Headshot.JPG"
+                            src="../src/assets/Harry_Headshot.JPG"
                             alt="Sponsor"
                             sx={{
                                 // maxWidth: "100%",
