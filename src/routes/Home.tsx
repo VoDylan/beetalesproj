@@ -4,6 +4,9 @@ import {useNavigate} from "react-router";
 import CustomCard from "../Components/CustomCard.tsx";
 import Carousel from "../Components/Carousel.tsx";
 import sprayingPesticide from "../assets/SprayPesticide.jpg";
+import pesticideWarning from "../assets/pesticide_warning.jpg"
+import deadBees from "../assets/Dead-bees.png"
+import bewareBee from "../assets/BewareBeeSign.jpg"
 
 export default function Home() {
     const navigate = useNavigate();
@@ -59,7 +62,7 @@ export default function Home() {
                                 justifyContent: 'center',
                             }}>
                                 <img
-                                    src="../src/assets/pesticide_warning.jpg"
+                                    src={pesticideWarning as string}
                                     alt="Description"
                                     style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                 />
@@ -75,7 +78,7 @@ export default function Home() {
                                     justifyContent: 'center',
                                 }}>
                                     <img
-                                        src="../src/assets/Dead-bees.png"
+                                        src={deadBees as string}
                                         alt="Description"
                                         style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
@@ -87,7 +90,7 @@ export default function Home() {
                                     justifyContent: 'center',
                                 }}>
                                     <img
-                                        src="../src/assets/BewareBeeSign.jpg"
+                                        src={bewareBee as string}
                                         alt="Description"
                                         style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
