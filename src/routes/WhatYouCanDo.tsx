@@ -7,6 +7,7 @@ import { pdfjs } from "react-pdf";
 import "../index.css"; // Assuming you have a CSS file for styles
 import DownloadIcon from '@mui/icons-material/Download';
 import {Button} from "@mui/material";
+import beePDF from "../assets/BeeWhatIf.pdf"
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -45,7 +46,7 @@ export default function WhatYouCanDo() {
                 Download
             </Button>
             <Document
-                file={"../assets/BeeWhatIf.pdf"}
+                file={beePDF as File}
                 onLoadSuccess={onDocumentLoadSuccess}
                 className="my-react-pdf"
             >

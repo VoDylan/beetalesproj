@@ -1,4 +1,9 @@
 import {Box, Stack, Typography} from "@mui/material";
+import DylanHeadshot from "../assets/Dylan_Headshot.jpeg"
+import JamesHeadshot from "../assets/James_Headshot.png"
+import KeethuHeadshot from "../assets/Keethu_Headshot.jpg"
+import ValliHeadshot from "../assets/Valli_Headshot.jpeg"
+import HarryHeadshot from "../assets/Harry_Headshot.png"
 
 export default function AboutPage() {
     return (
@@ -162,7 +167,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="../assets/James_Headshot.JPG"
+                                src={JamesHeadshot}
                                 alt="Student 1"
                                 sx={{
                                     width: 80, // Increase image size
@@ -216,7 +221,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="../assets/Keethu_Headshot.jpg"
+                                src={KeethuHeadshot}
                                 alt="Student 2"
                                 sx={{
                                     width: 80, // Increase image size
@@ -280,7 +285,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="../assets/Valli_Headshot.jpeg"
+                                src={ValliHeadshot}
                                 alt="Student 3"
                                 sx={{
                                     width: 80, // Increase image size
@@ -333,7 +338,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="../assets/Dylan_Headshot.jpeg"
+                                src={DylanHeadshot}
                                 alt="Student 4"
                                 sx={{
                                     width: 80, // Increase image size
@@ -525,7 +530,7 @@ export default function AboutPage() {
 
                         <Box
                             component="img"
-                            src="../assets/Harry_Headshot.JPG"
+                            src={HarryHeadshot}
                             alt="Sponsor"
                             sx={{
                                 // maxWidth: "100%",
