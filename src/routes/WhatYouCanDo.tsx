@@ -46,7 +46,7 @@ export default function WhatYouCanDo() {
                 Download
             </Button>
             <Document
-                file={beePDF as File}
+                file={beePDF}
                 onLoadSuccess={onDocumentLoadSuccess}
                 className="my-react-pdf"
             >
