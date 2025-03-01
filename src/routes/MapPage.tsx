@@ -4,7 +4,7 @@ import {
     Typography
 } from "@mui/material";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
-import {Icon} from "leaflet"
+import {Icon, LatLngTuple} from "leaflet"
 import "leaflet/dist/leaflet.css";
 import "../mapstyles.css";
 import Grid from '@mui/material/Grid2';
@@ -636,7 +636,7 @@ export default function MapPage() {
                     {markers.map((marker, markerIndex) => (
                         <Marker
                             key={markerIndex}
-                            position={marker.geocode}
+                            position={marker.geocode as LatLngTuple}
                             icon={marker.type === "park" ? parkIcon : hikeIcon}
                         >
                             <Popup>
@@ -646,7 +646,8 @@ export default function MapPage() {
 
                                     // overflow: 'auto',
                                 }}>
-                                    <Typography variant="h6" alignItems={"center"}>{marker.popUp}</Typography>
+                                    <Typography variant="h5" fontFamily={"Geologica"} fontWeight={"bold"} sx={{textAlign: 'center'
+                                    }}>{marker.popUp}</Typography>
                                     <Box sx={{
                                         display: 'flex',
                                         flexDirection: 'row',
