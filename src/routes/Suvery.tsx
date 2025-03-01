@@ -30,8 +30,14 @@ export default function SurveyPage() {
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
-                    backgroundColor: '#F7CE46',
-                }}>
+                    backgroundColor: '#ffe5ed',
+                }}
+            >
+                <Typography color="black">
+                    We initially planned to conduct in-person surveys at parks while collecting data on pollinators. However, due to factors such as distrust of surveys or QR codes, as well as reluctance to participate in surveys or interviews with foreigners, we were unable to gather many responses. As a result, the majority of our data comes from an online form that we shared with local friends around our age whom we met here. They were more responsive to participating in our survey.
+
+                    While this approach introduces sample bias and limits the statistical significance of our data, it still provides valuable insights into public perceptions. Our data suggests that most young people have some understanding of the importance of bees. However, it is important to note that many older individuals may not necessarily share the same perspective.
+                    </Typography>
                 <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"}>
                     The purpose of the survey in our study was to assess public
                     perception of bees and explore the potential root causes behind

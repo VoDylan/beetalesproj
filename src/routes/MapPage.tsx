@@ -621,7 +621,7 @@ export default function MapPage() {
             </Box>
             <Box
                 sx={{
-                    width: "175vh", height: "75%", justifyContent: "center"
+                    width: "100%", height: "75%", justifyContent: "center"
                 }}>
                 <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
                               style={{
