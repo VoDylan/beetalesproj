@@ -12,6 +12,7 @@ import beePDF from "../assets/BeeWhatIf.pdf"
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 export default function WhatYouCanDo() {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [numPages, setNumPages] = useState<number>();
     const [pageNumber] = useState<number>(1);
     // setPageNumber
@@ -52,9 +53,9 @@ export default function WhatYouCanDo() {
             >
                 <Page pageNumber={pageNumber} />
             </Document>
-            <p>
-                Page {pageNumber} of {numPages}
-            </p>
+            {/*<p>*/}
+            {/*    Page {pageNumber} of {numPages}*/}
+            {/*</p>*/}
         </div>
     );
 }
