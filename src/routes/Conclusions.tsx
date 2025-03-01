@@ -7,25 +7,19 @@ export default function ConclusionPage() {
             src: 'src/assets/BeetalesConc.jpg',
             title: 'Beetales',
             description: 'Beetales is a dedicated organization focused on pollinator conservation. They actively rescue bees that have lost their hives and work to educate the public about the vital role bees play in our ecosystem. Through engaging workshops and classes, such as lip balm making using beeswax and mead making with honey, Beetales fosters a deeper understanding and appreciation for these essential pollinators.' ,
-            link: 'https://example.com/image1',
+            link: 'https://www.beetales.com.hk/',
         },
         {
             src: 'src/assets/Kadoorie_Farm.jpg',
             title: 'Kadoorie Farms',
-            description: 'This is a description for Image 2.',
-            link: 'https://example.com/image2',
+            description: 'Kadoorie Farm and Botanic Garden began as an initiative to support farmers in leading independent lives through agricultural aid. Over time, it has expanded its efforts by transforming barren land into thriving forests, which now include mature woodlands throughout its gardens. Today, the organization has become a leading advocate for sustainability, ecosystem restoration, and the conservation of endangered species in Hong Kong and beyond. Their mission remains to achieve sustainable coexistence between humans and nature.',
+            link: 'https://www.kfbg.org/en/',
         },
         {
             src: 'src/assets/Mai_Po.png',
             title: 'Mai Po Wetlands Reserve',
-            description: 'This is a description for Image 3.',
-            link: 'https://example.com/image3',
-        },
-        {
-            src: 'https://via.placeholder.com/300',
-            title: 'Image 4',
-            description: 'This is a description for Image 4.',
-            link: 'https://example.com/image4',
+            description: 'Mai Po Wetland Reserve is run by the WWF and serves to protect the Mai Po Wetlands and maintain the biodiversity of the region. The wetlands are maintained in part because they serve as a major stopover and habitat for over 500 bird species on the East Asian-Australasian Flyway for migration. They believe in preserving the green zones and country parks, as well as improving the parks within the city as well  order to improve the quality of life for the wildlife and humans alike.',
+            link: 'https://www.wwf.org.hk/en/wetlands/booking/?gad_source=1',
         },
     ];
 
@@ -48,7 +42,7 @@ export default function ConclusionPage() {
                         width: '100%', // Ensure the title box spans the full width
                     }}
                 >
-                    <Typography color="black" variant="h4" align="center" sx={{ padding: 2 }}>
+                    <Typography color="black" variant="h4" align="center" fontFamily={"Geologica"}sx={{ padding: 2 }}>
                         Which key environmental and social factors influence pollinator populations across urban, suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced for greater effectiveness?
                     </Typography>
                 </Box>
@@ -81,7 +75,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#f8c2d4',
                         }}
                     >
-                        <Typography color="black" variant="h4">
+                        <Typography color="black" variant="h4" fontFamily={"Geologica"}>
                             Environmental Factors
                         </Typography>
                     </Box>
@@ -111,7 +105,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#f8c2d4',
                         }}
                     >
-                        <Typography color="black" variant="h4">
+                        <Typography color="black" variant="h4" fontFamily={"Geologica"}>
                             Social Factors
                         </Typography>
                     </Box>
@@ -128,6 +122,22 @@ export default function ConclusionPage() {
                         <Typography color="black">
                             People in general are very scared of all insects including bees in Hong Kong. There are also some cultural misconceptions around bees and wasps, and people tend to think that bees are the same as wasps.
                         </Typography>
+                        {/* Image */}
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                justifyContent: 'center', // Center the image horizontally
+                                alignItems: 'center', // Center the image vertically
+                                marginTop: 2, // Add spacing between text and image
+                            }}
+                        >
+                            <img
+                                src="src/assets/wasp_bee.png"
+                                alt="Bees and Wasps"
+                                style={{ maxWidth: '100%', height: 'auto', borderRadius: 8 }} // Adjust image styling
+                            />
+                        </Box>
+
                     </Box>
                 </Grid>
             </Grid>
@@ -143,7 +153,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffab91',
                 }}
             >
-                <Typography color="black" variant="h4">
+                <Typography color="black" variant="h4" fontFamily={"Geologica"}>
                     How to Enhance Conservation Efforts
                 </Typography>
             </Box>
@@ -159,7 +169,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffab91',
                 }}
             >
-                <Typography color="black">For the Law Enforcing Agencies of Hong Kong</Typography>
+                <Typography color="black" fontFamily={"Geologica"}>For the Law Enforcing Agencies of Hong Kong</Typography>
             </Box>
 
             <Box
@@ -174,9 +184,9 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffccbc',
                 }}
             >
-                <Typography>
-                    The law enforcing agencies in Hong Kong that regulate the use of pesticides and decide what should be planted in government areas include but are not limited to...
-                </Typography>
+                <Typography color={'black'}>
+                    The law enforcing agencies in hong kong that regulate the use of pesticides should weigh in the negative impact of pesticides, especially those used for mosquitos on bees and their populations in and around the city even though they are not the target of those pesticides. These pesticides can harm bees and other beneficial insects in the process of keeping mosquitos away. The plants used in parks for landscaping and decoration can also be changed to improve the local biodiversity of the area. This can be through replacing foreign oriental species of plants with those that are local to the area and also attract pollinators. These steps can bring the cities throughout hong kong even closer to coexisting with the natural landscape surrounding them, and in turn help improve the situation of bees in the city.
+                    </Typography>
             </Box>
 
             <Box
@@ -191,7 +201,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffab91',
                 }}
             >
-                <Typography color="black">For Everyone Else Looking to Make a Difference</Typography>
+                <Typography color="black" fontFamily={"Geologica"}>For Everyone Else Looking to Make a Difference</Typography>
             </Box>
 
             <Box
@@ -206,9 +216,9 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffccbc',
                 }}
             >
-                <Typography>
-                    Support the local organizations around you looking to restore the pollinator populations like our sponsor Beetales.
-                </Typography>
+                <Typography color={"black"}>
+                    Even if bees aren’t physically present in everyones lives all the time, they impact our lives indirectly with many products using beeswax and honey as well as bees being the main pollinators of many crops for foods that we eat. This is why we must be mindful of our interactions with bees. In the case that there is a bee hive or swarm of bees, its ok to be scared or frightened. The main choice we need to make, however, is to keep the bees safe from pesticides and prevent anyone from killing them because of fear. This is the only way we can coexist and have a future that is sustainable
+                 </Typography>
             </Box>
 
             <Box sx={{ overflow: 'hidden' }}>
@@ -228,7 +238,7 @@ export default function ConclusionPage() {
                         right: 'calc(-50vw + 50%)', // Adjust for any parent padding
                     }}
                 >
-                    <Typography color="black" variant="h4" sx={{ mb: 2 }}>
+                    <Typography color="black" variant="h4" fontFamily={"Geologica"} sx={{ mb: 2 }}>
                         Explore More About Conservation Efforts in Hong Kong
                     </Typography>
                 </Box>
@@ -236,7 +246,7 @@ export default function ConclusionPage() {
 
             {/* Image Grid */}
             <Box sx={{ flexGrow: 1, padding: 4 }}>
-                <Grid container spacing={4}>
+                <Grid container spacing={3}>
                     {images.map((image, index) => (
                         <Grid size={{xs:12 , sm:6, md:6}}
                             // item xs={12} sm={6} md={6}
