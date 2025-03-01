@@ -7,11 +7,8 @@ import { useState } from "react";
 function Header() {
     const [drawerOpen, setDrawerOpen] = useState(false);
 
-    const toggleDrawer = (open) => (event) => {
-        if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
-            return;
-        }
-        setDrawerOpen(open);
+    const toggleDrawer = (newOpen: boolean) => () => {
+        setDrawerOpen(newOpen);
     };
 
     const drawerContent = (
@@ -22,22 +19,22 @@ function Header() {
             onKeyDown={toggleDrawer(false)}
         >
             <List>
-                <ListItem button component={Link} to="/">
+                <ListItem component={Link} to="/">
                     <ListItemText primary="Home" />
                 </ListItem>
-                <ListItem button component={Link} to="/about">
+                <ListItem component={Link} to="/about">
                     <ListItemText primary="About" />
                 </ListItem>
-                <ListItem button component={Link} to="/mapPage">
+                <ListItem component={Link} to="/mapPage">
                     <ListItemText primary="Map" />
                 </ListItem>
-                <ListItem button component={Link} to="/Database">
+                <ListItem component={Link} to="/Database">
                     <ListItemText primary="Database" />
                 </ListItem>
-                <ListItem button component={Link} to="/conclusions">
+                <ListItem component={Link} to="/conclusions">
                     <ListItemText primary="Conclusions" />
                 </ListItem>
-                <ListItem button component={Link} to="/WhatYouCanDo">
+                <ListItem component={Link} to="/WhatYouCanDo">
                     <ListItemText primary="WhatYouCanDo" />
                 </ListItem>
             </List>

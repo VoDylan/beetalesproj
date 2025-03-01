@@ -44,7 +44,7 @@ export default function WhatYouCanDo({ src }: PdfProps) {
             }}>
                 Download
             </Button>
-            <Document sx={{border: '1px solid #000',}}
+            <Document
                 file={src}
                 onLoadSuccess={onDocumentLoadSuccess}
                 className="my-react-pdf"

@@ -520,12 +520,6 @@ export default function AboutPage() {
                                 height: 120
                             }}
                         />
-                        {/*<Box sx={{*/}
-                        {/*    height: '50%',*/}
-                        {/*    display: 'flex',*/}
-                        {/*}}>*/}
-                        {/*    <img src={"src/assets/Harry_Headshot.JPG"} alt="Description" style={{maxWidth: "100%", height: "100%", objectFit: 'cover', border: '1px solid #000'}}/>*/}
-                        {/*</Box>*/}
                         <Box>
                             <Box
                                 sx={{

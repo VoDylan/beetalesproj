@@ -33,7 +33,7 @@ export default function Home() {
 
             <Box sx={{width: '100%'}}>
                 <Grid container spacing={"1rem"} direction="column" alignItems="center">
-                    <Grid item xs={12}>
+                    <Grid size={{ xs: 12 }}>
                         <Box sx={{
                             width: '100%',
                             height: '100%',
@@ -44,7 +44,7 @@ export default function Home() {
                             <CustomCard imageUrl={"src/assets/SprayPesticide.jpg"} text={"Why do we use pesticides at the cost of our well being and environment?"}/>
                         </Box>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid size={{ xs: 12 }}>
                         <Box sx={{
                             display: 'flex',
                             flexDirection: 'row',

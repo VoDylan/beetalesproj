@@ -35,7 +35,7 @@ export default function ConclusionPage() {
                         padding: 2, // Padding for the content box
                     }}
                 >
-                    <Typography color="black" paragraph>
+                    <Typography color="black">
                         Our research in Hong Kong was focused on addressing the main research
                         question outlined earlier. Prior to arriving, we expected that the majority
                         of our data would be gathered through a survey distributed to local residents.
@@ -48,7 +48,7 @@ export default function ConclusionPage() {
                         large nor diverse enough to be considered conclusive for our analysis.
                     </Typography>
 
-                    <Typography color="black" paragraph>
+                    <Typography color="black">
                         To summarize the rest of our data, however, we found that bees resided more
                         in rural and suburban locations than urban due to the increased number of
                         flowers and other greenery.
@@ -57,7 +57,7 @@ export default function ConclusionPage() {
             </Box>
             <Grid container spacing={2}>
                 {/* Environmental Factors Section */}
-                <Grid item xs={12} sm={6}>
+                <Grid size={{ xs: 12, sm: 6 }}>
                     {/* Title Box 1 */}
                     <Box
                         sx={{
@@ -87,7 +87,7 @@ export default function ConclusionPage() {
                 </Grid>
 
                 {/* Social Factors Section */}
-                <Grid item xs={12} sm={6}>
+                <Grid size={{ xs: 12, sm:6 }}>
                     {/* Title Box 2 */}
                     <Box
                         sx={{

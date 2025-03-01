@@ -1,4 +1,4 @@
-import Slider from 'react-slick';
+import Slider, {Settings} from 'react-slick';
 import { Box, Card, CardMedia} from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import "slick-carousel/slick/slick.css";
@@ -18,7 +18,7 @@ const images = [
 ];
 
 export default function Carousel() {
-    const settings = {
+    const settings: Settings = {
         dots: true,
         infinite: true,
         speed: 500,
@@ -33,9 +33,10 @@ export default function Carousel() {
 
     return (
         <Box sx={{ width: '100%', margin: '0 auto', marginBottom: "1rem" }}>
+            // @ts-ignore
             <Slider {...settings}>
                 {images.map((image, index) => (
-                    <Grid key={index} item xs={12} sm={4} sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Grid key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
                         <Card>
                             <CardMedia
                                 component="img"
