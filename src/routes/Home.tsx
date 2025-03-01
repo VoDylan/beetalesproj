@@ -107,10 +107,10 @@ export default function Home() {
                     marginBottom: "1rem",
                     width: "fit-content",
                 }}>
-                <Typography color="black" variant="h3" fontFamily={"Nunito Sans"}> To ensure the health of ourselves
-                    and
-                    others it's worth asking,
-                    are pesticides really worth it?</Typography>
+                <Typography color="black" variant="h3" fontFamily={"Nunito Sans"}>
+                    {/*To ensure the health of ourselves and others it's worth asking, are pesticides really worth it?*/}
+                    Pesticides destroy living environments pollinators, leading to less food sources declining populations
+                </Typography>
             </Box>
             <Carousel/>
             <Box sx={{
@@ -138,7 +138,9 @@ export default function Home() {
                         sx={{
                             backgroundColor: "#c5e1a5",
                             color: "black",
-                            fontSize: "2rem"
+                            fontSize: "2rem",
+                            border: '1px solid #000',
+                            fontFamily: "Geologica"
 
                         }}>
                     See Map
