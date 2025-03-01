@@ -1,6 +1,3 @@
-// noinspection TypeScriptValidateTypes
-
-import React from 'react';
 import Slider from 'react-slick';
 import { Box, Card, CardMedia} from '@mui/material';
 import Grid from '@mui/material/Grid2';
