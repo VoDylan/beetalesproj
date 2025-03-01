@@ -59,7 +59,7 @@ export default function Home() {
                                 justifyContent: 'center',
                             }}>
                                 <img
-                                    src="../assets/pesticide_warning.jpg"
+                                    src="../src/assets/pesticide_warning.jpg"
                                     alt="Description"
                                     style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                 />
@@ -75,7 +75,7 @@ export default function Home() {
                                     justifyContent: 'center',
                                 }}>
                                     <img
-                                        src="../assets/Dead-bees.png"
+                                        src="../src/assets/Dead-bees.png"
                                         alt="Description"
                                         style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
@@ -87,7 +87,7 @@ export default function Home() {
                                     justifyContent: 'center',
                                 }}>
                                     <img
-                                        src="../assets/BewareBeeSign.jpg"
+                                        src="../src/assets/BewareBeeSign.jpg"
                                         alt="Description"
                                         style={{width: '100%', height: 'auto', objectFit: 'cover'}}
                                     />
