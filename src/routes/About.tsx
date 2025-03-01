@@ -29,9 +29,9 @@ export default function AboutPage() {
 
                     }}
                 >
-                    <Typography variant="h2" color='black' fontFamily={"Geologica"}>Purpose</Typography>
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Purpose</Typography>
                 </Box>
-                <Typography color="black" fontFamily={"Nunito Sans"} variant="h5">
+                <Typography color="black">
                     In completion of the Interactive Qualifying Project at WPI done by students in their
                     junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
                     and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
@@ -62,9 +62,10 @@ export default function AboutPage() {
 
                     }}
                 >
-                    <Typography variant="h2" color='black' fontFamily={"Geologica"}>Research Question</Typography>
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Research
+                        Question</Typography>
                 </Box>
-                <Typography color='black' variant='h5' fontFamily={"Nunito Sans"}>
+                <Typography color='black' variant='h4'>
                     Which key environmental and social factors influence pollinator populations across urban,
                     suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
                     for greater effectiveness?
@@ -101,16 +102,29 @@ export default function AboutPage() {
                     padding: 2, // Add padding to the container
                 }}
             >
-                <Box
-                    sx={{
-                        padding: 2,
-                        width: 'fit-content',
-                        backgroundColor: "#c5e1a5",
-                        textAlign: 'center', // Center text inside the box
-                        border: '1px solid #000',
-                    }}
-                >
-                    <Typography variant="h2" color='black' fontFamily={"Geologica"}>About Us </Typography>
+                {/* Wrapper Box to Ensure Full Width */}
+                <Box sx={{ overflow: 'hidden' }}>
+                    {/* About Us Banner */}
+                    <Box
+                        sx={{
+                            padding: 2, // Padding inside the banner
+                            width: '100vw', // Full viewport width
+                            backgroundColor: '#c5e1a5', // Background color
+                            textAlign: 'center', // Center text inside the banner
+                            border: '0px solid #000', // Border for the banner
+                            display: 'flex', // Use flexbox for alignment
+                            justifyContent: 'center', // Center content horizontally
+                            alignItems: 'center', // Center content vertically
+                            height: 'auto', // Keep the same height as before
+                            position: 'relative', // Required for negative margins
+                            left: 'calc(-50vw + 50%)', // Adjust for any parent padding
+                            right: 'calc(-50vw + 50%)', // Adjust for any parent padding
+                        }}
+                    >
+                        <Typography variant="h2" color="black">
+                            About Us
+                        </Typography>
+                    </Box>
                 </Box>
 
                 {/* Student Boxes */}
@@ -180,7 +194,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
+                                    <Typography variant="body2" color='black'>
                                         Mechanical Engineering Class of 26'
                                     </Typography>
                                 </Box>
@@ -233,7 +247,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
+                                    <Typography variant="body2" color='black'>
                                         Computer Science Class of 26'
                                     </Typography>
                                 </Box>
@@ -297,7 +311,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
+                                    <Typography variant="body2" color='black'>
                                         Biomedical Engineering Class of 26'
                                     </Typography>
                                 </Box>
@@ -350,7 +364,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
+                                    <Typography variant="body2" color='black'>
                                         Computer Science Class of 26'
                                     </Typography>
                                 </Box>
@@ -374,9 +388,9 @@ export default function AboutPage() {
                     padding: 2,
                     width: 'fit-content',
                     backgroundColor: "#c5e1a5",
-                    textAlign: 'center',
+                    textAlign: 'center', // Center text inside the box
                     border: '1px solid #000',}}>
-                    <Typography variant="h3"  sx={{textAlign: 'center'}} color='black' fontFamily={"Geologica"}>
+                    <Typography variant="h3" sx={{textAlign: 'center'}} color='black'>
                         Special Thanks to our Advising Professors and Sponsor
                     </Typography>
 
