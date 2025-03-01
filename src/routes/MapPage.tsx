@@ -604,7 +604,7 @@ export default function MapPage() {
                    width: '100%',
                    marginTop: "10vh",
                    justifyContent: "center",
-                   aligs: "center"
+                   alignItems: "center"
 
                }}>
             <Box sx={{
@@ -621,7 +621,7 @@ export default function MapPage() {
             </Box>
             <Box
                 sx={{
-                    width: "175vh", height: "75%", justifyContent: "center"
+                    width: "100%", height: "75%", justifyContent: "center"
                 }}>
                 <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
                               style={{
@@ -712,7 +712,7 @@ export default function MapPage() {
                 padding: 2,
                 backgroundColor: "#F8CB00",
                 marginTop: 2,
-                width: "90%",
+                width: "100%%",
                 justifyContent: 'center',
                 textAlign: 'center'
 
@@ -739,7 +739,7 @@ export default function MapPage() {
                 padding: 2,
                 backgroundColor: '#F8CB00',
                 marginTop: 2,
-                width: "90%",
+                width: "100%",
                 justifyContent: 'center',
                 textAlign: 'center'
             }}>

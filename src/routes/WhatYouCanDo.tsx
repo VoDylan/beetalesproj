@@ -35,7 +35,7 @@ export default function WhatYouCanDo({ src }: PdfProps) {
             {/*<button className="custom-button" onClick={nextPage} disabled={pageNumber >= (numPages ?? -1)}>*/}
             {/*    Next*/}
             {/*</button>*/}
-            <Button variant="contained" endIcon={<DownloadIcon />}
+            <Button variant="contained" endIcon={<DownloadIcon/>}
                     sx={{
                 backgroundColor: "#c5e1a5",
                 color: "black",
