@@ -33,7 +33,6 @@ export default function Carousel() {
 
     return (
         <Box sx={{ width: '100%', margin: '0 auto', marginBottom: "1rem" }}>
-            // @ts-ignore
             <Slider {...settings}>
                 {images.map((image, index) => (
                     <Grid key={index} sx={{ display: 'flex', justifyContent: 'center' }}>
