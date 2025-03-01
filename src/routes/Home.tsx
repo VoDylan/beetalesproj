@@ -1,6 +1,8 @@
 import {Box, Button, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
+import CustomCard from "../Components/CustomCard.tsx";
+import Carousel from "../Components/Carousel.tsx";
 // import sprayingPesticide from "../assets/spraying-pesticides.jpg";
 
 export default function Home() {
@@ -30,7 +32,7 @@ export default function Home() {
             </Box>
 
             <Box sx={{width: '100%'}}>
-                <Grid container spacing={4} direction="column" alignItems="center">
+                <Grid container spacing={"1rem"} direction="column" alignItems="center">
                     <Grid item xs={12}>
                         <Box sx={{
                             width: '100%',
@@ -39,11 +41,7 @@ export default function Home() {
                             alignItems: 'center',
                             justifyContent: 'center',
                         }}>
-                            <img
-                                src="src/assets/SprayPesticide.jpg"
-                                alt="Description"
-                                style={{width: '100%', height: 'auto', objectFit: 'cover'}}
-                            />
+                            <CustomCard imageUrl={"src/assets/SprayPesticide.jpg"} text={"Why do we use pesticides at the cost of our well being and environment?"}/>
                         </Box>
                     </Grid>
                     <Grid item xs={12}>
@@ -54,7 +52,8 @@ export default function Home() {
                             width: '100%',
                         }}>
                             <Box sx={{
-                                width: '100%',
+                                width: 'stretch',
+                                // height: '100%',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -62,12 +61,15 @@ export default function Home() {
                                 <img
                                     src="src/assets/pesticide_warning.jpg"
                                     alt="Description"
-                                    style={{width: '100%', height: 'auto', objectFit: 'cover'}}
+                                    style={{width: '100%', height: '100%', objectFit: 'cover'}}
                                 />
                             </Box>
-                            <Grid container spacing={1} direction="column" alignItems="end">
+                            <Grid container spacing={1} direction="column" alignItems="stretch"
+                            sx = {{
+                                marginLeft: "1rem"
+                            }}>
                                 <Box sx={{
-                                    width: '85%',
+                                    width: '100%',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -79,7 +81,7 @@ export default function Home() {
                                     />
                                 </Box>
                                 <Box sx={{
-                                    width: '85%',
+                                    width: '100%',
                                     display: 'flex',
                                     alignItems: 'center',
                                     justifyContent: 'center',
@@ -102,25 +104,26 @@ export default function Home() {
                     borderRadius: 1,
                     backgroundColor: '#ffe468',
                     marginTop: "1rem",
-                    marginBottom: "2rem",
+                    marginBottom: "1rem",
                     width: "fit-content",
                 }}>
-                <Typography color="black" variant="h3" fontFamily={"Julius Sans One"}> To ensure the health of ourselves
+                <Typography color="black" variant="h3" fontFamily={"Nunito Sans"}> To ensure the health of ourselves
                     and
                     others it's worth asking,
                     are pesticides really worth it?</Typography>
             </Box>
+            <Carousel/>
             <Box sx={{
                 border: '1px solid #000',
                 padding: 2,
                 backgroundColor: "#c5e1a5",
                 marginTop: 2,
             }}>
-                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
+                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Nunito Sans"}
                             sx={{wordBreak: "break-word"}}>
                     Our study in Hong Kong and what we discovered!
                 </Typography>
-                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}
+                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Nunito Sans"}
                             sx={{wordBreak: "break-word"}}>Click below to see where we found pollinators!
                 </Typography>
 

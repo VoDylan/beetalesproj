@@ -1,8 +1,8 @@
-import {AppBar, Button, Toolbar, Stack, Box, Drawer, List, ListItem, ListItemText, IconButton} from "@mui/material";
+import { AppBar, Button, Toolbar, Stack, Box, Drawer, List, ListItem, ListItemText, IconButton } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import Logo from "../assets/WpiXBeetalesLogo.png";
-import {Link} from "react-router";
-import {useState} from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Header() {
     const [drawerOpen, setDrawerOpen] = useState(false);
@@ -16,29 +16,29 @@ function Header() {
 
     const drawerContent = (
         <Box
-            sx={{width: 250}}
+            sx={{ width: 250 }}
             role="presentation"
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
         >
             <List>
                 <ListItem button component={Link} to="/">
-                    <ListItemText primary="Home"/>
+                    <ListItemText primary="Home" />
                 </ListItem>
                 <ListItem button component={Link} to="/about">
-                    <ListItemText primary="About"/>
+                    <ListItemText primary="About" />
                 </ListItem>
                 <ListItem button component={Link} to="/mapPage">
-                    <ListItemText primary="Map"/>
+                    <ListItemText primary="Map" />
                 </ListItem>
                 <ListItem button component={Link} to="/Database">
-                    <ListItemText primary="Database"/>
+                    <ListItemText primary="Database" />
                 </ListItem>
                 <ListItem button component={Link} to="/conclusions">
-                    <ListItemText primary="Conclusions"/>
+                    <ListItemText primary="Conclusions" />
                 </ListItem>
                 <ListItem button component={Link} to="/WhatYouCanDo">
-                    <ListItemText primary="WhatYouCanDo"/>
+                    <ListItemText primary="WhatYouCanDo" />
                 </ListItem>
             </List>
         </Box>
@@ -53,35 +53,29 @@ function Header() {
                 width: "100%",
                 left: 0,
                 right: 0,
-
             }}
         >
-            <Toolbar sx={{justifyContent: 'space-between', paddingLeft: 2, paddingRight: 2}}>
+            <Toolbar sx={{ justifyContent: 'space-between', paddingLeft: 2, paddingRight: 2 }}>
                 <IconButton
                     edge="start"
                     color="inherit"
                     aria-label="menu"
-                    sx={{display: {xs: 'flex', md: 'none'}}}
+                    sx={{ display: { xs: 'flex', md: 'none' } }}
                     onClick={toggleDrawer(true)}
                 >
-                    <MenuIcon/>
+                    <MenuIcon />
                 </IconButton>
-                <Box display="flex" alignItems="center" sx={{display: {xs: 'none', md: 'flex'}}}>
-                    <img src={Logo as string} alt="Logo" style={{height: '50px', marginRight: '16px'}}/>
+                <Box display="flex" alignItems="center" sx={{ display: { xs: 'none', md: 'flex' } }}>
+                    <img src={Logo as string} alt="Logo" style={{ height: '50px', marginRight: '16px' }} />
                 </Box>
-                <Box sx={{display: {xs: 'none', md: 'flex'}, flexGrow: 1, justifyContent: 'center'}}>
+                <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1, justifyContent: 'center' }}>
                     <Stack direction="row" spacing={2} alignItems="center">
-                        <Button component={Link} to="/" sx={{color: 'black', fontWeight: 'bold'}}>Home</Button>
-                        <Button component={Link} to="/about"
-                                sx={{color: 'black', fontWeight: 'bold'}}>About</Button>
-                        <Button component={Link} to="/mapPage"
-                                sx={{color: 'black', fontWeight: 'bold'}}>Map</Button>
-                        <Button component={Link} to="/Survey"
-                                sx={{color: 'black', fontWeight: 'bold'}}>Survey Data</Button>
-                        <Button component={Link} to="/conclusions"
-                                sx={{color: 'black', fontWeight: 'bold'}}>Conclusions</Button>
-                        <Button component={Link} to="/WhatYouCanDo"
-                                sx={{color: 'black', fontWeight: 'bold'}}>What You Can Do</Button>
+                        <Button component={Link} to="/" sx={{ color: 'black', fontWeight: 'bold' }}>Home</Button>
+                        <Button component={Link} to="/about" sx={{ color: 'black', fontWeight: 'bold' }}>About</Button>
+                        <Button component={Link} to="/mapPage" sx={{ color: 'black', fontWeight: 'bold' }}>Map</Button>
+                        <Button component={Link} to="/Survey" sx={{ color: 'black', fontWeight: 'bold' }}>Survey Data</Button>
+                        <Button component={Link} to="/conclusions" sx={{ color: 'black', fontWeight: 'bold' }}>Conclusions</Button>
+                        <Button component={Link} to="/WhatYouCanDo" sx={{ color: 'black', fontWeight: 'bold' }}>What You Can Do</Button>
                     </Stack>
                 </Box>
                 <Drawer
