@@ -17,11 +17,11 @@ const CustomCard: React.FC<CustomCardProps> = ({ imageUrl, text }) => {
 const styles: { [key: string]: React.CSSProperties } = {
     card: {
         position: 'relative',
-        width: '25%',
-        height: '25%',
+        width: '100%',
+        height: '100%',
         overflow: 'hidden',
-        borderRadius: '10px',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+        // borderRadius: '1px',
+        // boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     },
     image: {
         width: '100%',
@@ -30,14 +30,17 @@ const styles: { [key: string]: React.CSSProperties } = {
     },
     textOverlay: {
         position: 'absolute',
-        top: '50%',
-        left: '50%',
+        top: '25%',
+        left: '75%',
         transform: 'translate(-50%, -50%)',
         color: 'white',
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         padding: '10px 20px',
         borderRadius: '5px',
         textAlign: 'center',
+        fontSize: '28px',
+        fontFamily: "Nunito Sans",
+        fontWeight: 'bold'
     },
 };
 

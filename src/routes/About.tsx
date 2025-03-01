@@ -29,9 +29,9 @@ export default function AboutPage() {
 
                     }}
                 >
-                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Purpose</Typography>
+                    <Typography variant="h2" color='black' fontFamily={"Geologica"}>Purpose</Typography>
                 </Box>
-                <Typography color="black">
+                <Typography color="black" fontFamily={"Nunito Sans"} variant="h5">
                     In completion of the Interactive Qualifying Project at WPI done by students in their
                     junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
                     and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
@@ -62,10 +62,9 @@ export default function AboutPage() {
 
                     }}
                 >
-                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Research
-                        Question</Typography>
+                    <Typography variant="h2" color='black' fontFamily={"Geologica"}>Research Question</Typography>
                 </Box>
-                <Typography color='black' variant='h4'>
+                <Typography color='black' variant='h5' fontFamily={"Nunito Sans"}>
                     Which key environmental and social factors influence pollinator populations across urban,
                     suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
                     for greater effectiveness?
@@ -82,12 +81,10 @@ export default function AboutPage() {
                     backgroundColor: "#dcedc8",
                     border: '1px solid #000',
                 }}>
-                <Typography color='black'>
+                <Typography color='black' fontFamily={"Nunito Sans"} variant="h5">
                     For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this
-                    website
-                    to illustrate our data to help us come to a conclusion about our research question under the
-                    guidance
-                    of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
+                    website to illustrate our data to help us come to a conclusion about our research question under the
+                    guidance of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
                     while trying to get locals to take our survey to collect data on pollinator perception. Based on the
                     results we created a written report and final presentation under the guidance of our advisors to
                     demonstrate the intent methodology and results of our project. Below is more information on us, the
@@ -104,7 +101,6 @@ export default function AboutPage() {
                     padding: 2, // Add padding to the container
                 }}
             >
-                {/* About Us Box */}
                 <Box
                     sx={{
                         padding: 2,
@@ -114,7 +110,7 @@ export default function AboutPage() {
                         border: '1px solid #000',
                     }}
                 >
-                    <Typography variant="h2" color='black'>About Us</Typography>
+                    <Typography variant="h2" color='black' fontFamily={"Geologica"}>About Us </Typography>
                 </Box>
 
                 {/* Student Boxes */}
@@ -171,7 +167,7 @@ export default function AboutPage() {
                                         backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="black">
+                                    <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                         James Gikas
                                     </Typography>
                                 </Box>
@@ -184,7 +180,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black'>
+                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
                                         Mechanical Engineering Class of 26'
                                     </Typography>
                                 </Box>
@@ -224,7 +220,7 @@ export default function AboutPage() {
                                         backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="black">
+                                    <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                         Keerthana Jayamoorthy
                                     </Typography>
                                 </Box>
@@ -237,7 +233,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black'>
+                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
                                         Computer Science Class of 26'
                                     </Typography>
                                 </Box>
@@ -270,7 +266,7 @@ export default function AboutPage() {
                         >
                             <Box
                                 component="img"
-                                src="/path"
+                                src="src/assets/Valli_Headshot.jpeg"
                                 alt="Student 3"
                                 sx={{
                                     width: 80, // Increase image size
@@ -288,7 +284,7 @@ export default function AboutPage() {
                                         backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="black">
+                                    <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                         Valli Velmurugan
                                     </Typography>
                                 </Box>
@@ -301,7 +297,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black'>
+                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
                                         Biomedical Engineering Class of 26'
                                     </Typography>
                                 </Box>
@@ -341,7 +337,7 @@ export default function AboutPage() {
                                         backgroundColor: '#f8c2d4',
                                     }}
                                 >
-                                    <Typography variant="body1" color="black">
+                                    <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                         Dylan Vo
                                     </Typography>
                                 </Box>
@@ -354,7 +350,7 @@ export default function AboutPage() {
                                         backgroundColor: '#ffe5ed',
                                     }}
                                 >
-                                    <Typography variant="body2" color='black'>
+                                    <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>
                                         Computer Science Class of 26'
                                     </Typography>
                                 </Box>
@@ -378,9 +374,9 @@ export default function AboutPage() {
                     padding: 2,
                     width: 'fit-content',
                     backgroundColor: "#c5e1a5",
-                    textAlign: 'center', // Center text inside the box
+                    textAlign: 'center',
                     border: '1px solid #000',}}>
-                    <Typography variant="h3" sx={{textAlign: 'center'}} color='black'>
+                    <Typography variant="h3"  sx={{textAlign: 'center'}} color='black' fontFamily={"Geologica"}>
                         Special Thanks to our Advising Professors and Sponsor
                     </Typography>
 
@@ -430,7 +426,7 @@ export default function AboutPage() {
                                     backgroundColor: '#ffab91',
                                 }}
                             >
-                                <Typography variant="body1" color="black">
+                                <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                     Clare Gillis
                                 </Typography>
                             </Box>
@@ -443,7 +439,7 @@ export default function AboutPage() {
                                     backgroundColor: '#ffccbc',
                                 }}
                             >
-                                <Typography variant="body2" color='black'>The Global School</Typography>
+                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>The Global School</Typography>
                             </Box>
                         </Box>
                     </Box>
@@ -481,7 +477,7 @@ export default function AboutPage() {
                                     backgroundColor: '#ffab91',
                                 }}
                             >
-                                <Typography variant="body1" color="black">
+                                <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                     John Lindholm
                                 </Typography>
                             </Box>
@@ -494,7 +490,7 @@ export default function AboutPage() {
                                     backgroundColor: '#ffccbc',
                                 }}
                             >
-                                <Typography variant="body2" color='black'>The Business School</Typography>
+                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>The Business School</Typography>
                             </Box>
                         </Box>
                     </Box>
@@ -512,13 +508,16 @@ export default function AboutPage() {
                             backgroundColor: '#ffccbc',
                         }}
                     >
+
                         <Box
                             component="img"
                             src="src/assets/Harry_Headshot.JPG"
                             alt="Sponsor"
                             sx={{
-                                width: 80, // Increase image size
-                                height: 80, // Increase image size0%',
+                                // maxWidth: "100%",
+                                // height: "25%",
+                                width: 100,
+                                height: 120
                             }}
                         />
                         <Box>
@@ -532,7 +531,7 @@ export default function AboutPage() {
                                     backgroundColor: '#ffab91',
                                 }}
                             >
-                                <Typography variant="body1" color="black">
+                                <Typography variant="body1" color="black" fontFamily={"Nunito Sans"}>
                                     Harry Wong
                                 </Typography>
                             </Box>
@@ -545,7 +544,7 @@ export default function AboutPage() {
                                     backgroundColor: '#ffccbc',
                                 }}
                             >
-                                <Typography variant="body2" color='black'>Founder of Beetales</Typography>
+                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>Founder of Beetales</Typography>
                             </Box>
                         </Box>
                     </Box>

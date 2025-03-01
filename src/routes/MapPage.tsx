@@ -4,7 +4,7 @@ import {
     Typography
 } from "@mui/material";
 import {MapContainer, TileLayer, Marker, Popup} from "react-leaflet";
-import {Icon} from "leaflet"
+import {Icon, LatLngTuple} from "leaflet"
 import "leaflet/dist/leaflet.css";
 import "../mapstyles.css";
 import Grid from '@mui/material/Grid2';
@@ -604,7 +604,7 @@ export default function MapPage() {
                    width: '100%',
                    marginTop: "10vh",
                    justifyContent: "center",
-                   alignItems: "center"
+                   aligs: "center"
 
                }}>
             <Box sx={{
@@ -636,7 +636,7 @@ export default function MapPage() {
                     {markers.map((marker, markerIndex) => (
                         <Marker
                             key={markerIndex}
-                            position={marker.geocode}
+                            position={marker.geocode as LatLngTuple}
                             icon={marker.type === "park" ? parkIcon : hikeIcon}
                         >
                             <Popup>
@@ -646,7 +646,8 @@ export default function MapPage() {
 
                                     // overflow: 'auto',
                                 }}>
-                                    <Typography variant="h6">{marker.popUp}</Typography>
+                                    <Typography variant="h5" fontFamily={"Geologica"} fontWeight={"bold"} sx={{textAlign: 'center'
+                                    }}>{marker.popUp}</Typography>
                                     <Box sx={{
                                         display: 'flex',
                                         flexDirection: 'row',
@@ -662,33 +663,43 @@ export default function MapPage() {
                                     </Box>
 
                                     <Grid container spacing={0}>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Date: {marker.Date}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Date:</Typography>
+                                            <Typography variant="h6">{marker.Date}</Typography>
                                         </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Flowers Observed: {marker.PlantsSeen}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Bees Per Flower:</Typography>
+                                            <Typography variant="h6">{marker.BeeAverage}</Typography>
                                         </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Pollinators Observed: {marker.Pollinators}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Flowers Observed:</Typography>
+                                            <Typography variant="h6">{marker.PlantsSeen} </Typography>
                                         </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Bee Average: {marker.BeeAverage}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Pollinators Observed:</Typography>
+                                            <Typography variant="h6">{marker.Pollinators}</Typography>
                                         </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Temperature: {marker.Temperature}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Temperature:</Typography>
+                                            <Typography variant="h6">{marker.Temperature}</Typography>
                                         </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Humidity: {marker.Humidity}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Humidity:</Typography>
+                                            <Typography variant="h6">{marker.Humidity}</Typography>
                                         </Grid>
-                                        <Grid item xs={6}>
-                                            <Typography variant="h6">Weather: {marker.Weather}</Typography>
+                                        <Grid size={{ xs: 6 }}>
+                                            <Typography variant="h5" fontWeight={"bold"}>Weather:</Typography>
+                                            <Typography variant="h6">{marker.Weather}</Typography>
                                         </Grid>
                                         {marker.Description && (
-                                            <Grid item xs={12}>
-                                                <Typography variant="h6">Notes: {marker.Description}</Typography>
+                                            <Grid size={{ xs: 12 }}>
+                                                <Typography variant="h5" fontWeight={"bold"}>Notes:</Typography>
+                                                <Typography variant="h6">{marker.Description}</Typography>
                                             </Grid>
                                         )}
                                     </Grid>
+
+
 
                                 </Stack>
                             </Popup>

@@ -19,20 +19,20 @@ function Footer() {
         >
             <Container maxWidth="xl">
                 <Grid container direction="column" alignItems="center">
-                    <Grid item xs={12}>
+                    <Grid size={{xs:12}}>
                         <Typography color="black" variant="h5" align="center" gutterBottom>
-                            This research is taken by students at Worcester Polytechnic Institute for completion of their Interactive Qualifying project and not peer reviewed.
+                            This research is taken by students at Worcester Polytechnic Institute for completion of their Interactive Qualifying Project (IQP) and is not peer reviewed.
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid size={{xs:12}}>
                         <Typography color="black" variant="body1" align="center" gutterBottom>
-                            © 2025 BeeTales. All rights reserved.
+                            © 2025 WPI. All rights reserved.
                         </Typography>
                     </Grid>
-                    <Grid item xs={12}>
+                    <Grid size={{xs:12}}>
                         <Typography color="black" variant="body1" align="center">
                             <Link href="https://www.beetales.com.hk/" color="inherit" underline="always" target="_blank" rel="noopener">
-                                BeeTales
+                                Beetales
                             </Link>
                             {" | "}
                             <Link href="https://www.wpi.edu" color="inherit" underline="always" target="_blank" rel="noopener">

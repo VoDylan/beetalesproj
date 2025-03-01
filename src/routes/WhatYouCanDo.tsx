@@ -5,6 +5,8 @@ import { Document, Page } from "react-pdf";
 import { PdfProps } from "../types";
 import { pdfjs } from "react-pdf";
 import "../index.css"; // Assuming you have a CSS file for styles
+import DownloadIcon from '@mui/icons-material/Download';
+import {Button} from "@mui/material";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
@@ -33,6 +35,15 @@ export default function WhatYouCanDo({ src }: PdfProps) {
             {/*<button className="custom-button" onClick={nextPage} disabled={pageNumber >= (numPages ?? -1)}>*/}
             {/*    Next*/}
             {/*</button>*/}
+            <Button variant="contained" endIcon={<DownloadIcon />}
+                    sx={{
+                backgroundColor: "#c5e1a5",
+                color: "black",
+                fontSize: "1rem",
+                marginBottom: "1rem"
+            }}>
+                Download
+            </Button>
             <Document
                 file={src}
                 onLoadSuccess={onDocumentLoadSuccess}

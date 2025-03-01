@@ -18,7 +18,7 @@ export default function SurveyPage() {
                     marginX: 'auto',
                     backgroundColor: '#c5e1a5',
                 }}>
-                <Typography color='black' variant='h4'>
+                <Typography color='black' variant='h4' fontFamily={"Geologica"}>
                     Purpose of the Survey
                 </Typography>
             </Box>
@@ -32,7 +32,7 @@ export default function SurveyPage() {
                     marginX: 'auto',
                     backgroundColor: '#F7CE46',
                 }}>
-                <Typography color='black'>
+                <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"}>
                     The purpose of the survey in our study was to assess public
                     perception of bees and explore the potential root causes behind
                     these perceptions. Based on our preliminary research, it was
@@ -54,57 +54,140 @@ export default function SurveyPage() {
                     marginX: 'auto',
                     backgroundColor: '#c5e1a5',
                 }}>
-                <Typography color='black' variant='h4'>
+                <Typography color='black' variant='h4' fontFamily={"Geologica"}>
                     Findings
                 </Typography>
             </Box>
-            <Box sx={{ width: '100%' }}>
-                <Grid container spacing={4} alignItems="stretch" columns={2}>
+            <Box sx={{width: '100%'}}>
+                <Grid container spacing={0} alignItems="stretch" columns={2}>
+                    <Box
+                        sx = {{
+                            border: '1px solid #000',
+                            maxWidth: '100%',
+                            width: 'stretch',
+                            backgroundColor: '#c5e1a5',
+                        }}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
+                            Age and Location Demographics
+                        </Typography>
+                    </Box>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46',  border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem" }}>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#F7CE46',
+                            border: '1px solid #000',
+                            paddingLeft: "1rem",
+                            paddingRight: "1rem"
+                        }}>
                             <Typography
                                 variant="h4"
-                                sx={{ fontSize: "2rem", textAlign: 'center',  }}
+                                sx={{fontSize: "2rem", textAlign: 'center',}}
                                 color={'black'}
+                                fontFamily={"Nunito Sans"}
                             >
-                                The majority of our demographic of survey responders tend to be those aged between
-                                18-24, which may influence responses gathered. Responses are also from all over the
-                                country.
+                                The majority of our demographic of survey responders tend to be those aged
+                                between 18-24, which may influence responses gathered. Responses are also from all over
+                                the country.
                             </Typography>
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', backgroundColor: '#292828',  border: '1px solid #000' }}>
-                            <img src={pieChart1} alt="Description" style={{ maxWidth: "100%", height: "auto", objectFit: 'cover' }} />
+                        <Box sx={{height: '100%'}}>
+                            <img src={pieChart1 as string} alt="Description"
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover', border: '1px solid #000'}}/>
                         </Box>
                     </Grid>
+                    <Box
+                        sx = {{
+                            border: '1px solid #000',
+                            maxWidth: '100%',
+                            width: 'stretch',
+                            backgroundColor: '#c5e1a5',
+                            marginTop: "1rem"
+                        }}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
+                            Should bees be allowed to live in the city?
+                        </Typography>
+                    </Box>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#FAE4B3',  border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#FAE4B3',
+                            border: '1px solid #000',
+                            paddingLeft: "1rem",
+                            paddingRight: "1rem"
+                        }}>
                             <Typography
                                 variant="h4"
                                 color={'black'}
-                                sx={{ fontSize: "2rem", textAlign: 'center' }}>
-                                Of these responses, participants strongly agree with the fact that bees have the right to live in cities, and that bee hives in the city should at least be relocated in the city, instead of being removed.
+                                fontFamily={"Nunito Sans"}
+                                sx={{fontSize: "2rem", textAlign: 'center'}}>
+                                Of these responses, participants strongly agree with the fact that bees have the right
+                                to live in cities, and that bee hives in the city should at least be relocated in the
+                                city, instead of being removed.
                             </Typography>
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828',  border: '1px solid #000' }}>
-                            <img src={pieChart2} alt="Description" style={{maxWidth: "100%", height: "auto"}}/>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            border: '1px solid #000'
+                        }}>
+                            <img src={pieChart2 as string} alt="Description" style={{maxWidth: "100%", height: "100%", objectFit: 'cover', border: '1px solid #000'}}/>
                         </Box>
                     </Grid>
+                    <Box
+                        sx = {{
+                            border: '1px solid #000',
+                            maxWidth: '100%',
+                            width: 'stretch',
+                            backgroundColor: '#c5e1a5',
+                            marginTop: "1rem"
+                        }}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
+                            Should Bee Nests be removed once found?
+                        </Typography>
+                    </Box>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#F7CE46',  border: '1px solid #000', paddingLeft: "1rem", paddingRight: "1rem"  }}>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            backgroundColor: '#F7CE46',
+                            border: '1px solid #000',
+                            paddingLeft: "1rem",
+                            paddingRight: "1rem"
+                        }}>
                             <Typography variant="h4"
                                         color={'black'}
-                                        sx={{ fontSize: "2rem", textAlign: 'center' }}>
-                                Even though people agree that bees are important for the city because they are pollinators, that doesnt change the fact that people are still fearful of bees. Taking extreme precautions in the event that they do encounter a bee even though they are not as dangerous as people really percieve them to be.
+                                        fontFamily={"Nunito Sans"}
+                                        sx={{fontSize: "2rem", textAlign: 'center'}}>
+                                Even though people agree that bees are important for the city because they are
+                                pollinators, that doesnt change the fact that people are still fearful of bees. Taking
+                                extreme precautions in the event that they do encounter a bee even though they are not
+                                as dangerous as people really percieve them to be.
                             </Typography>
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{ height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#292828',  border: '1px solid #000' }}>
-                            <img src={pieChart3} alt="Description" style={{maxWidth: "100%", height: "auto"}}/>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            border: '1px solid #000'
+                        }}>
+                            <img src={pieChart3 as string} alt="Description" style={{maxWidth: "100%", height: "100%", objectFit: 'cover', border: '1px solid #000'}}/>
                         </Box>
                     </Grid>
                 </Grid>
