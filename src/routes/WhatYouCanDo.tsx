@@ -2,7 +2,7 @@ import "react-pdf/dist/Page/TextLayer.css";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import { useState } from "react";
 import { Document, Page } from "react-pdf";
-import { PdfProps } from "../types";
+// import { PdfProps } from "../types";
 import { pdfjs } from "react-pdf";
 import "../index.css"; // Assuming you have a CSS file for styles
 import DownloadIcon from '@mui/icons-material/Download';
@@ -10,7 +10,7 @@ import {Button} from "@mui/material";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
-export default function WhatYouCanDo({ src }: PdfProps) {
+export default function WhatYouCanDo() {
     const [numPages, setNumPages] = useState<number>();
     const [pageNumber] = useState<number>(1);
     // setPageNumber
@@ -45,7 +45,7 @@ export default function WhatYouCanDo({ src }: PdfProps) {
                 Download
             </Button>
             <Document
-                file={src}
+                file={"src/assets/BeeWhatIf.pdf"}
                 onLoadSuccess={onDocumentLoadSuccess}
                 className="my-react-pdf"
             >

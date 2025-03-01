@@ -43,7 +43,7 @@ function App() {
             },
             {
                 path: "/WhatYouCanDo",
-                element: <WhatYouCanDo src={"src/assets/BeeWhatIf.pdf"}/>,
+                element: <WhatYouCanDo/>,
             },
         ],
     },
