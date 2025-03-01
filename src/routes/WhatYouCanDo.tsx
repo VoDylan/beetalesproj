@@ -45,7 +45,7 @@ export default function WhatYouCanDo() {
                 Download
             </Button>
             <Document
-                file={"../src/assets/BeeWhatIf.pdf"}
+                file={"../assets/BeeWhatIf.pdf"}
                 onLoadSuccess={onDocumentLoadSuccess}
                 className="my-react-pdf"
             >
