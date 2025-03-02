@@ -1,4 +1,4 @@
-import {Box, Button, Stack, Typography} from "@mui/material";
+import {Box, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
 import CustomCard from "../Components/CustomCard.tsx";
@@ -112,42 +112,28 @@ export default function Home() {
                 }}>
                 <Typography color="black" variant="h3" fontFamily={"Nunito Sans"}>
                     {/*To ensure the health of ourselves and others it's worth asking, are pesticides really worth it?*/}
-                    Pesticides destroy living environments pollinators, leading to less food sources declining populations
+                    Pesticides destroy living environments for pollinators, leading to less food sources declining populations
                 </Typography>
             </Box>
             <Carousel/>
-            <Box sx={{
-                border: '1px solid #000',
-                padding: 2,
-                backgroundColor: "#c5e1a5",
-                marginTop: 2,
-            }}>
-                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Nunito Sans"}
-                            sx={{wordBreak: "break-word"}}>
-                    Our study in Hong Kong and what we discovered!
+            <Box
+                sx={{
+                    border: '1px solid #000',
+                    padding: 2,
+                    backgroundColor: "#c5e1a5",
+                    marginTop: 2,
+                    cursor: 'pointer' // Add a pointer cursor to indicate clickable area
+                }}
+                onClick={handleClick} // Transfer the click functionality
+            >
+                <Typography
+                    variant='h4'
+                    fontStyle={'bold'}
+                    color={"black"}
+                    fontFamily={"Nunito Sans"}
+                >
+                    Click Here to see where we found pollinators in Hong Kong!
                 </Typography>
-                <Typography variant='h3' fontStyle={'bold'} color={"black"} fontFamily={"Nunito Sans"}
-                            sx={{wordBreak: "break-word"}}>Click below to see where we found pollinators!
-                </Typography>
-
-            </Box>
-            <Box sx={{
-                display: 'fit',
-                justifyContent: 'center',
-                marginTop: "1rem",
-
-            }}>
-                <Button variant="contained" onClick={handleClick}
-                        sx={{
-                            backgroundColor: "#c5e1a5",
-                            color: "black",
-                            fontSize: "2rem",
-                            border: '1px solid #000',
-                            fontFamily: "Geologica"
-
-                        }}>
-                    See Map
-                </Button>
             </Box>
         </Stack>
     )

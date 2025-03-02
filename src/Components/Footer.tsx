@@ -21,7 +21,7 @@ function Footer() {
                 <Grid container direction="column" alignItems="center">
                     <Grid size={{xs:12}}>
                         <Typography color="black" variant="h5" align="center" gutterBottom>
-                            This research is taken by students at Worcester Polytechnic Institute for completion of their Interactive Qualifying Project (IQP) and is not peer reviewed.
+                            This research is conducted by students at Worcester Polytechnic Institute for completion of their Interactive Qualifying Project (IQP) and is not peer reviewed.
                         </Typography>
                     </Grid>
                     <Grid size={{xs:12}}>
