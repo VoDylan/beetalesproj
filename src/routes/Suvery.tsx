@@ -1,8 +1,8 @@
 import {Box, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import pieChart1 from "../assets/Q_ Which Hong Kong district do you live in_.png"
+import pieChart1 from "../assets/Q_ What age are you_.png"
 import pieChart2 from "../assets/Q_ I like having bees around and they should be allowed in the ciity.png"
-import pieChart3 from "../assets/Q_ Which Hong Kong district do you live in_.png"
+import pieChart3 from "../assets/Q_ Bee nests should be removed once found.png"
 
 export default function SurveyPage() {
     return (
@@ -110,7 +110,8 @@ export default function SurveyPage() {
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffccbc',
-                            marginTop: "1rem"
+                            marginTop: "1rem",
+                            padding: '1.5rem'
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
                             Should bees be allowed to live in the city?
