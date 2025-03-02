@@ -217,9 +217,9 @@ export default function SurveyPage() {
                     backgroundColor: '#ffe5ed',
                     textAlign: 'left'
                 }}>
-                <Typography color='black' variant='h7' fontFamily={"Abril Fatface"}
+                <Typography color='black' variant='h6' fontFamily={"Abril Fatface"}
                             fontStyle={'italic'}>Disclaimer: </Typography>
-                <Typography color="black" variant='h7' fontFamily={"Nunito Sans"} align="left" fontStyle={'italic'}
+                <Typography color="black" variant='h6' fontFamily={"Nunito Sans"} align="left" fontStyle={'italic'}
                             sx={{
                                 textIndent: '2rem'
                             }}>

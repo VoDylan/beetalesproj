@@ -7,7 +7,6 @@ import sprayingPesticide from "../assets/sprayingPesticides.jpg";
 import pesticideWarning from "../assets/pesticide_warning.jpg"
 import deadBees from "../assets/Dead-bees.png"
 import bewareBee from "../assets/BewareBeeSign.jpg"
-import '@fontsource/abril-fatface';
 
 export default function Home() {
     const navigate = useNavigate();
