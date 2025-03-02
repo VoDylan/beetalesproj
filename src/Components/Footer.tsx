@@ -1,6 +1,5 @@
 import { Box, Container, Typography, Link } from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import "@fontsource/nunito-sans";
 
 function Footer() {
     return (
