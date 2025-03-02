@@ -42,7 +42,7 @@ export default function ConclusionPage() {
                         width: '100%', // Ensure the title box spans the full width
                     }}
                 >
-                    <Typography color="black" variant="h4" align="center" fontFamily={"Geologica"}sx={{ padding: 2 }}>
+                    <Typography color="black" variant="h4" align="center" fontFamily={"Geologica"} sx={{ padding: 2 }}>
                         Which key environmental and social factors influence pollinator populations across urban, suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced for greater effectiveness?
                     </Typography>
                 </Box>
@@ -185,7 +185,7 @@ export default function ConclusionPage() {
                 }}
             >
                 <Typography color={'black'}>
-                    The law enforcing agencies in hong kong that regulate the use of pesticides should weigh in the negative impact of pesticides, especially those used for mosquitos on bees and their populations in and around the city even though they are not the target of those pesticides. These pesticides can harm bees and other beneficial insects in the process of keeping mosquitos away. The plants used in parks for landscaping and decoration can also be changed to improve the local biodiversity of the area. This can be through replacing foreign oriental species of plants with those that are local to the area and also attract pollinators. These steps can bring the cities throughout hong kong even closer to coexisting with the natural landscape surrounding them, and in turn help improve the situation of bees in the city.
+                    The law enforcing agencies in hong kong that regulate the use of pesticides should weigh in the negative impact of pesticides, especially those used for mosquitos on bees and their populations in and around the city even though they are not the target of those pesticides. These pesticides can harm bees and other beneficial insects in the process of keeping mosquitos away. The plants used in parks for landscaping and decoration can also be changed to improve the local biodiversity of the area. This can be through replacing foreign oriental species of plants with those that are local to the area and also attract pollinators. These steps can bring the cities throughout hong kong even closer to coexisting with the natural landscape surrounding them, and in turn help improve the situation of bees in the city.
                     </Typography>
             </Box>
 
