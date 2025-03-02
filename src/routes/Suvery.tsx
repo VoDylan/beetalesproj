@@ -40,6 +40,44 @@ export default function SurveyPage() {
                 </Typography>
             </Box>
 
+
+            <Box
+                sx={{
+                    padding: 2,
+                    maxWidth: '100%',
+                    width: 'fit-content',
+                    marginX: 'auto',
+                    backgroundColor: '#ffe5ed',
+                }}
+            >
+                <Box
+                    sx={{
+                        padding: 2,
+                        maxWidth: '100%',
+                        marginX: 'auto',
+                    }}>
+                    <Typography color='black' variant='h2' align={'left'} fontFamily={"Bree Serif"}>Survey Purpose
+                    </Typography>
+                </Box>
+
+                <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"} align={"left"}
+                            sx={{
+                                paddingLeft: '1.1rem',
+                                paddingRight: '1.1rem',
+                                textIndent: '2rem'
+                            }}>
+                    The purpose of the survey in our study was to assess public
+                    perception of bees and explore the potential root causes behind
+                    these perceptions. Based on our preliminary research, it was
+                    evident that bees are not viewed favorably in urban areas
+                    like Hong Kong, where people are less accustomed to insects
+                    and often fear them. This observation aligned with our findings,
+                    such as the frequent presence of prominent pesticide warning
+                    signs throughout the city, which further highlighted the
+                    negative attitudes toward insects like bees.
+                </Typography>
+            </Box>
+
             <Box
                 sx={{
                     padding: 2,
@@ -129,47 +167,7 @@ export default function SurveyPage() {
             </Box>
 
 
-            <Box
-                sx={{
-                    padding: 2,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: '#c5e1a5',
-                }}>
-                <Typography color='black' variant='h2' fontFamily={"Bree Serif"}>Survey Purpose
-                </Typography>
-            </Box>
-            <Box
-                sx={{
-                    padding: 2,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: '#ffe5ed',
-                    textAlign: "left"
-                }}
-            >
 
-                <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"} align={"left"}
-                            sx={{
-                                paddingLeft: '1.1rem',
-                                paddingRight: '1.1rem',
-                                textIndent: '2rem'
-                            }}>
-                    The purpose of the survey in our study was to assess public
-                    perception of bees and explore the potential root causes behind
-                    these perceptions. Based on our preliminary research, it was
-                    evident that bees are not viewed favorably in urban areas
-                    like Hong Kong, where people are less accustomed to insects
-                    and often fear them. This observation aligned with our findings,
-                    such as the frequent presence of prominent pesticide warning
-                    signs throughout the city, which further highlighted the
-                    negative attitudes toward insects like bees.
-                </Typography>
-            </Box>
 
             <Box sx={{width: '100%'}}>
                 <Box
