@@ -3,7 +3,7 @@ import Grid from '@mui/material/Grid2';
 import {useNavigate} from "react-router";
 import CustomCard from "../Components/CustomCard.tsx";
 import Carousel from "../Components/Carousel.tsx";
-import sprayingPesticide from "../assets/SprayPesticide.jpg";
+import sprayingPesticide from "../assets/sprayingPesticides.jpg";
 import pesticideWarning from "../assets/pesticide_warning.jpg"
 import deadBees from "../assets/Dead-bees.png"
 import bewareBee from "../assets/BewareBeeSign.jpg"
@@ -51,7 +51,6 @@ export default function Home() {
                         <Box sx={{
                             display: 'flex',
                             flexDirection: 'row',
-                            // justifyContent: 'space-between',
                             width: '100%',
                         }}>
                             <Box sx={{

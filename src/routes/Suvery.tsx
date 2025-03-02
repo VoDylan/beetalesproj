@@ -28,7 +28,7 @@ export default function SurveyPage() {
                     width: 'fit-content',
                     marginX: 'auto',
                     backgroundColor: '#ffe5ed',
-                    textAlign:"left"
+                    textAlign: "left"
                 }}
             >
 
@@ -70,7 +70,7 @@ export default function SurveyPage() {
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffab91',
-                            padding: '1.5rem'
+                            padding: "2rem"
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
                             Age and Location Demographics
@@ -79,17 +79,20 @@ export default function SurveyPage() {
                     <Grid size={1}>
                         <Box sx={{
                             height: '100%',
+                            width: '100%',
                             display: 'flex',
                             backgroundColor: '#ffab91',
                             paddingLeft: "1rem",
-                            paddingRight: "1rem",
-                            textAlign: "right"
+                            paddingRight: "1rem"
                         }}>
                             <Typography
                                 variant="h4"
-                                sx={{fontSize: "2rem", textAlign: 'left',
+                                sx={{
+                                    fontSize: "2rem",
+                                    textAlign: 'left',
                                     padding: '1.1rem',
-                                    textIndent: '2rem'}}
+                                    textIndent: '2rem'
+                                }}
                                 color={'black'}
                                 fontFamily={"Nunito Sans"}
                             >
@@ -100,9 +103,14 @@ export default function SurveyPage() {
                         </Box>
                     </Grid>
                     <Grid size={1}>
-                        <Box sx={{height: '100%'}}>
+                        <Box sx={{
+                            height: '100%',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }}>
                             <img src={pieChart1 as string} alt="Description"
-                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover',}}/>
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover', paddingLeft: "1.5rem"}}/>
                         </Box>
                     </Grid>
                     <Box
@@ -110,7 +118,6 @@ export default function SurveyPage() {
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffccbc',
-                            marginTop: "1rem",
                             padding: '1.5rem'
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
@@ -120,6 +127,7 @@ export default function SurveyPage() {
                     <Grid size={1}>
                         <Box sx={{
                             height: '100%',
+                            width: '100%',
                             display: 'flex',
                             backgroundColor: '#ffccbc',
                             paddingLeft: "1rem",
@@ -129,9 +137,11 @@ export default function SurveyPage() {
                                 variant="h4"
                                 color={'black'}
                                 fontFamily={"Nunito Sans"}
-                                    sx={{fontSize: "2rem", textAlign: 'left',
-                                        padding: '1.1rem',
-                                        textIndent: '2rem'}}>
+                                sx={{
+                                    fontSize: "2rem", textAlign: 'left',
+                                    padding: '1.1rem',
+                                    textIndent: '2rem'
+                                }}>
                                 Of these responses, participants strongly agree with the fact that bees have the right
                                 to live in cities, and that bee hives in the city should at least be relocated in the
                                 city, instead of being removed.
@@ -143,10 +153,10 @@ export default function SurveyPage() {
                             height: '100%',
                             display: 'flex',
                             alignItems: 'center',
-                            justifyContent: 'center',
+                            justifyContent: 'center'
                         }}>
                             <img src={pieChart2 as string} alt="Description"
-                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover'}}/>
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover', paddingLeft: "1.5rem"}}/>
                         </Box>
                     </Grid>
                     <Box
@@ -154,7 +164,7 @@ export default function SurveyPage() {
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffab91',
-                            marginTop: "1rem"
+                            padding: "2rem"
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
                             Should Bee Nests be removed once found?
@@ -171,9 +181,11 @@ export default function SurveyPage() {
                             <Typography variant="h4"
                                         color={'black'}
                                         fontFamily={"Nunito Sans"}
-                                        sx={{fontSize: "2rem", textAlign: 'left',
+                                        sx={{
+                                            fontSize: "2rem", textAlign: 'left',
                                             padding: '1.1rem',
-                                            textIndent: '2rem'}}>
+                                            textIndent: '2rem'
+                                        }}>
                                 Even though people agree that bees are important for the city because they are
                                 pollinators, that doesnt change the fact that people are still fearful of bees. Taking
                                 extreme precautions in the event that they do encounter a bee even though they are not
