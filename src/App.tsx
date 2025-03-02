@@ -7,7 +7,7 @@ import Conclusions from "./routes/Conclusions.tsx";
 import Survey from "./routes/Suvery.tsx";
 import WhatYouCanDo from "./routes/WhatYouCanDo.tsx";
 import ScrollToTop from './Components/ScrollToTop.tsx'
-import '@fontsource/abril-fatface';
+// import '@fontsource/abril-fatface';
 import {
     createBrowserRouter,
     RouterProvider,
