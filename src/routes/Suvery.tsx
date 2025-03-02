@@ -1,8 +1,8 @@
 import {Box, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
-import pieChart1 from "../assets/BeetalesAge.png"
-import pieChart2 from "../assets/BeetalesCity.png"
-import pieChart3 from "../assets/BeetalesNests.png"
+import pieChart1 from "../assets/Q_ Which Hong Kong district do you live in_.png"
+import pieChart2 from "../assets/Q_ I like having bees around and they should be allowed in the ciity.png"
+import pieChart3 from "../assets/Q_ Which Hong Kong district do you live in_.png"
 
 export default function SurveyPage() {
     return (
@@ -33,11 +33,35 @@ export default function SurveyPage() {
                     backgroundColor: '#ffe5ed',
                 }}
             >
-                <Typography color="black">
-                    We initially planned to conduct in-person surveys at parks while collecting data on pollinators. However, due to factors such as distrust of surveys or QR codes, as well as reluctance to participate in surveys or interviews with foreigners, we were unable to gather many responses. As a result, the majority of our data comes from an online form that we shared with local friends around our age whom we met here. They were more responsive to participating in our survey.
+                <Box
+                    sx = {{
+                        border: '1px solid #000',
+                        padding: 2,
+                        marginBottom: 2,
+                        maxWidth: '100%',
+                        width: 'fit-content',
+                        marginX: 'auto',
+                        backgroundColor: '#ffe5ed'
+                    }}>
+                    <Box
+                        sx = {{
+                            border: '1px solid #000',
+                            padding: 2,
+                            marginBottom: 2,
+                            maxWidth: '100%',
+                            width: 'fit-content',
+                            marginX: 'auto',
+                            backgroundColor: '#f8c2d4'
+                        }}>
+                        <Typography color='black' variant='h4' fontFamily={"Geologica"}> Disclaimer</Typography>
+                    </Box>
+                    <Typography color="black">
+                        We initially planned to conduct in-person surveys at parks while collecting data on pollinators. However, due to factors such as distrust of surveys or QR codes, as well as reluctance to participate in surveys or interviews with foreigners, we were unable to gather many responses. As a result, the majority of our data comes from an online form that we shared with local friends around our age whom we met here. They were more responsive to participating in our survey.
 
-                    While this approach introduces sample bias and limits the statistical significance of our data, it still provides valuable insights into public perceptions. Our data suggests that most young people have some understanding of the importance of bees. However, it is important to note that many older individuals may not necessarily share the same perspective.
+                        While this approach introduces sample bias and limits the statistical significance of our data, it still provides valuable insights into public perceptions. Our data suggests that most young people have some understanding of the importance of bees. However, it is important to note that many older individuals may not necessarily share the same perspective.
                     </Typography>
+                </Box>
+
                 <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"}>
                     The purpose of the survey in our study was to assess public
                     perception of bees and explore the potential root causes behind
@@ -71,7 +95,7 @@ export default function SurveyPage() {
                             border: '1px solid #000',
                             maxWidth: '100%',
                             width: 'stretch',
-                            backgroundColor: '#c5e1a5',
+                            backgroundColor: '#ffab91',
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
                             Age and Location Demographics
@@ -83,7 +107,7 @@ export default function SurveyPage() {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#F7CE46',
+                            backgroundColor: '#ffab91',
                             border: '1px solid #000',
                             paddingLeft: "1rem",
                             paddingRight: "1rem"
@@ -111,7 +135,7 @@ export default function SurveyPage() {
                             border: '1px solid #000',
                             maxWidth: '100%',
                             width: 'stretch',
-                            backgroundColor: '#c5e1a5',
+                            backgroundColor: '#ffccbc',
                             marginTop: "1rem"
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
@@ -124,7 +148,7 @@ export default function SurveyPage() {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#FAE4B3',
+                            backgroundColor: '#ffccbc',
                             border: '1px solid #000',
                             paddingLeft: "1rem",
                             paddingRight: "1rem"
@@ -156,7 +180,7 @@ export default function SurveyPage() {
                             border: '1px solid #000',
                             maxWidth: '100%',
                             width: 'stretch',
-                            backgroundColor: '#c5e1a5',
+                            backgroundColor: '#ffab91',
                             marginTop: "1rem"
                         }}>
                         <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
@@ -169,7 +193,7 @@ export default function SurveyPage() {
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
-                            backgroundColor: '#F7CE46',
+                            backgroundColor: '#ffab91',
                             border: '1px solid #000',
                             paddingLeft: "1rem",
                             paddingRight: "1rem"
