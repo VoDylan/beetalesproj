@@ -22,7 +22,7 @@ export default function WhatYouCanDo() {
 
     function downloadPDF() {
         const link = document.createElement('a');
-        link.href = {beePDF};
+        link.href = beePDF;
         link.download = 'BeeWhatIf.pdf';
         document.body.appendChild(link);
         link.click();
