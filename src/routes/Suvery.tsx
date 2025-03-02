@@ -110,7 +110,7 @@ export default function SurveyPage() {
                             justifyContent: 'center'
                         }}>
                             <img src={pieChart1 as string} alt="Description"
-                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover', paddingLeft: "1.5rem"}}/>
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'fill', paddingLeft: "1.5rem"}}/>
                         </Box>
                     </Grid>
                     <Box
@@ -156,7 +156,7 @@ export default function SurveyPage() {
                             justifyContent: 'center'
                         }}>
                             <img src={pieChart2 as string} alt="Description"
-                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover', paddingLeft: "1.5rem"}}/>
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'fill', paddingLeft: "1.5rem"}}/>
                         </Box>
                     </Grid>
                     <Box
@@ -201,7 +201,7 @@ export default function SurveyPage() {
                             justifyContent: 'center',
                         }}>
                             <img src={pieChart3 as string} alt="Description"
-                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover'}}/>
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'fill'}}/>
                         </Box>
                     </Grid>
                 </Grid>
