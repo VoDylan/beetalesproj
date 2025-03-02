@@ -678,18 +678,18 @@ export default function MapPage() {
                                             </Grid>
                                         </Grid>
                                         <Grid container alignItems="center" size={{ xs: 12 }}>
-                                            <Grid size={{ xs: 6 }}>
+                                            <Grid size={{ xs: 9 }}>
                                                 <Typography variant="h6" fontFamily={"Nunito Sans"} fontSize={"1"} fontWeight={"bold"} align="left">Flowers Observed:</Typography>
                                             </Grid>
-                                            <Grid size={{ xs: 6 }}>
+                                            <Grid size={{ xs: 3 }}>
                                                 <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.PlantsSeen}</Typography>
                                             </Grid>
                                         </Grid>
                                         <Grid container alignItems="center" size={{ xs: 12 }}>
-                                            <Grid size={{ xs: 6 }}>
+                                            <Grid size={{ xs: 9 }}>
                                                 <Typography variant="h6" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Pollinators Observed:</Typography>
                                             </Grid>
-                                            <Grid size={{ xs: 6 }}>
+                                            <Grid size={{ xs: 3 }}>
                                                 <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.Pollinators}</Typography>
                                             </Grid>
                                         </Grid>

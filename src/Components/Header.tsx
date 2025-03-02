@@ -13,7 +13,7 @@ function Header() {
 
     const drawerContent = (
         <Box
-            sx={{ width: 250 }}
+            sx={{ width: '50%' }}
             role="presentation"
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
@@ -28,8 +28,8 @@ function Header() {
                 <ListItem component={Link} to="/mapPage">
                     <ListItemText primary="Map" />
                 </ListItem>
-                <ListItem component={Link} to="/Database">
-                    <ListItemText primary="Database" />
+                <ListItem component={Link} to="/Survey">
+                    <ListItemText primary="Survey" />
                 </ListItem>
                 <ListItem component={Link} to="/conclusions">
                     <ListItemText primary="Conclusions" />
