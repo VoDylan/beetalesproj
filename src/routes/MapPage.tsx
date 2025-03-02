@@ -607,7 +607,6 @@ export default function MapPage() {
 
                }}>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
                 backgroundColor: '#c5e1a5',
                 marginTop: 2,
@@ -742,9 +741,8 @@ export default function MapPage() {
                 </MapContainer>
             </Box>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
-                backgroundColor: "#F8CB00",
+                backgroundColor: "#ffe468",
                 marginTop: 2,
                 width: "100%%",
                 justifyContent: 'center',
@@ -758,7 +756,6 @@ export default function MapPage() {
                 </Typography>
             </Box>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
                 backgroundColor: '#c5e1a5',
                 marginTop: 2,
@@ -769,9 +766,8 @@ export default function MapPage() {
                 </Typography>
             </Box>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
-                backgroundColor: '#F8CB00',
+                backgroundColor: '#ffe468',
                 marginTop: 2,
                 width: "fit-content",
                 justifyContent: 'center',

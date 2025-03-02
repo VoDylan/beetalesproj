@@ -27,9 +27,8 @@ export default function Home() {
                     marginBottom: "2rem",
                     borderRadius: "0",
                     backgroundColor: '#c5e1a5',
-                    border: "#000 1px solid"
                 }}>
-                <Typography color='#000000' variant='h1' fontWeight={"Geologica"}>
+                <Typography color='#000000' variant='h1' fontFamily={"Geologica"}>
                     The Real Cost of Pesticides
                 </Typography>
             </Box>
@@ -102,7 +101,6 @@ export default function Home() {
             </Box>
             <Box
                 sx={{
-                    border: '1px solid #000',
                     padding: 2,
                     borderRadius: 1,
                     backgroundColor: '#ffe468',
@@ -118,7 +116,6 @@ export default function Home() {
             <Carousel/>
             <Box
                 sx={{
-                    border: '1px solid #000',
                     padding: 2,
                     backgroundColor: "#c5e1a5",
                     marginTop: 2,
