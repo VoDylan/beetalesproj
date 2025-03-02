@@ -4,6 +4,7 @@ import JamesHeadshot from "../assets/James_Headshot.png"
 import KeethuHeadshot from "../assets/Keethu_Headshot.jpg"
 import ValliHeadshot from "../assets/Valli_Headshot.jpeg"
 import HarryHeadshot from "../assets/Harry_Headshot.png"
+import ClareHeadshot from "../assets/Clare_Headshot.jpg"
 
 export default function AboutPage() {
     return (
@@ -27,7 +28,7 @@ export default function AboutPage() {
                     }}
                 >
                     <Typography variant="h2" align="left" color='black'
-                                style={{fontFamily: 'Geologica'}}>Purpose</Typography>
+                                style={{fontFamily: 'Abril Fatface'}}>Purpose</Typography>
                 </Box>
                 <Typography color="black"
                             align="left"
@@ -62,7 +63,7 @@ export default function AboutPage() {
                         alignSelf: 'auto',
                     }}
                 >
-                    <Typography variant="h2" color='black' style={{fontFamily: 'Geologica'}}>Research
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Abril Fatface'}}>Research
                         Question</Typography>
                 </Box>
                 <Typography color='black' variant='h5'
@@ -96,7 +97,7 @@ export default function AboutPage() {
                     }}
                 >
                     <Typography variant="h2" color='black'
-                                style={{fontFamily: 'Geologica'}}>Methodology</Typography>
+                                style={{fontFamily: 'Abril Fatface'}}>Methodology</Typography>
                 </Box>
                 <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
                             sx={{
@@ -106,12 +107,11 @@ export default function AboutPage() {
                             }}>
                     For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this
                     website to illustrate our data to help us come to a conclusion about our research question under the
-                    guidance of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks
+                    guidance of our sponsor. The first 4 weeks were spent collecting data on pollinator presence in parks
                     and hikes
                     while trying to get locals to take our survey to collect data on pollinator perception. Based on the
                     results we created a written report and final presentation under the guidance of our advisors to
-                    demonstrate the intent methodology and results of our project. Below is more information on us, the
-                    students who worked on this project, and our advisors and sponsor who guided us.
+                    demonstrate the intent methodology and results of our project.
                 </Typography>
             </Box>
 
@@ -143,7 +143,7 @@ export default function AboutPage() {
                             right: 'calc(-50vw + 50%)', // Adjust for any parent padding
                         }}
                     >
-                        <Typography variant="h2" color="black" style={{fontFamily: 'Geologica'}}>
+                        <Typography variant="h2" color="black" style={{fontFamily: 'Abril Fatface'}}>
                             About Us
                         </Typography>
                     </Box>
@@ -412,7 +412,7 @@ export default function AboutPage() {
                 {/*    backgroundColor: "#c5e1a5",*/}
                 {/*    textAlign: 'center', // Center text inside the box*/}
                 {/*}}>*/}
-                {/*    <Typography variant="h2" sx={{textAlign: 'center'}} color='black' fontFamily="Geologica">*/}
+                {/*    <Typography variant="h2" sx={{textAlign: 'center'}} color='black' fontFamily="Abril Fatface">*/}
                 {/*        Special Thanks to our Advising Professors and Sponsor*/}
                 {/*    </Typography>*/}
                 {/*</Box>*/}
@@ -443,7 +443,7 @@ export default function AboutPage() {
                     >
                         <Box
                             component="img"
-                            src="/path"
+                            src={ClareHeadshot}
                             alt="Advisor 1"
                             sx={{
                                 width: 80, // Increase image size

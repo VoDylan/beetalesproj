@@ -244,7 +244,7 @@ export default function MapPage() {
             popUp: "Kowloon Bird Park",
             Pollinators: "37",
             PlantsSeen: "15",
-            BeeAverage: "2.466666667",
+            BeeAverage: "2.467",
             Temperature: "18C",
             Humidity: "61%",
             Weather: "Cloudy",
@@ -612,7 +612,7 @@ export default function MapPage() {
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"}
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily="Abril Fatface"
                 >
                     Our Observations of Pollinators in Hong Kong
                 </Typography>
@@ -749,11 +749,13 @@ export default function MapPage() {
                 textAlign: 'center'
 
             }}>
-                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
-                    This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on, its not a
-                    conclusive map that shows all the places that bees and other pollinators reside in Hong Kong but
-                    instead just the places the four of us have observed bees and other pollinators.
+                <Typography variant='h4' fontStyle={'bold'} color={"black"} align="left" fontFamily={"Nunito Sans"} sx={{
+                    padding: '1.1rem',
+                    textIndent: '2rem'
+                }}>
+                    This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on. This map shows all the places that we have seen bees and other pollinators reside in Hong Kong and is not a conclsive map.
                 </Typography>
+
             </Box>
             <Box sx={{
                 padding: 2,
@@ -761,7 +763,7 @@ export default function MapPage() {
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Abril Fatface"}>
                     Methodology for Data Collection
                 </Typography>
             </Box>
@@ -773,13 +775,15 @@ export default function MapPage() {
                 justifyContent: 'center',
                 textAlign: 'center'
             }}>
-                <Typography variant='h5' color={"black"} fontFamily={"Julius Sans One"} >
+                <Typography variant='h5' color={"black"} fontFamily={"Nunito Sans"} align="left" sx={{
+                    padding: '1.1rem',
+                    textIndent: '2rem'
+                }}>
                     At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take
                     data on bees and other pollinators we picked a flowering plant that either had pollinators around it
                     or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to
                     the plant and wrote down the number, frequency of visits, and the weather directly above the plant
-                    (sun, partial shade, or shade). We tried to do five flowers for park but if we couldn’t find 5
-                    different flower species we just took data on the as many different flowers we could find.
+                    (sun, partial shade, or shade). The goal was to collect data on five flowers per location.
                 </Typography>
             </Box>
         </Stack>

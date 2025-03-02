@@ -1,5 +1,6 @@
 import { Box, Container, Typography, Link } from "@mui/material";
 import Grid from '@mui/material/Grid2';
+import "@fontsource/nunito-sans";
 
 function Footer() {
     return (
@@ -20,17 +21,17 @@ function Footer() {
             <Container maxWidth="xl">
                 <Grid container direction="column" alignItems="center">
                     <Grid size={{xs:12}}>
-                        <Typography color="black" variant="h5" align="center" gutterBottom>
+                        <Typography color="black" variant="h5" align="center" gutterBottom fontFamily="Nunito Sans">
                             This research is conducted by students at Worcester Polytechnic Institute for completion of their Interactive Qualifying Project (IQP) and is not peer reviewed.
                         </Typography>
                     </Grid>
                     <Grid size={{xs:12}}>
-                        <Typography color="black" variant="body1" align="center" gutterBottom>
+                        <Typography color="black" variant="body1" align="center" gutterBottom fontFamily="Nunito Sans">
                             © 2025 WPI. All rights reserved.
                         </Typography>
                     </Grid>
                     <Grid size={{xs:12}}>
-                        <Typography color="black" variant="body1" align="center">
+                        <Typography color="black" variant="body1" align="center" fontFamily="Nunito Sans">
                             <Link href="https://www.beetales.com.hk/" color="inherit" underline="always" target="_blank" rel="noopener">
                                 Beetales
                             </Link>

@@ -7,6 +7,7 @@ import sprayingPesticide from "../assets/SprayPesticide.jpg";
 import pesticideWarning from "../assets/pesticide_warning.jpg"
 import deadBees from "../assets/Dead-bees.png"
 import bewareBee from "../assets/BewareBeeSign.jpg"
+import '@fontsource/abril-fatface';
 
 export default function Home() {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ export default function Home() {
                     borderRadius: "0",
                     backgroundColor: '#c5e1a5',
                 }}>
-                <Typography color='#000000' variant='h1' fontFamily={"Geologica"}>
+                <Typography color='#000000' variant='h1' fontFamily={"Abril Fatface"}>
                     The Real Cost of Pesticides
                 </Typography>
             </Box>

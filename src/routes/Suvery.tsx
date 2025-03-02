@@ -16,7 +16,7 @@ export default function SurveyPage() {
                     marginX: 'auto',
                     backgroundColor: '#c5e1a5',
                 }}>
-                <Typography color='black' variant='h4' fontFamily={"Geologica"}>
+                <Typography color='black' variant='h4' fontFamily={"Abril Fatface"}>
                     Purpose of the Survey
                 </Typography>
             </Box>
@@ -28,38 +28,17 @@ export default function SurveyPage() {
                     width: 'fit-content',
                     marginX: 'auto',
                     backgroundColor: '#ffe5ed',
+                    textAlign:"left"
                 }}
             >
-                <Box
-                    sx = {{
-                        border: '1px solid #000',
-                        padding: 2,
-                        marginBottom: 2,
-                        maxWidth: '100%',
-                        width: 'fit-content',
-                        marginX: 'auto',
-                        backgroundColor: '#ffe5ed'
-                    }}>
-                    <Box
-                        sx = {{
-                            border: '1px solid #000',
-                            padding: 2,
-                            marginBottom: 2,
-                            maxWidth: '100%',
-                            width: 'fit-content',
-                            marginX: 'auto',
-                            backgroundColor: '#f8c2d4'
-                        }}>
-                        <Typography color='black' variant='h4' fontFamily={"Geologica"}> Disclaimer</Typography>
-                    </Box>
-                    <Typography color="black">
-                        We initially planned to conduct in-person surveys at parks while collecting data on pollinators. However, due to factors such as distrust of surveys or QR codes, as well as reluctance to participate in surveys or interviews with foreigners, we were unable to gather many responses. As a result, the majority of our data comes from an online form that we shared with local friends around our age whom we met here. They were more responsive to participating in our survey.
 
-                        While this approach introduces sample bias and limits the statistical significance of our data, it still provides valuable insights into public perceptions. Our data suggests that most young people have some understanding of the importance of bees. However, it is important to note that many older individuals may not necessarily share the same perspective.
-                    </Typography>
-                </Box>
+                <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"} align={"left"}
+                            sx={{
+                                paddingLeft: '1.1rem',
+                                paddingRight: '1.1rem',
+                                textIndent: '2rem'
 
-                <Typography color='black' variant={"h5"} fontFamily={"Nunito Sans"}>
+                            }}>
                     The purpose of the survey in our study was to assess public
                     perception of bees and explore the potential root causes behind
                     these perceptions. Based on our preliminary research, it was
@@ -80,19 +59,20 @@ export default function SurveyPage() {
                     marginX: 'auto',
                     backgroundColor: '#c5e1a5',
                 }}>
-                <Typography color='black' variant='h4' fontFamily={"Geologica"}>
+                <Typography color='black' variant='h4' fontFamily={"Abril Fatface"}>
                     Findings
                 </Typography>
             </Box>
             <Box sx={{width: '100%'}}>
                 <Grid container spacing={0} alignItems="stretch" columns={2}>
                     <Box
-                        sx = {{
+                        sx={{
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffab91',
+                            padding: '1.5rem'
                         }}>
-                        <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
                             Age and Location Demographics
                         </Typography>
                     </Box>
@@ -100,16 +80,16 @@ export default function SurveyPage() {
                         <Box sx={{
                             height: '100%',
                             display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
                             backgroundColor: '#ffab91',
-                            border: '1px solid #000',
                             paddingLeft: "1rem",
-                            paddingRight: "1rem"
+                            paddingRight: "1rem",
+                            textAlign: "right"
                         }}>
                             <Typography
                                 variant="h4"
-                                sx={{fontSize: "2rem", textAlign: 'center',}}
+                                sx={{fontSize: "2rem", textAlign: 'left',
+                                    padding: '1.1rem',
+                                    textIndent: '2rem'}}
                                 color={'black'}
                                 fontFamily={"Nunito Sans"}
                             >
@@ -122,17 +102,17 @@ export default function SurveyPage() {
                     <Grid size={1}>
                         <Box sx={{height: '100%'}}>
                             <img src={pieChart1 as string} alt="Description"
-                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover', }}/>
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover',}}/>
                         </Box>
                     </Grid>
                     <Box
-                        sx = {{
+                        sx={{
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffccbc',
                             marginTop: "1rem"
                         }}>
-                        <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
                             Should bees be allowed to live in the city?
                         </Typography>
                     </Box>
@@ -140,8 +120,6 @@ export default function SurveyPage() {
                         <Box sx={{
                             height: '100%',
                             display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
                             backgroundColor: '#ffccbc',
                             paddingLeft: "1rem",
                             paddingRight: "1rem"
@@ -150,7 +128,9 @@ export default function SurveyPage() {
                                 variant="h4"
                                 color={'black'}
                                 fontFamily={"Nunito Sans"}
-                                sx={{fontSize: "2rem", textAlign: 'center'}}>
+                                    sx={{fontSize: "2rem", textAlign: 'left',
+                                        padding: '1.1rem',
+                                        textIndent: '2rem'}}>
                                 Of these responses, participants strongly agree with the fact that bees have the right
                                 to live in cities, and that bee hives in the city should at least be relocated in the
                                 city, instead of being removed.
@@ -164,17 +144,18 @@ export default function SurveyPage() {
                             alignItems: 'center',
                             justifyContent: 'center',
                         }}>
-                            <img src={pieChart2 as string} alt="Description" style={{maxWidth: "100%", height: "100%", objectFit: 'cover'}}/>
+                            <img src={pieChart2 as string} alt="Description"
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover'}}/>
                         </Box>
                     </Grid>
                     <Box
-                        sx = {{
+                        sx={{
                             maxWidth: '100%',
                             width: 'stretch',
                             backgroundColor: '#ffab91',
                             marginTop: "1rem"
                         }}>
-                        <Typography color={'black'} variant={"h3"} fontFamily={"Geologica"}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
                             Should Bee Nests be removed once found?
                         </Typography>
                     </Box>
@@ -182,8 +163,6 @@ export default function SurveyPage() {
                         <Box sx={{
                             height: '100%',
                             display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
                             backgroundColor: '#ffab91',
                             paddingLeft: "1rem",
                             paddingRight: "1rem"
@@ -191,7 +170,9 @@ export default function SurveyPage() {
                             <Typography variant="h4"
                                         color={'black'}
                                         fontFamily={"Nunito Sans"}
-                                        sx={{fontSize: "2rem", textAlign: 'center'}}>
+                                        sx={{fontSize: "2rem", textAlign: 'left',
+                                            padding: '1.1rem',
+                                            textIndent: '2rem'}}>
                                 Even though people agree that bees are important for the city because they are
                                 pollinators, that doesnt change the fact that people are still fearful of bees. Taking
                                 extreme precautions in the event that they do encounter a bee even though they are not
@@ -206,10 +187,34 @@ export default function SurveyPage() {
                             alignItems: 'center',
                             justifyContent: 'center',
                         }}>
-                            <img src={pieChart3 as string} alt="Description" style={{maxWidth: "100%", height: "100%", objectFit: 'cover'}}/>
+                            <img src={pieChart3 as string} alt="Description"
+                                 style={{maxWidth: "100%", height: "100%", objectFit: 'cover'}}/>
                         </Box>
                     </Grid>
                 </Grid>
+
+            </Box>
+            <Box
+                sx={{
+                    padding: 2,
+                    marginBottom: 2,
+                    maxWidth: '100%',
+                    width: 'fit-content',
+                    marginX: 'auto',
+                    backgroundColor: '#ffe5ed',
+                    textAlign: 'left'
+                }}>
+                <Typography color='black' variant='h7' fontFamily={"Abril Fatface"}
+                            fontStyle={'italic'}>Disclaimer: </Typography>
+                <Typography color="black" variant='h7' fontFamily={"Nunito Sans"} align="left" fontStyle={'italic'}
+                            sx={{
+                                textIndent: '2rem'
+                            }}>
+                    Due to factors such as distrust or miscommunication, the majority of our data was obtained through
+                    word of mouth.
+                    This introduces sample bias and limits the statistical significance of our data, it still provides
+                    valuable insights into public perceptions.
+                </Typography>
             </Box>
         </Stack>
     );
