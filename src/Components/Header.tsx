@@ -56,7 +56,7 @@ function Header() {
             <Toolbar sx={{ justifyContent: 'space-between', paddingLeft: 2, paddingRight: 2 }}>
                 <IconButton
                     edge="start"
-                    color="black"
+                    color="primary"
                     aria-label="menu"
                     sx={{ display: { xs: 'flex', md: 'none' } }}
                     onClick={toggleDrawer(true)}
