@@ -20,6 +20,15 @@ export default function WhatYouCanDo() {
         setNumPages(numPages);
     }
 
+    function downloadPDF() {
+        const link = document.createElement('a');
+        link.href = beePDF;
+        link.download = 'BeeWhatIf.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     // function nextPage() {
     //     setPageNumber((v) => ++v);
     // }
@@ -36,7 +45,10 @@ export default function WhatYouCanDo() {
             {/*<button className="custom-button" onClick={nextPage} disabled={pageNumber >= (numPages ?? -1)}>*/}
             {/*    Next*/}
             {/*</button>*/}
-            <Button variant="contained" endIcon={<DownloadIcon/>}
+            <Button
+                variant="contained"
+                endIcon={<DownloadIcon/>}
+                onClick={downloadPDF}
                     sx={{
                 backgroundColor: "#c5e1a5",
                 color: "black",

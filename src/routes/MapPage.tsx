@@ -48,7 +48,6 @@ import TsuenWan1 from "../assets/parkImages/Tsuen Wan Park Plant 3.jpg"
 import TsuenWan2 from "../assets/parkImages/Tsuen Wan Park Plant 6.jpg"
 import GardenHill1 from "../assets/parkImages/GardenHill_Plant1.jpg"
 import KingGeorge1 from "../assets/parkImages/KingGeorgeVPark_F2_1.jpg"
-import KingGeorge2 from "../assets/parkImages/KingGeorgeVPark_F2_2.jpg"
 import KingGeorge3 from "../assets/parkImages/KingGeorgeVPark_F2_3.jpg"
 import MountAustin1 from "../assets/parkImages/MountAustinPlayground_F1.jpg"
 import MountAustin2 from "../assets/parkImages/MountAustin2.jpg"
@@ -245,7 +244,7 @@ export default function MapPage() {
             popUp: "Kowloon Bird Park",
             Pollinators: "37",
             PlantsSeen: "15",
-            BeeAverage: "2.466666667",
+            BeeAverage: "2.467",
             Temperature: "18C",
             Humidity: "61%",
             Weather: "Cloudy",
@@ -262,7 +261,7 @@ export default function MapPage() {
             popUp: "Tsuen Wan Park",
             Pollinators: "10",
             PlantsSeen: "6",
-            BeeAverage: "1.666666667",
+            BeeAverage: "1.67",
             Temperature: "18C",
             Humidity: "58%",
             Weather: "Partially Cloudy",
@@ -437,7 +436,7 @@ export default function MapPage() {
             Description: "",
             imageUrl: [
                 KingGeorge1,
-                KingGeorge2,
+                // KingGeorge2,
                 KingGeorge3,
             ],
             type: "park"
@@ -608,13 +607,12 @@ export default function MapPage() {
 
                }}>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
                 backgroundColor: '#c5e1a5',
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"}
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily="Abril Fatface"
                 >
                     Our Observations of Pollinators in Hong Kong
                 </Typography>
@@ -640,7 +638,7 @@ export default function MapPage() {
                             icon={marker.type === "park" ? parkIcon : hikeIcon}
                         >
                             <Popup>
-                                <Stack sx={{
+                                <Box sx={{
                                     height: 'fit-content',
                                     width: 'fit-content',
 
@@ -663,93 +661,129 @@ export default function MapPage() {
                                     </Box>
 
                                     <Grid container spacing={0}>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Date:</Typography>
-                                            <Typography variant="h6">{marker.Date}</Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Date:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontSize={"1.2rem"} align="right">{marker.Date}</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Bees Per Flower:</Typography>
-                                            <Typography variant="h6">{marker.BeeAverage}</Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontSize={"1.2rem"} fontWeight={"bold"} align="left">Bees Per Flower:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.BeeAverage}</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Flowers Observed:</Typography>
-                                            <Typography variant="h6">{marker.PlantsSeen} </Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontSize={"1"} fontWeight={"bold"} align="left">Flowers Observed:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.PlantsSeen}</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Pollinators Observed:</Typography>
-                                            <Typography variant="h6">{marker.Pollinators}</Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Pollinators Observed:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.Pollinators}</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Temperature:</Typography>
-                                            <Typography variant="h6">{marker.Temperature}</Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Temperature:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.Temperature}</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Humidity:</Typography>
-                                            <Typography variant="h6">{marker.Humidity}</Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Humidity:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.Humidity}</Typography>
+                                            </Grid>
                                         </Grid>
-                                        <Grid size={{ xs: 6 }}>
-                                            <Typography variant="h5" fontWeight={"bold"}>Weather:</Typography>
-                                            <Typography variant="h6">{marker.Weather}</Typography>
+                                        <Grid container alignItems="center" size={{ xs: 12 }}>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Weather:</Typography>
+                                            </Grid>
+                                            <Grid size={{ xs: 6 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.Weather}</Typography>
+                                            </Grid>
                                         </Grid>
                                         {marker.Description && (
-                                            <Grid size={{ xs: 12 }}>
-                                                <Typography variant="h5" fontWeight={"bold"}>Notes:</Typography>
-                                                <Typography variant="h6">{marker.Description}</Typography>
+                                            <Grid container alignItems="center" size={{ xs: 12 }}>
+                                                <Grid size={{ xs: 6 }}>
+                                                    <Typography variant="h5" fontFamily={"Nunito Sans"} fontWeight={"bold"} align="left">Notes:</Typography>
+                                                </Grid>
+                                                <Grid size={{ xs: 6 }}>
+                                                    <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.Description}</Typography>
+                                                </Grid>
                                             </Grid>
                                         )}
                                     </Grid>
 
 
 
-                                </Stack>
+
+
+
+                                </Box>
                             </Popup>
                         </Marker>
                     ))}
                 </MapContainer>
             </Box>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
-                backgroundColor: "#F8CB00",
+                backgroundColor: "#ffe468",
                 marginTop: 2,
                 width: "100%%",
                 justifyContent: 'center',
                 textAlign: 'center'
 
             }}>
-                <Typography variant='h4' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
-                    This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on, its not a
-                    conclusive map that shows all the places that bees and other pollinators reside in Hong Kong but
-                    instead just the places the four of us have observed bees and other pollinators.
+                <Typography variant='h4' fontStyle={'bold'} color={"black"} align="left" fontFamily={"Nunito Sans"} sx={{
+                    padding: '1.1rem',
+                    textIndent: '2rem'
+                }}>
+                    This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on. This map shows all the places that we have seen bees and other pollinators reside in Hong Kong and is not a conclsive map.
                 </Typography>
+
             </Box>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
                 backgroundColor: '#c5e1a5',
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Julius Sans One"}>
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Abril Fatface"}>
                     Methodology for Data Collection
                 </Typography>
             </Box>
             <Box sx={{
-                border: '1px solid #000',
                 padding: 2,
-                backgroundColor: '#F8CB00',
+                backgroundColor: '#ffe468',
                 marginTop: 2,
                 width: "fit-content",
                 justifyContent: 'center',
                 textAlign: 'center'
             }}>
-                <Typography variant='h5' color={"black"} fontFamily={"Julius Sans One"} >
+                <Typography variant='h5' color={"black"} fontFamily={"Nunito Sans"} align="left" sx={{
+                    padding: '1.1rem',
+                    textIndent: '2rem'
+                }}>
                     At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take
                     data on bees and other pollinators we picked a flowering plant that either had pollinators around it
                     or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to
                     the plant and wrote down the number, frequency of visits, and the weather directly above the plant
-                    (sun, partial shade, or shade). We tried to do five flowers for park but if we couldn’t find 5
-                    different flower species we just took data on the as many different flowers we could find.
+                    (sun, partial shade, or shade). The goal was to collect data on five flowers per location.
                 </Typography>
             </Box>
         </Stack>

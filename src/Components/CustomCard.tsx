@@ -30,16 +30,13 @@ const styles: { [key: string]: React.CSSProperties } = {
     },
     textOverlay: {
         position: 'absolute',
-        top: '25%',
+        top: '75%',
         left: '75%',
         transform: 'translate(-50%, -50%)',
         color: 'white',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        padding: '10px 20px',
-        borderRadius: '5px',
-        textAlign: 'center',
-        fontSize: '28px',
-        fontFamily: "Nunito Sans",
+        // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        fontSize: '3rem',
+        fontFamily: "Abril Fatface",
         fontWeight: 'bold'
     },
 };

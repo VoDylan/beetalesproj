@@ -4,6 +4,7 @@ import JamesHeadshot from "../assets/James_Headshot.png"
 import KeethuHeadshot from "../assets/Keethu_Headshot.jpg"
 import ValliHeadshot from "../assets/Valli_Headshot.jpeg"
 import HarryHeadshot from "../assets/Harry_Headshot.png"
+import ClareHeadshot from "../assets/Clare_Headshot.jpg"
 
 export default function AboutPage() {
     return (
@@ -11,32 +12,33 @@ export default function AboutPage() {
 
             <Box
                 sx={{
-                    // border: '1px solid #000',
-                    padding: 2,
                     backgroundColor: "#c5e1a5",
+                    padding: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
-                    // marginX: 'auto',
-                    alignSelf: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    border: '1px solid #000',
                 }}
             >
                 <Box
                     sx={{
                         padding: 2,
-                        marginBottom: "1rem",
                         fontSize: '20px',
                         width: 'fit-content',
-                        alignSelf: 'auto',
+                        alignContent: 'start',
 
                     }}
                 >
-                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Purpose</Typography>
+                    <Typography variant="h2" align="left" color='black'
+                                style={{fontFamily: 'Abril Fatface'}}>Purpose</Typography>
                 </Box>
-                <Typography color="black">
+                <Typography color="black"
+                            align="left"
+                            variant="h5"
+                            style={{fontFamily: 'Nunito Sans'}}
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+                            }}
+                >
                     In completion of the Interactive Qualifying Project at WPI done by students in their
                     junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
                     and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
@@ -49,28 +51,29 @@ export default function AboutPage() {
                     padding: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
-                    // marginX: 'auto',
-                    alignSelf: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
+                    marginX: 'auto',
                     backgroundColor: '#ffe468',
-                    border: '1px solid #000',
                 }}>
+
                 <Box
                     sx={{
                         padding: 2,
-                        marginBottom: "1rem",
                         fontSize: '20px',
                         width: 'fit-content',
                         alignSelf: 'auto',
-
                     }}
                 >
-                    <Typography variant="h2" color='black' style={{fontFamily: 'Julius Sans One'}}>Research
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Abril Fatface'}}>Research
                         Question</Typography>
                 </Box>
-                <Typography color='black' variant='h4'>
+                <Typography color='black' variant='h5'
+                            align="left"
+                            style={{fontFamily: 'Nunito Sans'}}
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
                     Which key environmental and social factors influence pollinator populations across urban,
                     suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
                     for greater effectiveness?
@@ -80,21 +83,35 @@ export default function AboutPage() {
             <Box
                 sx={{
                     padding: 2,
-                    marginBottom: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
                     marginX: 'auto',
                     backgroundColor: "#dcedc8",
-                    border: '1px solid #000',
                 }}>
-                <Typography color='black' fontFamily={"Nunito Sans"} variant="h5">
+                <Box
+                    sx={{
+                        padding: 2,
+                        fontSize: '20px',
+                        width: 'fit-content',
+                        alignSelf: 'auto',
+                    }}
+                >
+                    <Typography variant="h2" color='black'
+                                style={{fontFamily: 'Abril Fatface'}}>Methodology</Typography>
+                </Box>
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
                     For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this
                     website to illustrate our data to help us come to a conclusion about our research question under the
-                    guidance of our sponsor. We spent the first 4 weeks collecting data on pollinator presence in parks and hikes
+                    guidance of our sponsor. The first 4 weeks were spent collecting data on pollinator presence in parks
+                    and hikes
                     while trying to get locals to take our survey to collect data on pollinator perception. Based on the
                     results we created a written report and final presentation under the guidance of our advisors to
-                    demonstrate the intent methodology and results of our project. Below is more information on us, the
-                    students who worked on this project, and our advisors and sponsor who guided us.
+                    demonstrate the intent methodology and results of our project.
                 </Typography>
             </Box>
 
@@ -108,7 +125,7 @@ export default function AboutPage() {
                 }}
             >
                 {/* Wrapper Box to Ensure Full Width */}
-                <Box sx={{ overflow: 'hidden' }}>
+                <Box sx={{overflow: 'hidden'}}>
                     {/* About Us Banner */}
                     <Box
                         sx={{
@@ -126,7 +143,7 @@ export default function AboutPage() {
                             right: 'calc(-50vw + 50%)', // Adjust for any parent padding
                         }}
                     >
-                        <Typography variant="h2" color="black">
+                        <Typography variant="h2" color="black" style={{fontFamily: 'Abril Fatface'}}>
                             About Us
                         </Typography>
                     </Box>
@@ -389,17 +406,16 @@ export default function AboutPage() {
                 }}
             >
                 {/* Heading */}
-                <Box sx={{
-                    padding: 2,
-                    width: 'fit-content',
-                    backgroundColor: "#c5e1a5",
-                    textAlign: 'center', // Center text inside the box
-                    border: '1px solid #000',}}>
-                    <Typography variant="h3" sx={{textAlign: 'center'}} color='black'>
-                        Special Thanks to our Advising Professors and Sponsor
-                    </Typography>
-
-                </Box>
+                {/*<Box sx={{*/}
+                {/*    padding: 2,*/}
+                {/*    width: 'fit-content',*/}
+                {/*    backgroundColor: "#c5e1a5",*/}
+                {/*    textAlign: 'center', // Center text inside the box*/}
+                {/*}}>*/}
+                {/*    <Typography variant="h2" sx={{textAlign: 'center'}} color='black' fontFamily="Abril Fatface">*/}
+                {/*        Special Thanks to our Advising Professors and Sponsor*/}
+                {/*    </Typography>*/}
+                {/*</Box>*/}
 
 
                 {/* Advisor and Sponsor Boxes */}
@@ -427,7 +443,7 @@ export default function AboutPage() {
                     >
                         <Box
                             component="img"
-                            src="/path"
+                            src={ClareHeadshot}
                             alt="Advisor 1"
                             sx={{
                                 width: 80, // Increase image size
@@ -458,7 +474,8 @@ export default function AboutPage() {
                                     backgroundColor: '#ffccbc',
                                 }}
                             >
-                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>The Global School</Typography>
+                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>The Global
+                                    School</Typography>
                             </Box>
                         </Box>
                     </Box>
@@ -509,7 +526,8 @@ export default function AboutPage() {
                                     backgroundColor: '#ffccbc',
                                 }}
                             >
-                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>The Business School</Typography>
+                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>The Business
+                                    School</Typography>
                             </Box>
                         </Box>
                     </Box>
@@ -563,7 +581,8 @@ export default function AboutPage() {
                                     backgroundColor: '#ffccbc',
                                 }}
                             >
-                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>Founder of Beetales</Typography>
+                                <Typography variant="body2" color='black' fontFamily={"Nunito Sans"}>Founder of
+                                    Beetales</Typography>
                             </Box>
                         </Box>
                     </Box>
