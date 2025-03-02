@@ -98,7 +98,7 @@ export default function SurveyPage() {
                             >
                                 The majority of our demographic of survey responders tend to be those aged
                                 between 18-24, which may influence responses gathered. Responses are also from all over
-                                the country.
+                                Hong Kong.
                             </Typography>
                         </Box>
                     </Grid>
