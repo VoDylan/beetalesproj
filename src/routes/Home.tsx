@@ -23,10 +23,8 @@ export default function Home() {
         }}>
             <Box
                 sx={{
-                    padding: 2,
                     width: "100%",
                     marginBottom: "2rem",
-                    borderRadius: "0",
                     backgroundColor: '#c5e1a5',
                 }}>
                 <Typography color='#000000' variant='h1' fontFamily={"Abril Fatface"}>

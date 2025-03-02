@@ -13,7 +13,7 @@ function Header() {
 
     const drawerContent = (
         <Box
-            sx={{ width: '50%' }}
+            sx={{ width: '75%' }}
             role="presentation"
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
