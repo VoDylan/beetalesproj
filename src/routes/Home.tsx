@@ -26,8 +26,10 @@ export default function Home() {
                     width: "100%",
                     marginBottom: "2rem",
                     backgroundColor: '#c5e1a5',
+                    paddingTop: 2,
+                    paddingBottom: 2,
                 }}>
-                <Typography color='#000000' variant='h1' fontFamily={"Abril Fatface"}>
+                <Typography color='#000000' variant='h2' fontFamily={"Bree Serif"}>
                     The Real Cost of Pesticides
                 </Typography>
             </Box>

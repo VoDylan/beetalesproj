@@ -20,26 +20,27 @@ function Header() {
         >
             <List>
                 <ListItem component={Link} to="/">
-                    <ListItemText primary="Home" />
+                    <ListItemText primary="Home" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
                 <ListItem component={Link} to="/about">
-                    <ListItemText primary="About" />
+                    <ListItemText primary="About Us" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
                 <ListItem component={Link} to="/mapPage">
-                    <ListItemText primary="Map" />
+                    <ListItemText primary="Map" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
                 <ListItem component={Link} to="/Survey">
-                    <ListItemText primary="Survey" />
+                    <ListItemText primary="Research" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
                 <ListItem component={Link} to="/conclusions">
-                    <ListItemText primary="Conclusions" />
+                    <ListItemText primary="Conclusions" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
                 <ListItem component={Link} to="/WhatYouCanDo">
-                    <ListItemText primary="WhatYouCanDo" />
+                    <ListItemText primary="WhatYouCanDo" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
             </List>
         </Box>
     );
+
 
     return (
         <AppBar
@@ -55,7 +56,7 @@ function Header() {
             <Toolbar sx={{ justifyContent: 'space-between', paddingLeft: 2, paddingRight: 2 }}>
                 <IconButton
                     edge="start"
-                    color="inherit"
+                    color="primary"
                     aria-label="menu"
                     sx={{ display: { xs: 'flex', md: 'none' } }}
                     onClick={toggleDrawer(true)}
@@ -68,9 +69,9 @@ function Header() {
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1, justifyContent: 'center' }}>
                     <Stack direction="row" spacing={2} alignItems="center">
                         <Button component={Link} to="/" sx={{ color: 'black', fontWeight: 'bold' }}>Home</Button>
-                        <Button component={Link} to="/about" sx={{ color: 'black', fontWeight: 'bold' }}>About</Button>
+                        <Button component={Link} to="/about" sx={{ color: 'black', fontWeight: 'bold' }}>About Us</Button>
                         <Button component={Link} to="/mapPage" sx={{ color: 'black', fontWeight: 'bold' }}>Map</Button>
-                        <Button component={Link} to="/Survey" sx={{ color: 'black', fontWeight: 'bold' }}>Survey Data</Button>
+                        <Button component={Link} to="/Research" sx={{ color: 'black', fontWeight: 'bold' }}>Research</Button>
                         <Button component={Link} to="/conclusions" sx={{ color: 'black', fontWeight: 'bold' }}>Conclusions</Button>
                         <Button component={Link} to="/WhatYouCanDo" sx={{ color: 'black', fontWeight: 'bold' }}>What You Can Do</Button>
                     </Stack>

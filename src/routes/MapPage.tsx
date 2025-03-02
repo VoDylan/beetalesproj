@@ -612,7 +612,7 @@ export default function MapPage() {
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily="Abril Fatface"
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily="Bree Serif"
                 >
                     Our Observations of Pollinators in Hong Kong
                 </Typography>
@@ -753,7 +753,7 @@ export default function MapPage() {
                     padding: '1.1rem',
                     textIndent: '2rem'
                 }}>
-                    This map illustrates the data we’ve taken on all of the parks and hikes we’ve been on. This map shows all the places that we have seen bees and other pollinators reside in Hong Kong and is not a conclsive map.
+                    This map illustrates the data we’ve taken at parks and hikes we have visited and is a non-conclusive map.
                 </Typography>
 
             </Box>
@@ -763,7 +763,7 @@ export default function MapPage() {
                 marginTop: 2,
                 alignSelf: 'stretch'
             }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Abril Fatface"}>
+                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Bree Serif"}>
                     Methodology for Data Collection
                 </Typography>
             </Box>
