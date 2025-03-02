@@ -495,7 +495,7 @@ export default function AboutPage() {
                     >
                         <Box
                             component="img"
-                            src="/path"
+                            src="src/assets/Jed_Headshot.png"
                             alt="Advisor 2"
                             sx={{
                                 width: 80, // Increase image size
