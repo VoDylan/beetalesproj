@@ -5,10 +5,11 @@ import KeethuHeadshot from "../assets/Keethu_Headshot.jpg"
 import ValliHeadshot from "../assets/Valli_Headshot.jpeg"
 import HarryHeadshot from "../assets/Harry_Headshot.png"
 import ClareHeadshot from "../assets/Clare_Headshot.jpg"
+import JedHeadshot from "../assets/Jed_Headshot.png"
 
 export default function AboutPage() {
     return (
-        <Stack spacing={2} sx={{paddingX: 2, marginTop: "5rem"}}>
+        <Stack spacing={2} sx={{marginTop: "5rem"}}>
 
             <Box
                 sx={{
@@ -16,19 +17,18 @@ export default function AboutPage() {
                     padding: 2,
                     maxWidth: '100%',
                     width: 'fit-content',
+                    marginX: 'auto',
                 }}
             >
                 <Box
                     sx={{
                         padding: 2,
-                        fontSize: '20px',
-                        width: 'fit-content',
-                        alignContent: 'start',
-
+                        maxWidth: '100%',
+                        marginX: 'auto',
                     }}
                 >
-                    <Typography variant="h2" align="left" color='black'
-                                style={{fontFamily: 'Abril Fatface'}}>Purpose</Typography>
+                    <Typography variant="h2" align="center" color='black'
+                                style={{fontFamily: 'Bree Serif'}}>About Us</Typography>
                 </Box>
                 <Typography color="black"
                             align="left"
@@ -39,79 +39,7 @@ export default function AboutPage() {
                                 textIndent: '2rem'
                             }}
                 >
-                    In completion of the Interactive Qualifying Project at WPI done by students in their
-                    junior year the following students, James Gikas, Keerthana Jayamoorthy, Valli Velmurugan,
-                    and Dylan Vo, were placed with the sponsor Beetales in Hong Kong to answer the following
-                    research question.
-                </Typography>
-            </Box>
-
-            <Box
-                sx={{
-                    padding: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: '#ffe468',
-                }}>
-
-                <Box
-                    sx={{
-                        padding: 2,
-                        fontSize: '20px',
-                        width: 'fit-content',
-                        alignSelf: 'auto',
-                    }}
-                >
-                    <Typography variant="h2" color='black' style={{fontFamily: 'Abril Fatface'}}>Research
-                        Question</Typography>
-                </Box>
-                <Typography color='black' variant='h5'
-                            align="left"
-                            style={{fontFamily: 'Nunito Sans'}}
-                            sx={{
-                                padding: '1.1rem',
-                                textIndent: '2rem'
-
-                            }}>
-                    Which key environmental and social factors influence pollinator populations across urban,
-                    suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
-                    for greater effectiveness?
-                </Typography>
-            </Box>
-
-            <Box
-                sx={{
-                    padding: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: "#dcedc8",
-                }}>
-                <Box
-                    sx={{
-                        padding: 2,
-                        fontSize: '20px',
-                        width: 'fit-content',
-                        alignSelf: 'auto',
-                    }}
-                >
-                    <Typography variant="h2" color='black'
-                                style={{fontFamily: 'Abril Fatface'}}>Methodology</Typography>
-                </Box>
-                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
-                            sx={{
-                                padding: '1.1rem',
-                                textIndent: '2rem'
-
-                            }}>
-                    For 8 weeks we collected data and created a guide on how to deal with bees and wasps and this
-                    website to illustrate our data to help us come to a conclusion about our research question under the
-                    guidance of our sponsor. The first 4 weeks were spent collecting data on pollinator presence in parks
-                    and hikes
-                    while trying to get locals to take our survey to collect data on pollinator perception. Based on the
-                    results we created a written report and final presentation under the guidance of our advisors to
-                    demonstrate the intent methodology and results of our project.
+                    This project was completed as part of the Interactive Qualifying Project at WPI, done by the following students: James Gikas, Keerthana Jayamoorthy, Valli Velmurugan, and Dylan Vo, who worked with Beetales to answer the following research question.
                 </Typography>
             </Box>
 
@@ -125,29 +53,25 @@ export default function AboutPage() {
                 }}
             >
                 {/* Wrapper Box to Ensure Full Width */}
-                <Box sx={{overflow: 'hidden'}}>
-                    {/* About Us Banner */}
-                    <Box
-                        sx={{
-                            padding: 2, // Padding inside the banner
-                            width: '100vw', // Full viewport width
-                            backgroundColor: '#c5e1a5', // Background color
-                            textAlign: 'center', // Center text inside the banner
-                            border: '0px solid #000', // Border for the banner
-                            display: 'flex', // Use flexbox for alignment
-                            justifyContent: 'center', // Center content horizontally
-                            alignItems: 'center', // Center content vertically
-                            height: 'auto', // Keep the same height as before
-                            position: 'relative', // Required for negative margins
-                            left: 'calc(-50vw + 50%)', // Adjust for any parent padding
-                            right: 'calc(-50vw + 50%)', // Adjust for any parent padding
-                        }}
-                    >
-                        <Typography variant="h2" color="black" style={{fontFamily: 'Abril Fatface'}}>
-                            About Us
-                        </Typography>
-                    </Box>
-                </Box>
+                {/*<Box sx={{overflow: 'hidden'}}>*/}
+                {/*    /!* About Us Banner *!/*/}
+                {/*    <Box*/}
+                {/*        sx={{*/}
+                {/*            width: '99vw', // Full viewport width*/}
+                {/*            backgroundColor: '#c5e1a5', // Background color*/}
+                {/*            textAlign: 'center', // Center text inside the banner*/}
+                {/*            display: 'flex', // Use flexbox for alignment*/}
+                {/*            justifyContent: 'center', // Center content horizontally*/}
+                {/*            alignItems: 'center', // Center content vertically*/}
+                {/*            height: 'auto', // Keep the same height as before*/}
+                {/*            // position: 'relative', // Required for negative margins*/}
+                {/*        }}*/}
+                {/*    >*/}
+                {/*        <Typography variant="h2" color="black" style={{fontFamily: 'Bree Serif'}}>*/}
+                {/*            About Us*/}
+                {/*        </Typography>*/}
+                {/*    </Box>*/}
+                {/*</Box>*/}
 
                 {/* Student Boxes */}
                 <Box
@@ -405,19 +329,6 @@ export default function AboutPage() {
 
                 }}
             >
-                {/* Heading */}
-                {/*<Box sx={{*/}
-                {/*    padding: 2,*/}
-                {/*    width: 'fit-content',*/}
-                {/*    backgroundColor: "#c5e1a5",*/}
-                {/*    textAlign: 'center', // Center text inside the box*/}
-                {/*}}>*/}
-                {/*    <Typography variant="h2" sx={{textAlign: 'center'}} color='black' fontFamily="Abril Fatface">*/}
-                {/*        Special Thanks to our Advising Professors and Sponsor*/}
-                {/*    </Typography>*/}
-                {/*</Box>*/}
-
-
                 {/* Advisor and Sponsor Boxes */}
                 <Box
                     sx={{
@@ -495,7 +406,7 @@ export default function AboutPage() {
                     >
                         <Box
                             component="img"
-                            src="src/assets/Jed_Headshot.png"
+                            src={JedHeadshot}
                             alt="Advisor 2"
                             sx={{
                                 width: 80, // Increase image size

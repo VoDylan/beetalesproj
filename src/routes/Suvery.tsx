@@ -7,6 +7,128 @@ import pieChart3 from "../assets/Q_ Bee nests should be removed once found.png"
 export default function SurveyPage() {
     return (
         <Stack spacing={2} sx={{paddingX: 2, marginTop: "5rem"}}>
+
+            <Box
+                sx={{
+                    backgroundColor: "#c5e1a5",
+                    padding: 2,
+                    maxWidth: '100%',
+                    width: 'fit-content',
+                    marginX: 'auto',
+                }}
+            >
+                <Box
+                    sx={{
+                        padding: 2,
+                        maxWidth: '100%',
+                        marginX: 'auto',
+                    }}
+                >
+                    <Typography variant="h2" align="left" color='black'
+                                style={{fontFamily: 'Bree Serif'}}>Purpose</Typography>
+                </Box>
+                <Typography color="black"
+                            align="left"
+                            variant="h5"
+                            style={{fontFamily: 'Nunito Sans'}}
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+                            }}
+                >
+                    The purpose of this project was to collect data on pollinators throughout Hong Kong and evlauate their condition. With this data, conclusions would be made about their wellbeing, including their resources, living conditions, and a rough estimate on their population. This would then be analyzed further to see how urban environments can be made more accomodating for bees as they are essential for our environment.
+                </Typography>
+            </Box>
+
+            <Box
+                sx={{
+                    padding: 2,
+                    maxWidth: '100%',
+                    width: 'fit-content',
+                    marginX: 'auto',
+                    backgroundColor: '#ffe468',
+                }}>
+
+                <Box
+                    sx={{
+                        padding: 2,
+                        width: 'fit-content',
+                        alignSelf: 'auto',
+                    }}
+                >
+                    <Typography variant="h2" color='black' style={{fontFamily: 'Bree Serif'}}>Research
+                        Question</Typography>
+                </Box>
+                <Typography color='black' variant='h5'
+                            align="left"
+                            style={{fontFamily: 'Nunito Sans'}}
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
+                    Which key environmental and social factors influence pollinator populations across urban,
+                    suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced
+                    for greater effectiveness?
+                </Typography>
+            </Box>
+
+            <Box
+                sx={{
+                    padding: 2,
+                    maxWidth: '100%',
+                    width: 'fit-content',
+                    marginX: 'auto',
+                    backgroundColor: "#dcedc8",
+                }}>
+                <Box
+                    sx={{
+                        padding: 2,
+                        width: 'fit-content',
+                        alignSelf: 'auto',
+                    }}
+                >
+                    <Typography variant="h2" color='black'
+                                style={{fontFamily: 'Bree Serif'}}>Methodology</Typography>
+                </Box>
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
+                    For 8 weeks we collected data, created a guide on how to deal with bees, and this website to illustrate our data to help us come to a conclusion about our research question with the assistance of Beetales.
+
+                </Typography>
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
+                    Data Collection Methodology: The first 4 weeks were spent collecting data on pollinator presence in parks and hikes throughout Hong Kong. At each location we recorded the humidity, temperature, weather, and date. For each blooming flower or bush of flowers, we then logged the number of pollinators that visited the plant for 10 minutes.
+                </Typography>
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
+                    Survey Methodology: During the first 4 weeks, survey data on perception of bees in Hong Kong on bees was also collected. Though, due to miscommunication
+                    while trying to gather data, locals were hesitant to take our survey, leading to a low sample size for the survey. Responses come primarily through word of mouth, and as such data may be skewed.
+
+                </Typography>
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+
+                            }}>
+                    Based on the survey and data collection, a written report and final presentation was created to demonstrate the intent methodology and results of our project.
+                </Typography>
+            </Box>
+
+
             <Box
                 sx={{
                     padding: 2,
@@ -16,8 +138,7 @@ export default function SurveyPage() {
                     marginX: 'auto',
                     backgroundColor: '#c5e1a5',
                 }}>
-                <Typography color='black' variant='h4' fontFamily={"Abril Fatface"}>
-                    Purpose of the Survey
+                <Typography color='black' variant='h2' fontFamily={"Bree Serif"}>Survey Purpose
                 </Typography>
             </Box>
             <Box
@@ -37,7 +158,6 @@ export default function SurveyPage() {
                                 paddingLeft: '1.1rem',
                                 paddingRight: '1.1rem',
                                 textIndent: '2rem'
-
                             }}>
                     The purpose of the survey in our study was to assess public
                     perception of bees and explore the potential root causes behind
@@ -50,21 +170,20 @@ export default function SurveyPage() {
                     negative attitudes toward insects like bees.
                 </Typography>
             </Box>
-            <Box
-                sx={{
-                    padding: 2,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: '#c5e1a5',
-                }}>
-                <Typography color='black' variant='h4' fontFamily={"Abril Fatface"}>
-                    Findings
-                </Typography>
-            </Box>
+
             <Box sx={{width: '100%'}}>
-                <Grid container spacing={0} alignItems="stretch" columns={2}>
+                <Box
+                    sx={{
+                        padding: 2,
+                        maxWidth: '100%',
+                        width: 'stretch',
+                        backgroundColor: '#c5e1a5',
+                    }}>
+                    <Typography color='black' variant='h2' fontFamily={"Bree Serif"}>
+                        Findings
+                    </Typography>
+                </Box>
+                <Grid container alignItems="stretch" columns={2}>
                     <Box
                         sx={{
                             maxWidth: '100%',
@@ -72,7 +191,7 @@ export default function SurveyPage() {
                             backgroundColor: '#ffab91',
                             padding: "2rem"
                         }}>
-                        <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Bree Serif"}>
                             Age and Location Demographics
                         </Typography>
                     </Box>
@@ -97,7 +216,7 @@ export default function SurveyPage() {
                                 fontFamily={"Nunito Sans"}
                             >
                                 The majority of our demographic of survey responders tend to be those aged
-                                between 18-24, which may influence responses gathered. Responses are also from all over
+                                between 18-24, which may influence responses gathered. Responses are from throughout
                                 Hong Kong.
                             </Typography>
                         </Box>
@@ -120,7 +239,7 @@ export default function SurveyPage() {
                             backgroundColor: '#ffccbc',
                             padding: '1.5rem'
                         }}>
-                        <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Bree Serif"}>
                             Should bees be allowed to live in the city?
                         </Typography>
                     </Box>
@@ -166,7 +285,7 @@ export default function SurveyPage() {
                             backgroundColor: '#ffab91',
                             padding: "2rem"
                         }}>
-                        <Typography color={'black'} variant={"h3"} fontFamily={"Abril Fatface"}>
+                        <Typography color={'black'} variant={"h3"} fontFamily={"Bree Serif"}>
                             Should Bee Nests be removed once found?
                         </Typography>
                     </Box>
@@ -217,7 +336,7 @@ export default function SurveyPage() {
                     backgroundColor: '#ffe5ed',
                     textAlign: 'left'
                 }}>
-                <Typography color='black' variant='h6' fontFamily={"Abril Fatface"}
+                <Typography color='black' variant='h6' fontFamily={"Bree Serif"}
                             fontStyle={'italic'}>Disclaimer: </Typography>
                 <Typography color="black" variant='h6' fontFamily={"Nunito Sans"} align="left" fontStyle={'italic'}
                             sx={{
