@@ -69,10 +69,10 @@ function Header() {
                 <Box sx={{ display: { xs: 'none', md: 'flex' }, flexGrow: 1, justifyContent: 'center' }}>
                     <Stack direction="row" spacing={2} alignItems="center">
                         <Button component={Link} to="/" sx={{ color: 'black', fontWeight: 'bold' }}>Home</Button>
-                        <Button component={Link} to="/about" sx={{ color: 'black', fontWeight: 'bold' }}>About Us</Button>
-                        <Button component={Link} to="/mapPage" sx={{ color: 'black', fontWeight: 'bold' }}>Map</Button>
+                        <Button component={Link} to="/About" sx={{ color: 'black', fontWeight: 'bold' }}>About Us</Button>
+                        <Button component={Link} to="/MapPage" sx={{ color: 'black', fontWeight: 'bold' }}>Map</Button>
                         <Button component={Link} to="/Research" sx={{ color: 'black', fontWeight: 'bold' }}>Research</Button>
-                        <Button component={Link} to="/conclusions" sx={{ color: 'black', fontWeight: 'bold' }}>Conclusions</Button>
+                        <Button component={Link} to="/Conclusions" sx={{ color: 'black', fontWeight: 'bold' }}>Conclusions</Button>
                         <Button component={Link} to="/WhatYouCanDo" sx={{ color: 'black', fontWeight: 'bold' }}>What You Can Do</Button>
                     </Stack>
                 </Box>

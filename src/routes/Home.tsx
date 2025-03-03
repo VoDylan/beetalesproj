@@ -110,7 +110,7 @@ export default function Home() {
                 }}>
                 <Typography color="black" variant="h3" fontFamily={"Nunito Sans"}>
                     {/*To ensure the health of ourselves and others it's worth asking, are pesticides really worth it?*/}
-                    Pesticides destroy living environments for pollinators, leading to less food sources declining populations
+                    Pesticides destroy living environments for pollinators, leading to less food sources and declining populations
                 </Typography>
             </Box>
             <Carousel/>

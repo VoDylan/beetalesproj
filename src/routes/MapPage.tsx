@@ -757,35 +757,6 @@ export default function MapPage() {
                 </Typography>
 
             </Box>
-            <Box sx={{
-                padding: 2,
-                backgroundColor: '#c5e1a5',
-                marginTop: 2,
-                alignSelf: 'stretch'
-            }}>
-                <Typography variant='h2' fontStyle={'bold'} color={"black"} fontFamily={"Bree Serif"}>
-                    Methodology for Data Collection
-                </Typography>
-            </Box>
-            <Box sx={{
-                padding: 2,
-                backgroundColor: '#ffe468',
-                marginTop: 2,
-                width: "fit-content",
-                justifyContent: 'center',
-                textAlign: 'center'
-            }}>
-                <Typography variant='h5' color={"black"} fontFamily={"Nunito Sans"} align="left" sx={{
-                    padding: '1.1rem',
-                    textIndent: '2rem'
-                }}>
-                    At each park/hike we went to we noted the humidity, temperature, weather, and time of day. To take
-                    data on bees and other pollinators we picked a flowering plant that either had pollinators around it
-                    or was just blooming. At each flower we spent 10 minutes observing to see if any pollinators came to
-                    the plant and wrote down the number, frequency of visits, and the weather directly above the plant
-                    (sun, partial shade, or shade). The goal was to collect data on five flowers per location.
-                </Typography>
-            </Box>
         </Stack>
     )
 }
