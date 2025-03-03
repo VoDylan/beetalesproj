@@ -190,18 +190,19 @@ export default function ConclusionPage() {
                     </Box>
                 </Grid>
             </Grid>
-            <Box
-            sx={{
-            border: '0px solid #000',
-            padding: 2,
-        }}
-            >
-            <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
-                Personal Reflections
-            </Typography>
-            </Box>
+
 
             <Box sx={{ width: '100%', overflow: 'hidden' }}> {/* Ensure the Box takes full width */}
+                <Box
+                    sx={{
+                        backgroundColor: '#c5e1a5',
+                        padding: 2,
+                    }}
+                >
+                    <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
+                        Personal Reflections
+                    </Typography>
+                </Box>
                 <Grid container spacing={0}> {/* Set spacing to 0 for no gaps between images */}
                     {personalReflectionImages.map((image, index) => (
                         <Grid size={{xs:12, sm:6}} key={index}> {/* 2 images per row on medium screens */}
@@ -250,7 +251,7 @@ export default function ConclusionPage() {
                     padding: 2,
                     marginBottom: 2,
                     maxWidth: '100%',
-                    width: '100%',
+                    width: 'stretch',
                     marginX: 'auto',
                     backgroundColor: '#ffab91',
                 }}
