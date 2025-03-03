@@ -130,31 +130,40 @@ export default function SurveyPage() {
                     For 8 weeks we collected data, created a guide on how to deal with bees, and this website to illustrate our data to help us come to a conclusion about our research question with the assistance of Beetales.
 
                 </Typography>
-                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left" fontWeight={'bold'}
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
                             sx={{
                                 padding: '1.1rem',
-                                textIndent: '2rem'
+                                textIndent: '2rem',
+                                fontWeight: 'bold',
                             }}>
                     Data Collection Methodology:
+                    <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                                sx={{
+                                    display: 'inline',
+                                    paddingLeft: '0.5rem',
+                                    fontWeight: 'normal',
+                                }}>
+                        The first 4 weeks were spent collecting data on pollinator presence in parks and hikes throughout Hong Kong. At each location, we recorded the humidity, temperature, weather, and date. For each blooming flower or bush of flowers, we then logged the number of pollinators that visited the plant for 10 minutes.
+                    </Typography>
                 </Typography>
+
                 <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
                             sx={{
                                 padding: '1.1rem',
-                                textIndent: '2rem'
-
+                                textIndent: '2rem',
+                                fontWeight: 'bold',
                             }}>
-                    The first 4 weeks were spent collecting data on pollinator presence in parks and hikes throughout Hong Kong. At each location we recorded the humidity, temperature, weather, and date. For each blooming flower or bush of flowers, we then logged the number of pollinators that visited the plant for 10 minutes.
+                    Survey Methodology:
+                    <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
+                                sx={{
+                                    display: 'inline',
+                                    paddingLeft: '0.5rem',
+                                    fontWeight: 'normal',
+                                }}>
+                        During the first 4 weeks, survey data on perception of bees in Hong Kong on bees was also collected. Though, due to miscommunication while trying to gather data, locals were hesitant to take our survey, leading to a low sample size for the survey. Responses came primarily through word of mouth, and as such, data may be skewed.
+                    </Typography>
                 </Typography>
-                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
-                            sx={{
-                                padding: '1.1rem',
-                                textIndent: '2rem'
 
-                            }}>
-                    Survey Methodology: During the first 4 weeks, survey data on perception of bees in Hong Kong on bees was also collected. Though, due to miscommunication
-                    while trying to gather data, locals were hesitant to take our survey, leading to a low sample size for the survey. Responses come primarily through word of mouth, and as such data may be skewed.
-
-                </Typography>
                 <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
                             sx={{
                                 padding: '1.1rem',
