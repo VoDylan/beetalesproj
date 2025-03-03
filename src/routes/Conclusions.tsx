@@ -188,7 +188,7 @@ export default function ConclusionPage() {
             <Box sx={{ width: '100%', overflow: 'hidden' }}> {/* Ensure the Box takes full width */}
                 <Grid container spacing={0}> {/* Set spacing to 0 for no gaps between images */}
                     {personalReflectionImages.map((image, index) => (
-                        <Grid item xs={12} sm={6} md={6} key={index}> {/* 2 images per row on medium screens */}
+                        <Grid size={{xs:12, sm:6, md:4}} key={index}> {/* 2 images per row on medium screens */}
                             <Box
                                 sx={{
                                     position: 'relative',
