@@ -10,6 +10,7 @@ import KeethuReflect from "../assets/Kreflect.jpg"
 import ValliReflect from "../assets/ValliConc.jpg"
 import DylanReflect from "../assets/DylanConc.jpg"
 import Tnc from "../assets/Tnc.jpg"
+import BeesWasps from "../assets/wasp_bee.png"
 
 export default function ConclusionPage() {
     const personalReflectionImages = [
@@ -136,6 +137,7 @@ export default function ConclusionPage() {
                             borderTop: '0', // Remove top border to merge with title box
                             padding: 2,
                             backgroundColor: '#ffe5ed',
+                            height: '85%'
                         }}
                     >
                         <Typography color="black" fontFamily={"Nunito Sans"} variant="h6">
@@ -166,10 +168,11 @@ export default function ConclusionPage() {
                             borderTop: '0', // Remove top border to merge with title box
                             padding: 2,
                             backgroundColor: '#ffe5ed',
+                            height: '85%'
                         }}
                     >
                         <Typography color="black" fontFamily={"Nunito Sans"} variant="h6">
-                            People in general are very scared of all insects including bees in Hong Kong. There are also some cultural misconceptions around bees and wasps, and people tend to think that bees are the same as wasps.
+                            People in general are very scared of all insects including bees in Hong Kong. Though, it is clear that people recognize the importance of bees in our environment, as shown through our surveys. There are also some cultural misconceptions around bees and wasps that lead people to think that bees are the same as wasps.
                         </Typography>
                         {/* Image */}
                         <Box
@@ -181,7 +184,7 @@ export default function ConclusionPage() {
                             }}
                         >
                             <img
-                                src="src/assets/wasp_bee.png"
+                                src={BeesWasps as string}
                                 alt="Bees and Wasps"
                                 style={{ maxWidth: '100%', height: 'auto', borderRadius: 8 }} // Adjust image styling
                             />
