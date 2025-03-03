@@ -36,7 +36,7 @@ const styles: { [key: string]: React.CSSProperties } = {
         color: 'white',
         // backgroundColor: 'rgba(0, 0, 0, 0.5)',
         fontSize: '3rem',
-        fontFamily: "Abril Fatface",
+        fontFamily: "Bree Serif",
         fontWeight: 'bold'
     },
 };

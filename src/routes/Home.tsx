@@ -108,7 +108,7 @@ export default function Home() {
                     marginBottom: "1rem",
                     width: "fit-content",
                 }}>
-                <Typography color="black" variant="h3" fontFamily={"Nunito Sans"}>
+                <Typography color="black" variant="h3" fontFamily={"Bree Serif"}>
                     {/*To ensure the health of ourselves and others it's worth asking, are pesticides really worth it?*/}
                     Pesticides destroy living environments for pollinators, leading to less food sources and declining populations
                 </Typography>
@@ -127,7 +127,7 @@ export default function Home() {
                     variant='h4'
                     fontStyle={'bold'}
                     color={"black"}
-                    fontFamily={"Nunito Sans"}
+                    fontFamily={"Bree Serif"}
                 >
                     Click Here to see where we found pollinators in Hong Kong!
                 </Typography>

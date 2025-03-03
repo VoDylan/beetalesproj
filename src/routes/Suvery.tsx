@@ -66,15 +66,7 @@ export default function SurveyPage() {
                                 paddingRight: '1.1rem',
                                 textIndent: '2rem'
                             }}>
-                    The purpose of the survey in our study was to assess public
-                    perception of bees and explore the potential root causes behind
-                    these perceptions. Based on our preliminary research, it was
-                    evident that bees are not viewed favorably in urban areas
-                    like Hong Kong, where people are less accustomed to insects
-                    and often fear them. This observation aligned with our findings,
-                    such as the frequent presence of prominent pesticide warning
-                    signs throughout the city, which further highlighted the
-                    negative attitudes toward insects like bees.
+                    The purpose of our survey was to evaluate public perceptions of bees and explore the potential underlying reasons for these views. Preliminary research indicated that bees are generally perceived unfavorably in urban settings like Hong Kong, where residents are less familiar with insects and often harbor a fear of them. This observation is consistent with our findings, which include the frequent presence of prominent pesticide warning signs throughout the city, further underscoring the negative attitudes toward insects such as bees.
                 </Typography>
             </Box>
 
