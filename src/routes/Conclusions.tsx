@@ -139,7 +139,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#ffe5ed',
                         }}
                     >
-                        <Typography color="black" fontFamily={"Nunito Sans"} variant="h4">
+                        <Typography color="black" fontFamily={"Nunito Sans"} variant="h6">
                             The main environmental factors contributing to the decline of bee and other pollinator populations in Hong Kong are the loss of habitat, food, and the increased use of pesticides. Hong Kong is one of the most urbanized regions globally, and its unsustainable rate of urban development has resulted in the fragmentation and loss of natural habitats that are essential for pollinators as well as diminishing native plant species <a href="https://medium.com/@danielle.tsang88/the-fragile-ecosystems-of-hong-kong-falling-short-of-un-biodiversity-targets-37cdce942f6b#:~:text=1.,2" target="_blank" rel="noopener noreferrer">[1]</a>. When we collected data we found most flowers to be invasive species that strain the local ecosystem. This leads us to our next environmental issue which is the lack of food for pollinators. Although there are many green spaces in Hong Kong there is a stark lack of flowers. And even the available water could be tainted with pesticides. Widespread application of pesticides in agricultural practices and public spaces poses a significant threat because the chemicals in them like neonicotinoids are toxic and not only directly affect the health of pollinators but can also lead to sub-lethal effects that impair their foraging behavior and navigation abilities. The accumulation of these chemicals in the environment further compounds the stressors faced by pollinators, contributing to their decline <a href="https://earth.org/climate-change-pollinators/" target="_blank" rel="noopener noreferrer">[2]</a>.
                         </Typography>
                     </Box>
@@ -169,7 +169,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#ffe5ed',
                         }}
                     >
-                        <Typography color="black" fontFamily={"Nunito Sans"} variant="h4">
+                        <Typography color="black" fontFamily={"Nunito Sans"} variant="h6">
                             People in general are very scared of all insects including bees in Hong Kong. There are also some cultural misconceptions around bees and wasps, and people tend to think that bees are the same as wasps.
                         </Typography>
                         {/* Image */}
@@ -191,18 +191,28 @@ export default function ConclusionPage() {
                     </Box>
                 </Grid>
             </Grid>
+            <Box
+            sx={{
+            border: '0px solid #000',
+            padding: 2,
+        }}
+            >
+            <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
+                Personal Reflections
+            </Typography>
+            </Box>
 
             <Box sx={{ width: '100%', overflow: 'hidden' }}> {/* Ensure the Box takes full width */}
                 <Grid container spacing={0}> {/* Set spacing to 0 for no gaps between images */}
                     {personalReflectionImages.map((image, index) => (
-                        <Grid size={{xs:12, sm:6, md:4}} key={index}> {/* 2 images per row on medium screens */}
+                        <Grid size={{xs:12, sm:6}} key={index}> {/* 2 images per row on medium screens */}
                             <Box
                                 sx={{
                                     position: 'relative',
                                     overflow: 'hidden',
                                     borderRadius: 2,
-                                    width: '310px',
-                                    height: '600px',// Set a fixed height for the images
+                                    width: '100%',
+                                    height: '100%',// Set a fixed height for the images
                                     '&:hover .description': {
                                         opacity: 1,
                                     },
@@ -221,13 +231,13 @@ export default function ConclusionPage() {
                                         right: 0,
                                         backgroundColor: 'rgba(0, 0, 0, 0.7)',
                                         color: 'white',
-                                        padding: '16px',
+                                        padding: '2px',
                                         opacity: 0,
                                         transition: 'opacity 0.3s ease',
                                     }}
                                     className="description"
                                 >
-                                    <Typography variant="h6" fontFamily={"Nunito Sans"}>{image.description}</Typography>
+                                    <Typography variant="h8" fontFamily={"Nunito Sans"}>{image.description}</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -250,70 +260,67 @@ export default function ConclusionPage() {
                     How to Enhance Conservation Efforts
                 </Typography>
             </Box>
+            <Grid container spacing={2}>
+                {/* First Section */}
+                <Grid item xs={12} sm={6}>
+                    {/* Title Box 1 */}
+                    <Box
+                        sx={{
+                            border: '0px solid #000',
+                            padding: 2,
+                            backgroundColor: '#ffab91',
+                        }}
+                    >
+                        <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
+                            For the Law Enforcing Agencies of Hong Kong
+                        </Typography>
+                    </Box>
 
-            <Box
-                sx={{
-                    border: '0px solid #000',
-                    padding: 2,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: '#ffab91',
-                }}
-            >
-                <Typography color="black" variant="h5" fontFamily={"Bree Serif"}>For the Law Enforcing Agencies of Hong Kong</Typography>
-            </Box>
+                    {/* Content Box 1 */}
+                    <Box
+                        sx={{
+                            border: '0px solid #000',
+                            borderTop: '0', // Remove top border to merge with title box
+                            padding: 2,
+                            backgroundColor: '#ffccbc',
+                        }}
+                    >
+                        <Typography color="black" fontFamily={"Nunito Sans"} variant="h6">
+                            The law enforcing agencies in Hong Kong that regulate the use of pesticides should weigh in the negative impact of pesticides, especially those used for mosquitos on bees and their populations in and around the city even though they are not the target of those pesticides. These pesticides can harm bees and other beneficial insects in the process of keeping mosquitos away. The plants used in parks for landscaping and decoration can also be changed to improve the local biodiversity of the area. This can be through replacing foreign oriental species of plants with those that are local to the area and also attract pollinators. These steps can bring the cities throughout Hong Kong even closer to coexisting with the natural landscape surrounding them, and in turn help improve the situation of bees in the city.
+                        </Typography>
+                    </Box>
+                </Grid>
 
-            <Box
-                sx={{
-                    border: '0px solid #000',
-                    padding: 2,
-                    borderRadius: 0,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: '100%',
-                    marginX: 'auto',
-                    backgroundColor: '#ffccbc',
-                }}
-            >
-                <Typography color={'black'} fontFamily={"Nunito Sans"} variant="h6">
-                    The law enforcing agencies in hong kong that regulate the use of pesticides should weigh in the negative impact of pesticides, especially those used for mosquitos on bees and their populations in and around the city even though they are not the target of those pesticides. These pesticides can harm bees and other beneficial insects in the process of keeping mosquitos away. The plants used in parks for landscaping and decoration can also be changed to improve the local biodiversity of the area. This can be through replacing foreign oriental species of plants with those that are local to the area and also attract pollinators. These steps can bring the cities throughout hong kong even closer to coexisting with the natural landscape surrounding them, and in turn help improve the situation of bees in the city.
-                    </Typography>
-            </Box>
+                {/* Second Section */}
+                <Grid item xs={12} sm={6}>
+                    {/* Title Box 2 */}
+                    <Box
+                        sx={{
+                            border: '0px solid #000',
+                            padding: 2,
+                            backgroundColor: '#ffab91',
+                        }}
+                    >
+                        <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
+                            For Everyone Else Looking to Make a Difference
+                        </Typography>
+                    </Box>
 
-            <Box
-                sx={{
-                    border: '0px solid #000',
-                    padding: 2,
-                    borderRadius: 0,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: 'fit-content',
-                    marginX: 'auto',
-                    backgroundColor: '#ffab91',
-                }}
-            >
-                <Typography color="black" variant="h5" fontFamily={"Bree Serif"}>For Everyone Else Looking to Make a Difference</Typography>
-            </Box>
-
-            <Box
-                sx={{
-                    border: '0px solid #000',
-                    padding: 2,
-                    borderRadius: 0,
-                    marginBottom: 2,
-                    maxWidth: '100%',
-                    width: '100%',
-                    marginX: 'auto',
-                    backgroundColor: '#ffccbc',
-                }}
-            >
-                <Typography color={"black"} variant="h6" fontFamily={"Nunito Sans"}>
-                    Even if bees aren’t physically present in everyones lives all the time, they impact our lives indirectly with many products using beeswax and honey as well as bees being the main pollinators of many crops for foods that we eat. This is why we must be mindful of our interactions with bees. In the case that there is a bee hive or swarm of bees, its ok to be scared or frightened. The main choice we need to make, however, is to keep the bees safe from pesticides and prevent anyone from killing them because of fear. This is the only way we can coexist and have a future that is sustainable
-                 </Typography>
-
-            </Box>
+                    {/* Content Box 2 */}
+                    <Box
+                        sx={{
+                            border: '0px solid #000',
+                            borderTop: '0', // Remove top border to merge with title box
+                            padding: 2,
+                            backgroundColor: '#ffccbc',
+                        }}
+                    >
+                        <Typography color="black" fontFamily={"Nunito Sans"} variant="h6">
+                            Even if bees aren’t physically present in everyone's lives all the time, they impact our lives indirectly with many products using beeswax and honey as well as bees being the main pollinators of many crops for foods that we eat. This is why we must be mindful of our interactions with bees. In the case that there is a bee hive or swarm of bees, it's okay to be scared or frightened. The main choice we need to make, however, is to keep the bees safe from pesticides and prevent anyone from killing them because of fear. This is the only way we can coexist and have a future that is sustainable.
+                        </Typography>
+                    </Box>
+                </Grid>
+            </Grid>
 
             <Box sx={{ overflow: 'hidden' }}>
                 <Box
