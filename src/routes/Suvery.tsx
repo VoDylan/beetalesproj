@@ -130,13 +130,20 @@ export default function SurveyPage() {
                     For 8 weeks we collected data, created a guide on how to deal with bees, and this website to illustrate our data to help us come to a conclusion about our research question with the assistance of Beetales.
 
                 </Typography>
+                <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left" fontWeight={'bold'}
+                            sx={{
+                                padding: '1.1rem',
+                                textIndent: '2rem'
+                            }}>
+                    Data Collection Methodology:
+                </Typography>
                 <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
                             sx={{
                                 padding: '1.1rem',
                                 textIndent: '2rem'
 
                             }}>
-                    Data Collection Methodology: The first 4 weeks were spent collecting data on pollinator presence in parks and hikes throughout Hong Kong. At each location we recorded the humidity, temperature, weather, and date. For each blooming flower or bush of flowers, we then logged the number of pollinators that visited the plant for 10 minutes.
+                    The first 4 weeks were spent collecting data on pollinator presence in parks and hikes throughout Hong Kong. At each location we recorded the humidity, temperature, weather, and date. For each blooming flower or bush of flowers, we then logged the number of pollinators that visited the plant for 10 minutes.
                 </Typography>
                 <Typography color='black' style={{fontFamily: 'Nunito Sans'}} variant="h5" align="left"
                             sx={{

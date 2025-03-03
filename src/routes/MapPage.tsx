@@ -621,7 +621,7 @@ export default function MapPage() {
                 sx={{
                     width: "100%", height: "75%", justifyContent: "center"
                 }}>
-                <MapContainer center={[22.30210013802836, 114.18289006159344]} zoom={13}
+                <MapContainer center={[22.35210013802836, 114.15289006159344]} zoom={12} maxBounds={[[22.1765, 113.8379], [22.7431, 114.4522]]}
                               style={{
                                   height: '90vh',
                                   width: '100%',

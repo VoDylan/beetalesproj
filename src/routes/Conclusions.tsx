@@ -10,6 +10,7 @@ import KeethuReflect from "../assets/Kreflect.jpg"
 import ValliReflect from "../assets/ValliConc.jpg"
 import DylanReflect from "../assets/DylanConc.jpg"
 import Tnc from "../assets/Tnc.jpg"
+import BeesWasps from "../assets/wasp_bee.png"
 
 export default function ConclusionPage() {
     const personalReflectionImages = [
@@ -181,7 +182,7 @@ export default function ConclusionPage() {
                             }}
                         >
                             <img
-                                src="src/assets/wasp_bee.png"
+                                src={BeesWasps as string}
                                 alt="Bees and Wasps"
                                 style={{ maxWidth: '100%', height: 'auto', borderRadius: 8 }} // Adjust image styling
                             />
