@@ -42,7 +42,7 @@ function App() {
                 element: <Survey/>,
             },
             {
-                path: "/WhatYouCanDo",
+                path: "/Guide",
                 element: <WhatYouCanDo/>,
             },
         ],

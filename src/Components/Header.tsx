@@ -22,20 +22,20 @@ function Header() {
                 <ListItem component={Link} to="/">
                     <ListItemText primary="Home" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
-                <ListItem component={Link} to="/about">
+                <ListItem component={Link} to="/About">
                     <ListItemText primary="About Us" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
-                <ListItem component={Link} to="/mapPage">
+                <ListItem component={Link} to="/MapPage">
                     <ListItemText primary="Map" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
-                <ListItem component={Link} to="/Survey">
+                <ListItem component={Link} to="/Research">
                     <ListItemText primary="Research" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
-                <ListItem component={Link} to="/conclusions">
+                <ListItem component={Link} to="/Conclusions">
                     <ListItemText primary="Conclusions" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
-                <ListItem component={Link} to="/WhatYouCanDo">
-                    <ListItemText primary="WhatYouCanDo" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
+                <ListItem component={Link} to="/Guide">
+                    <ListItemText primary="Guide" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
             </List>
         </Box>
@@ -73,7 +73,7 @@ function Header() {
                         <Button component={Link} to="/MapPage" sx={{ color: 'black', fontWeight: 'bold' }}>Map</Button>
                         <Button component={Link} to="/Research" sx={{ color: 'black', fontWeight: 'bold' }}>Research</Button>
                         <Button component={Link} to="/Conclusions" sx={{ color: 'black', fontWeight: 'bold' }}>Conclusions</Button>
-                        <Button component={Link} to="/WhatYouCanDo" sx={{ color: 'black', fontWeight: 'bold' }}>What You Can Do</Button>
+                        <Button component={Link} to="/Guide" sx={{ color: 'black', fontWeight: 'bold' }}>Guide</Button>
                     </Stack>
                 </Box>
                 <Drawer

@@ -7,7 +7,7 @@ import { pdfjs } from "react-pdf";
 import "../index.css"; // Assuming you have a CSS file for styles
 import DownloadIcon from '@mui/icons-material/Download';
 import {Button} from "@mui/material";
-import beePDF from "../assets/BeeWhatIf.pdf"
+import beePDF from "../assets/BeetalesInfographic.pdf"
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
