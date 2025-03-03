@@ -741,22 +741,21 @@ export default function MapPage() {
                 </MapContainer>
             </Box>
             <Box sx={{
-                padding: 2,
+                paddingBottom: 2,
                 backgroundColor: "#dcedc8",
-                marginTop: 2,
                 width: "stretch",
                 justifyContent: 'center',
                 textAlign: 'center',
                 alignSelf: 'stretch'
 
             }}>
-                <Typography variant='h5' fontStyle={'bold'} color={"black"} align="left" fontFamily={"Nunito Sans"} sx={{
+                <Typography variant='h5' fontWeight={'bold'} color={"black"} align="left" fontFamily={"Nunito Sans"} sx={{
                     padding: '1.1rem',
                     textIndent: '2rem'
                 }}>
                     This map illustrates the data we’ve taken at locations we have visited and is a non-conclusive map.
                 </Typography>
-                <Typography variant='h5' fontStyle={'bold'} color={"black"} align="center" fontFamily={"Nunito Sans"}>Click a point to see more!</Typography>
+                <Typography variant='h5' fontWeight ={'bold'} color={"black"} align="center" fontFamily={"Nunito Sans"}>Click a point to see more!</Typography>
 
             </Box>
         </Stack>
