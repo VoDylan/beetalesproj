@@ -85,7 +85,7 @@ export default function ConclusionPage() {
                         width: '100%', // Ensure the title box spans the full width
                     }}
                 >
-                    <Typography color="black" variant="h4" align="center" fontFamily={"Geologica"} sx={{ padding: 2 }}>
+                    <Typography color="black" variant="h4" align="center" fontFamily={"Bree Serif"} sx={{ padding: 2 }}>
                         Which key environmental and social factors influence pollinator populations across urban, suburban, and rural areas of Hong Kong, and how can conservation efforts be enhanced for greater effectiveness?
                     </Typography>
                 </Box>
@@ -97,11 +97,11 @@ export default function ConclusionPage() {
                         padding: 2, // Padding for the content box
                     }}
                 >
-                    <Typography color="black">
+                    <Typography color="black" fontFamily={"Nunito Sans"}>
                         Our research in Hong Kong was focused on addressing the main research question outlined earlier. Prior to arriving, we expected that the majority of our data would be gathered through a survey distributed to local residents. However, after a few days, it became clear that collecting substantial or conclusive data through the survey would be challenging. Many individuals were hesitant to engage with QR codes or provide information online, even though our questions only asked for basic details such as age and district number. Others were either too busy or simply uninterested in participating. While we managed to collect just under 50 responses, the sample size was neither large nor diverse enough to be considered conclusive for our analysis.
                     </Typography>
 
-                    <Typography color="black">
+                    <Typography color="black" fontFamily={"Nunito Sans"}>
                         To summarize the rest of our data, however, we found that bees resided more in rural and suburban locations than urban due to the increased number of flowers and other greenery.
                     </Typography>
                 </Box>
@@ -118,7 +118,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#f8c2d4',
                         }}
                     >
-                        <Typography color="black" variant="h4" fontFamily={"Geologica"}>
+                        <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
                             Environmental Factors
                         </Typography>
                     </Box>
@@ -132,7 +132,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#ffe5ed',
                         }}
                     >
-                        <Typography color="black">
+                        <Typography color="black" fontFamily={"Nunito Sans"}>
                             The main environmental factors contributing to the decline of bee and other pollinator populations in Hong Kong are the loss of habitat, food, and the increased use of pesticides. Hong Kong is one of the most urbanized regions globally, and its unsustainable rate of urban development has resulted in the fragmentation and loss of natural habitats that are essential for pollinators as well as diminishing native plant species <a href="https://medium.com/@danielle.tsang88/the-fragile-ecosystems-of-hong-kong-falling-short-of-un-biodiversity-targets-37cdce942f6b#:~:text=1.,2" target="_blank" rel="noopener noreferrer">[1]</a>. When we collected data we found most flowers to be invasive species that strain the local ecosystem. This leads us to our next environmental issue which is the lack of food for pollinators. Although there are many green spaces in Hong Kong there is a stark lack of flowers. And even the available water could be tainted with pesticides. Widespread application of pesticides in agricultural practices and public spaces poses a significant threat because the chemicals in them like neonicotinoids are toxic and not only directly affect the health of pollinators but can also lead to sub-lethal effects that impair their foraging behavior and navigation abilities. The accumulation of these chemicals in the environment further compounds the stressors faced by pollinators, contributing to their decline <a href="https://earth.org/climate-change-pollinators/" target="_blank" rel="noopener noreferrer">[2]</a>.
                         </Typography>
                     </Box>
@@ -148,7 +148,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#f8c2d4',
                         }}
                     >
-                        <Typography color="black" variant="h4" fontFamily={"Geologica"}>
+                        <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
                             Social Factors
                         </Typography>
                     </Box>
@@ -162,7 +162,7 @@ export default function ConclusionPage() {
                             backgroundColor: '#ffe5ed',
                         }}
                     >
-                        <Typography color="black">
+                        <Typography color="black" fontFamily={"Nunito Sans"}>
                             People in general are very scared of all insects including bees in Hong Kong. There are also some cultural misconceptions around bees and wasps, and people tend to think that bees are the same as wasps.
                         </Typography>
                         {/* Image */}
@@ -220,7 +220,7 @@ export default function ConclusionPage() {
                                     }}
                                     className="description"
                                 >
-                                    <Typography variant="body2">{image.description}</Typography>
+                                    <Typography variant="body2" fontFamily={"Nunito Sans"}>{image.description}</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -239,7 +239,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffab91',
                 }}
             >
-                <Typography color="black" variant="h4" fontFamily={"Geologica"}>
+                <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
                     How to Enhance Conservation Efforts
                 </Typography>
             </Box>
@@ -255,7 +255,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffab91',
                 }}
             >
-                <Typography color="black" fontFamily={"Geologica"}>For the Law Enforcing Agencies of Hong Kong</Typography>
+                <Typography color="black" fontFamily={"Bree Serif"}>For the Law Enforcing Agencies of Hong Kong</Typography>
             </Box>
 
             <Box
@@ -270,7 +270,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffccbc',
                 }}
             >
-                <Typography color={'black'}>
+                <Typography color={'black'} fontFamily={"Nunito Sans"}>
                     The law enforcing agencies in hong kong that regulate the use of pesticides should weigh in the negative impact of pesticides, especially those used for mosquitos on bees and their populations in and around the city even though they are not the target of those pesticides. These pesticides can harm bees and other beneficial insects in the process of keeping mosquitos away. The plants used in parks for landscaping and decoration can also be changed to improve the local biodiversity of the area. This can be through replacing foreign oriental species of plants with those that are local to the area and also attract pollinators. These steps can bring the cities throughout hong kong even closer to coexisting with the natural landscape surrounding them, and in turn help improve the situation of bees in the city.
                     </Typography>
             </Box>
@@ -287,7 +287,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffab91',
                 }}
             >
-                <Typography color="black" fontFamily={"Geologica"}>For Everyone Else Looking to Make a Difference</Typography>
+                <Typography color="black" fontFamily={"Bree Serif"}>For Everyone Else Looking to Make a Difference</Typography>
             </Box>
 
             <Box
@@ -302,7 +302,7 @@ export default function ConclusionPage() {
                     backgroundColor: '#ffccbc',
                 }}
             >
-                <Typography color={"black"}>
+                <Typography color={"black"} fontFamily={"Nunito Sans"}>
                     Even if bees aren’t physically present in everyones lives all the time, they impact our lives indirectly with many products using beeswax and honey as well as bees being the main pollinators of many crops for foods that we eat. This is why we must be mindful of our interactions with bees. In the case that there is a bee hive or swarm of bees, its ok to be scared or frightened. The main choice we need to make, however, is to keep the bees safe from pesticides and prevent anyone from killing them because of fear. This is the only way we can coexist and have a future that is sustainable
                  </Typography>
             </Box>
@@ -324,7 +324,7 @@ export default function ConclusionPage() {
                         right: 'calc(-50vw + 50%)', // Adjust for any parent padding
                     }}
                 >
-                    <Typography color="black" variant="h4" fontFamily={"Geologica"} sx={{ mb: 2 }}>
+                    <Typography color="black" variant="h4" fontFamily={"Bree Serif"} sx={{ mb: 2 }}>
                         Explore More About Conservation Efforts in Hong Kong
                     </Typography>
                 </Box>
@@ -367,7 +367,7 @@ export default function ConclusionPage() {
                                         borderRadius: 1,
                                     }}
                                 >
-                                    <Typography variant="h6">{image.title}</Typography>
+                                    <Typography variant="h6" fontFamily={"Bree Serif"}>{image.title}</Typography>
                                 </Box>
 
                                 {/* Hover Description */}
@@ -385,7 +385,7 @@ export default function ConclusionPage() {
                                         transition: 'opacity 0.3s ease', // Smooth transition
                                     }}
                                 >
-                                    <Typography variant="body1">{image.description}</Typography>
+                                    <Typography variant="body1" fontFamily={"Nunito Sans"}>{image.description}</Typography>
                                 </Box>
                             </Box>
                         </Grid>
