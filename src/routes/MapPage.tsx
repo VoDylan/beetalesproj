@@ -601,7 +601,7 @@ export default function MapPage() {
         <Stack spacing={2}
                sx={{
                    width: '100%',
-                   marginTop: "10vh",
+                   marginTop: "5rem",
                    justifyContent: "center",
                    alignItems: "center"
 
@@ -742,19 +742,21 @@ export default function MapPage() {
             </Box>
             <Box sx={{
                 padding: 2,
-                backgroundColor: "#ffe468",
+                backgroundColor: "#dcedc8",
                 marginTop: 2,
-                width: "100%%",
+                width: "stretch",
                 justifyContent: 'center',
-                textAlign: 'center'
+                textAlign: 'center',
+                alignSelf: 'stretch'
 
             }}>
-                <Typography variant='h4' fontStyle={'bold'} color={"black"} align="left" fontFamily={"Nunito Sans"} sx={{
+                <Typography variant='h5' fontStyle={'bold'} color={"black"} align="left" fontFamily={"Nunito Sans"} sx={{
                     padding: '1.1rem',
                     textIndent: '2rem'
                 }}>
-                    This map illustrates the data we’ve taken at parks and hikes we have visited and is a non-conclusive map.
+                    This map illustrates the data we’ve taken at locations we have visited and is a non-conclusive map.
                 </Typography>
+                <Typography variant='h5' fontStyle={'bold'} color={"black"} align="center" fontFamily={"Nunito Sans"}>Click a point to see more!</Typography>
 
             </Box>
         </Stack>
