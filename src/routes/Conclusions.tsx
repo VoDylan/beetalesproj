@@ -35,31 +35,31 @@ export default function ConclusionPage() {
     ];
     const images = [
         {
-            src: {BeetalesC},
+            src: BeetalesC,
             title: 'Beetales',
             description: 'Beetales is a dedicated organization focused on pollinator conservation. They actively rescue bees that have lost their hives and work to educate the public about the vital role bees play in our ecosystem. Through engaging workshops and classes, such as lip balm making using beeswax and mead making with honey, Beetales fosters a deeper understanding and appreciation for these essential pollinators.' ,
             link: 'https://www.beetales.com.hk/',
         },
         {
-            src: {KadoorieFarm},
+            src: KadoorieFarm,
             title: 'Kadoorie Farms',
             description: 'Kadoorie Farm and Botanic Garden began as an initiative to support farmers in leading independent lives through agricultural aid. Over time, it has expanded its efforts by transforming barren land into thriving forests, which now include mature woodlands throughout its gardens. Today, the organization has become a leading advocate for sustainability, ecosystem restoration, and the conservation of endangered species in Hong Kong and beyond. Their mission remains to achieve sustainable coexistence between humans and nature.',
             link: 'https://www.kfbg.org/en/',
         },
         {
-            src: {MaiPo},
+            src: MaiPo,
             title: 'Mai Po Wetlands Reserve',
             description: 'Mai Po Wetland Reserve is run by the WWF and serves to protect the Mai Po Wetlands and maintain the biodiversity of the region. The wetlands are maintained in part because they serve as a major stopover and habitat for over 500 bird species on the East Asian-Australasian Flyway for migration. They believe in preserving the green zones and country parks, as well as improving the parks within the city as well  order to improve the quality of life for the wildlife and humans alike.',
             link: 'https://www.wwf.org.hk/en/wetlands/booking/?gad_source=1',
         },
         {
-            src: {FungYuen},
+            src: FungYuen,
             title: 'Fung Yuen Butterfly Reserve',
             description: 'The Fung Yuen Butterfly Reserve is a conservation area with the goal of protecting butterfly populations and their local habitats. On top of that, the reserve includes many diverse flowers that support various local butterfly species. It serves as an educational center, with the goal of spreading awareness about the importance of biodiversity and the need for conservation in Hong Kong.',
             link: 'https://www.fungyuen.org/',
         },
         {
-            src: {Bat},
+            src: Bat,
             title: 'Hong Kong Bat Radar',
             description: 'Hong Kong Bat Radar is a comprehensive local bat information platform, offering up-to-date, scientifically accurate, and locally relevant information on bats',
             link: 'https://hkbatradar.com/en/home/',
@@ -188,7 +188,7 @@ export default function ConclusionPage() {
             <Box sx={{ width: '100%', overflow: 'hidden' }}> {/* Ensure the Box takes full width */}
                 <Grid container spacing={0}> {/* Set spacing to 0 for no gaps between images */}
                     {personalReflectionImages.map((image, index) => (
-                        <Grid item xs={12} sm={6} md={6} key={index}> {/* 2 images per row on medium screens */}
+                        <Grid size={{xs:12, sm:6, md:4}} key={index}> {/* 2 images per row on medium screens */}
                             <Box
                                 sx={{
                                     position: 'relative',
@@ -202,7 +202,7 @@ export default function ConclusionPage() {
                                 }}
                             >
                                 <img
-                                    src={image.src}
+                                    src={image.src as string}
                                     alt={image.title}
                                     style={{ width: '100%', height: '100%', objectFit: 'cover' }} // Fill the box
                                 />
@@ -303,8 +303,8 @@ export default function ConclusionPage() {
                 }}
             >
                 <Typography color={"black"} fontFamily={"Nunito Sans"}>
-                    Even if bees aren’t physically present in everyones lives all the time, they impact our lives indirectly with many products using beeswax and honey as well as bees being the main pollinators of many crops for foods that we eat. This is why we must be mindful of our interactions with bees. In the case that there is a bee hive or swarm of bees, its ok to be scared or frightened. The main choice we need to make, however, is to keep the bees safe from pesticides and prevent anyone from killing them because of fear. This is the only way we can coexist and have a future that is sustainable
-                 </Typography>
+                    Even if bees aren’t physically present in everyone's lives all the time, they impact our lives indirectly with many products that use beeswax and honey. On top of that, they’re the main pollinators of many crops we eat. Bee nests should never be destroyed. Instead, call a conservationist such as Beetales to relocate the hive and avoid killing them. This is the only way we can coexist and have a sustainable future
+                </Typography>
             </Box>
 
             <Box sx={{ overflow: 'hidden' }}>
@@ -334,22 +334,22 @@ export default function ConclusionPage() {
             <Box sx={{ flexGrow: 1, padding: 4 }}>
                 <Grid container spacing={3}>
                     {images.map((image, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index}>
+                        <Grid size={{xs:12, sm:6, md:4}} key={index}>
                             <Box
                                 sx={{
                                     position: 'relative',
                                     overflow: 'hidden',
                                     borderRadius: 2,
-                                    height: 400, // Set a fixed height for uniformity
+                                    height: 400,
                                     '&:hover .description': {
-                                        opacity: 1, // Show description on hover
+                                        opacity: 1,
                                     },
                                 }}
                             >
                                 {/* Clickable Image */}
                                 <a href={image.link} target="_blank" rel="noopener noreferrer">
                                     <img
-                                        src={image.src}
+                                        src={image.src as string}
                                         alt={image.title}
                                         style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} // Fixed height and cover
                                     />
@@ -375,9 +375,6 @@ export default function ConclusionPage() {
                                     className="description"
                                     sx={{
                                         position: 'absolute',
-                                        bottom: 0,
-                                        left: 0,
-                                        right: 0,
                                         backgroundColor: 'rgba(0, 0, 0, 0.7)',
                                         color: 'white',
                                         padding: '16px',
