@@ -237,7 +237,7 @@ export default function ConclusionPage() {
                                     }}
                                     className="description"
                                 >
-                                    <Typography variant="h8" fontFamily={"Nunito Sans"}>{image.description}</Typography>
+                                    <Typography variant="h6" fontFamily={"Nunito Sans"}>{image.description}</Typography>
                                 </Box>
                             </Box>
                         </Grid>
@@ -262,7 +262,7 @@ export default function ConclusionPage() {
             </Box>
             <Grid container spacing={2}>
                 {/* First Section */}
-                <Grid item xs={12} sm={6}>
+                <Grid size={{xs:12, sm:6}}>
                     {/* Title Box 1 */}
                     <Box
                         sx={{
@@ -292,7 +292,7 @@ export default function ConclusionPage() {
                 </Grid>
 
                 {/* Second Section */}
-                <Grid item xs={12} sm={6}>
+                <Grid size={{xs:12, sm:6}}>
                     {/* Title Box 2 */}
                     <Box
                         sx={{
