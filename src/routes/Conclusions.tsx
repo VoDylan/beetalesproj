@@ -45,13 +45,13 @@ export default function ConclusionPage() {
         {
             src: KadoorieFarm,
             title: 'Kadoorie Farms',
-            description: 'Kadoorie Farm and Botanic Garden began as an initiative to support farmers in leading independent lives through agricultural aid. Over time, it has expanded its efforts by transforming barren land into thriving forests, which now include mature woodlands throughout its gardens. Today, the organization has become a leading advocate for sustainability, ecosystem restoration, and the conservation of endangered species in Hong Kong and beyond. Their mission remains to achieve sustainable coexistence between humans and nature.',
+            description: 'Kadoorie Farm and Botanic Garden started as a project to help farmers become self-sufficient through agricultural aid. It has since transformed barren land into thriving forests and mature woodlands. Today, it is a leading advocate for sustainability, ecosystem restoration, and endangered species conservation in Hong Kong and beyond. Their mission is to achieve sustainable coexistence between humans and nature.',
             link: 'https://www.kfbg.org/en/',
         },
         {
             src: MaiPo,
             title: 'Mai Po Wetlands Reserve',
-            description: 'Mai Po Wetland Reserve is run by the WWF and serves to protect the Mai Po Wetlands and maintain the biodiversity of the region. The wetlands are maintained in part because they serve as a major stopover and habitat for over 500 bird species on the East Asian-Australasian Flyway for migration. They believe in preserving the green zones and country parks, as well as improving the parks within the city as well  order to improve the quality of life for the wildlife and humans alike.',
+            description: 'Mai Po Wetland Reserve is run by the WWF and serves to protect the Mai Po Wetlands and maintain the biodiversity of the region. The wetlands are maintained in part because they serve as a major stopover and habitat for over 500 bird species on the East Asian-Australasian Flyway for migration. They believe in preserving the green zones and country parks, as well as improving the parks within the city as well  order to improve the quality of life for the wildlife and humans alike.',
             link: 'https://www.wwf.org.hk/en/wetlands/booking/?gad_source=1',
         },
         {
@@ -258,6 +258,7 @@ export default function ConclusionPage() {
                                     '&:hover .description': {
                                         opacity: 1,
                                     },
+
                                 }}
                             >
                                 <img
@@ -469,7 +470,7 @@ export default function ConclusionPage() {
                                         transition: 'opacity 0.3s ease', // Smooth transition
                                     }}
                                 >
-                                    <Typography variant="h6" fontFamily={"Nunito Sans"}>{image.description}</Typography>
+                                    <Typography variant="h6" fontSize={"1rem"}  fontFamily={"Nunito Sans"}>{image.description}</Typography>
                                 </Box>
                             </Box>
                         </Grid>
