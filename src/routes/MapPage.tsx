@@ -478,9 +478,9 @@ export default function MapPage() {
         {
             geocode: [22.35415862, 114.1868307],
             popUp: "Lion Rock",
-            Pollinators: "0",
-            PlantsSeen: "1",
-            BeeAverage: "0",
+            Pollinators: "11",
+            PlantsSeen: "2",
+            BeeAverage: "5.5",
             Temperature: "15.7C",
             Humidity: "29%",
             Weather: "Sunny",
