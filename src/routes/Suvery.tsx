@@ -1,7 +1,7 @@
 import {Box, Stack, Typography} from "@mui/material";
 import Grid from '@mui/material/Grid2';
 import pieChart1 from "../assets/Q_ What age are you_.png"
-import pieChart2 from "../assets/Q_ I like having bees around and they should be allowed in the ciity.png"
+import pieChart2 from "../assets/Q_ I like having bees around and they should be allowed in the city.png"
 import pieChart3 from "../assets/Q_ Bee nests should be removed once found.png"
 
 export default function SurveyPage() {
