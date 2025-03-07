@@ -37,6 +37,9 @@ function Header() {
                 <ListItem component={Link} to="/Guide">
                     <ListItemText primary="Guide" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
                 </ListItem>
+                <ListItem component={Link} to="/Booklet">
+                    <ListItemText primary="Booklet" sx={{ color: 'black', fontFamily: 'Nunito Sans' }} />
+                </ListItem>
             </List>
         </Box>
     );
@@ -74,6 +77,7 @@ function Header() {
                         <Button component={Link} to="/Research" sx={{ color: 'black', fontWeight: 'bold' }}>Research</Button>
                         <Button component={Link} to="/Conclusions" sx={{ color: 'black', fontWeight: 'bold' }}>Conclusions</Button>
                         <Button component={Link} to="/Guide" sx={{ color: 'black', fontWeight: 'bold' }}>Guide</Button>
+                        <Button component={Link} to="/Booklet" sx={{ color: 'black', fontWeight: 'bold' }}>Booklet</Button>
                     </Stack>
                 </Box>
                 <Drawer

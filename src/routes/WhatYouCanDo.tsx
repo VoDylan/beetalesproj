@@ -47,14 +47,22 @@ export default function WhatYouCanDo() {
             {/*</button>*/}
             <Button
                 variant="contained"
-                endIcon={<DownloadIcon/>}
+                endIcon={<DownloadIcon />}
                 onClick={downloadPDF}
-                    sx={{
-                backgroundColor: "#c5e1a5",
-                color: "black",
-                fontSize: "1rem",
-                marginBottom: "1rem"
-            }}>
+                sx={{
+                    backgroundColor: "#c5e1a5",
+                    color: "black",
+                    fontSize: "1rem",
+                    marginBottom: "1rem",
+                    padding: "0.5rem 1rem",
+                    border: "none",
+                    cursor: "pointer",
+                    "&:disabled": {
+                        backgroundColor: "#e0e0e0",
+                        cursor: "not-allowed"
+                    }
+                }}
+            >
                 Download
             </Button>
             <Document
