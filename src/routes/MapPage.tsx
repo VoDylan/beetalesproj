@@ -478,9 +478,9 @@ export default function MapPage() {
         {
             geocode: [22.35415862, 114.1868307],
             popUp: "Lion Rock",
-            Pollinators: "0",
-            PlantsSeen: "1",
-            BeeAverage: "0",
+            Pollinators: "11",
+            PlantsSeen: "2",
+            BeeAverage: "5.5",
             Temperature: "15.7C",
             Humidity: "29%",
             Weather: "Sunny",
@@ -670,10 +670,10 @@ export default function MapPage() {
                                             </Grid>
                                         </Grid>
                                         <Grid container alignItems="center" size={{ xs: 12 }}>
-                                            <Grid size={{ xs: 6 }}>
-                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontSize={"1.2rem"} fontWeight={"bold"} align="left">Bees Per Flower:</Typography>
+                                            <Grid size={{ xs: 9 }}>
+                                                <Typography variant="h6" fontFamily={"Nunito Sans"} fontSize={"1.2rem"} fontWeight={"bold"} align="left">Pollinators Per Flower:</Typography>
                                             </Grid>
-                                            <Grid size={{ xs: 6 }}>
+                                            <Grid size={{ xs: 3 }}>
                                                 <Typography variant="h6" fontFamily={"Nunito Sans"} align="right">{marker.BeeAverage}</Typography>
                                             </Grid>
                                         </Grid>

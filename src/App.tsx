@@ -14,6 +14,7 @@ import {
     Outlet
 } from "react-router-dom";
 import Footer from "./Components/Footer.tsx";
+import BookletReport from "./routes/BookletReport.tsx";
 
 function App() {
     const router = createBrowserRouter([{
@@ -44,6 +45,10 @@ function App() {
             {
                 path: "/Guide",
                 element: <WhatYouCanDo/>,
+            },
+            {
+                path: "/Booklet",
+                element: <BookletReport/>,
             },
         ],
     },

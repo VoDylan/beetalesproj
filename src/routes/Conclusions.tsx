@@ -1,40 +1,14 @@
 import {Box, Stack, Typography} from '@mui/material';
 import Grid from '@mui/material/Grid2';
-import JamesReflect from "../assets/Jreflect.jpg"
 import BeetalesC from "../assets/BeetalesConc.jpg"
 import KadoorieFarm from "../assets/Kadoorie_Farm.jpg"
 import MaiPo from "../assets/Mai_Po.png"
 import FungYuen from "../assets/FungYuen.jpg"
 import Bat from "../assets/BatRadar.webp"
-import KeethuReflect from "../assets/Kreflect.jpg"
-import ValliReflect from "../assets/ValliConc.jpg"
-import DylanReflect from "../assets/DylanConc.jpg"
 import Tnc from "../assets/Tnc.jpg"
 import BeesWasps from "../assets/wasp_bee.png"
 
 export default function ConclusionPage() {
-    const personalReflectionImages = [
-        {
-            title: "James",
-            src: JamesReflect,
-            description: "Overall based on data observed and recorded it is clear that the bee population in Hong Kong needs improvement. If the government worked together with the organizations in charge of the floral biodiversity in local parks, they could find plants that are not just aesthetically pleasing but also better for the environment. By doing this not only would it provide bees with an easier way to collect food and help pollinate the other plants, it would also improve their population. In terms of public perception, I would recommend some sort of education reform regarding what is taught in local primary schools about pollinators, if anything is taught at all about them. It appears while many acknowledge bees are important, they are not understanding as to how docile they can be if unprovoked. If in the instance there is a hive on someone's property or home, people should be taught to call a local conservation instead of trying to kill the hive, so it can be kept alive and relocated."
-        },
-        {
-            title: "Keethu",
-            src: KeethuReflect,
-            description: "All of our preliminary research pretty much aligned with what we in the data we took about bees and other pollinators in Hong Kong. Because it's a very urban city there not much space for them to live or suitable plants to sustain them. It's also sad that most people are also very scared of them which contributes to their dwindling population. Although our findings were relatively what we expected I'm glad for this opportunity to explore Hong Kong."
-        },
-        {
-            title: "Valli",
-            src: ValliReflect,
-            description: "This project with Beetales has opened my eyes to the major issues with urbanization and development on the environment not only to the animals that lose their habitats, but to the plants in the city as well. Travelling through the parks and seeing the lack of local flowering plants in person while taking data made the initiatives of Beetales and many of the local conservation groups much more relevant. It also made me realise that many people that are in the thick of the city sometimes don’t understand the importance of insects such as bees, or even birds in the ecosystems of the surrounding areas. This has made me reflect on how lucky I am to be able to to increase awareness about the importance of pollinators and preserving the local biodiversity while coexisting with the bustling city."
-        },
-        {
-            title: "Dylan",
-            src: DylanReflect,
-            description: "Over the course of this project I have been extremely privileged to have explored a large part of Hong Kong while also observing the parks and hikes. The findings our team has discovered about parks in Hong Kong has been very interesting to me, as the number of pollinators is not just reliant on the number of flowers but also the species of flowers found in parks. Among other things, I have learned a lot working with Beetales and I am happy I was able to contribute to this project. This experience has changed the way I look at the environment and greatly respect the work that other conservation groups do to sustain our environment. "
-        },
-    ];
     const images = [
         {
             src: BeetalesC,
@@ -233,61 +207,6 @@ export default function ConclusionPage() {
                 </Grid>
             </Box>
 
-
-            <Box sx={{width: '100%', overflow: 'hidden'}}> {/* Ensure the Box takes full width */}
-                <Box
-                    sx={{
-                        backgroundColor: '#c5e1a5',
-                        padding: 2,
-                    }}
-                >
-                    <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
-                        Personal Reflections
-                    </Typography>
-                </Box>
-                <Grid container spacing={0}> {/* Set spacing to 0 for no gaps between images */}
-                    {personalReflectionImages.map((image, index) => (
-                        <Grid size={{xs: 12, sm: 6}} key={index}> {/* 2 images per row on medium screens */}
-                            <Box
-                                sx={{
-                                    position: 'relative',
-                                    overflow: 'hidden',
-                                    borderRadius: 2,
-                                    width: '100%',
-                                    height: '100%',// Set a fixed height for the images
-                                    '&:hover .description': {
-                                        opacity: 1,
-                                    },
-
-                                }}
-                            >
-                                <img
-                                    src={image.src as string}
-                                    alt={image.title}
-                                    style={{width: '100%', height: '100%', objectFit: 'cover'}} // Fill the box
-                                />
-                                <Box
-                                    sx={{
-                                        position: 'absolute',
-                                        bottom: 0,
-                                        left: 0,
-                                        right: 0,
-                                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                                        color: 'white',
-                                        padding: '2px',
-                                        opacity: 0,
-                                        transition: 'opacity 0.3s ease',
-                                    }}
-                                    className="description"
-                                >
-                                    <Typography variant="h6" fontFamily={"Nunito Sans"}>{image.description}</Typography>
-                                </Box>
-                            </Box>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Box>
-
             <Box
                 sx={{
                     border: '0px solid #000',
@@ -296,7 +215,7 @@ export default function ConclusionPage() {
                     maxWidth: '100%',
                     width: 'stretch',
                     marginX: 'auto',
-                    backgroundColor: '#ffab91',
+                    backgroundColor: '#c5e1a5',
                 }}
             >
                 <Typography color="black" variant="h4" fontFamily={"Bree Serif"}>
